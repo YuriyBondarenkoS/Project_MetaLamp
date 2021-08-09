@@ -38,11 +38,9 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 var ___HTML_LOADER_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ./assets/favicon.ico */ "./assets/favicon.ico"), __webpack_require__.b);
-var ___HTML_LOADER_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ./img/2.jpg */ "./img/2.jpg"), __webpack_require__.b);
 // Module
 var ___HTML_LOADER_REPLACEMENT_0___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_0___);
-var ___HTML_LOADER_REPLACEMENT_1___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_1___);
-var code = "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n  <meta charset=\"UTF-8\">\r\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n  <link rel=\"shortcut icon\" href=\"" + ___HTML_LOADER_REPLACEMENT_0___ + "\" type=\"image/x-icon\">\r\n  <title>new site</title>\r\n</head>\r\n<body>\r\n  <div class=\"site-container\">\r\n    <header class=\"header\">\r\n      xvmcgh\r\n    </header>\r\n    <img src=\"" + ___HTML_LOADER_REPLACEMENT_1___ + "\" alt=\"img\">\r\n  </div>\r\n</body>\r\n</html>";
+var code = "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n  <meta charset=\"UTF-8\">\r\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n  <link rel=\"shortcut icon\" href=\"" + ___HTML_LOADER_REPLACEMENT_0___ + "\" type=\"image/x-icon\">\r\n  <title>new site</title>\r\n</head>\r\n<body>\r\n<div class=\"wrapper\">\r\n    <header class=\"header\">\r\n      <div class=\"container\">\r\n        <div class=\"header__inner\">\r\n          <nav class=\"menu\">\r\n            <ul class=\"menu__list\">\r\n              <li class=\"menu__list-item\">\r\n                <a class=\"menu__list-link\" href=\"#\">О нас</a>\r\n              </li>\r\n              <li class=\"menu__list-item\">\r\n                <a class=\"menu__list-link\" href=\"#\">Услуги</a>\r\n              </li>\r\n              <li class=\"menu__list-item\">\r\n                <a class=\"menu__list-link\" href=\"#\">Вакансии</a>\r\n              </li>\r\n              <li class=\"menu__list-item\">\r\n                <a class=\"menu__list-link\" href=\"#\">Новости</a>\r\n              </li>\r\n              <li class=\"menu__list-item\">\r\n                <a class=\"menu__list-link\" href=\"#\">Соглашения</a>\r\n              </li>\r\n            </ul>\r\n          </nav>\r\n          <button class=\"login-button\">войти</button>\r\n          <button class=\"register\">зарегистрироваться</button>\r\n        </div>\r\n      </div>\r\n    </header>\r\n  </div>\r\n</body>\r\n</html>";
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);
 
@@ -67,16 +65,6 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__.p + "img/28faaa7af5fb8932a114.ico";
-
-/***/ }),
-
-/***/ "./img/2.jpg":
-/*!*******************!*\
-  !*** ./img/2.jpg ***!
-  \*******************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "img/da7f6a0e9955f2c34423.jpg";
 
 /***/ })
 
