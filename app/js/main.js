@@ -37,10 +37,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0__);
 // Imports
 
-var ___HTML_LOADER_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ./assets/favicon.ico */ "./assets/favicon.ico"), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ./img/Group.png */ "./img/Group.png"), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ./img/TOXIN.png */ "./img/TOXIN.png"), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(/*! ./img/twitter.png */ "./img/twitter.png"), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_3___ = new URL(/* asset import */ __webpack_require__(/*! ./img/facebook.png */ "./img/facebook.png"), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_4___ = new URL(/* asset import */ __webpack_require__(/*! ./img/instagram.png */ "./img/instagram.png"), __webpack_require__.b);
 // Module
 var ___HTML_LOADER_REPLACEMENT_0___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_0___);
-var code = "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n  <meta charset=\"UTF-8\">\r\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n  <link rel=\"shortcut icon\" href=\"" + ___HTML_LOADER_REPLACEMENT_0___ + "\" type=\"image/x-icon\">\r\n  <title>new site</title>\r\n</head>\r\n<body>\r\n<div class=\"wrapper\">\r\n    <header class=\"header\">\r\n      <div class=\"container\">\r\n        <div class=\"header__inner\">\r\n          <nav class=\"menu\">\r\n            <ul class=\"menu__list\">\r\n              <li class=\"menu__list-item\">\r\n                <a class=\"menu__list-link\" href=\"#\">О нас</a>\r\n              </li>\r\n              <li class=\"menu__list-item\">\r\n                <a class=\"menu__list-link\" href=\"#\">Услуги</a>\r\n              </li>\r\n              <li class=\"menu__list-item\">\r\n                <a class=\"menu__list-link\" href=\"#\">Вакансии</a>\r\n              </li>\r\n              <li class=\"menu__list-item\">\r\n                <a class=\"menu__list-link\" href=\"#\">Новости</a>\r\n              </li>\r\n              <li class=\"menu__list-item\">\r\n                <a class=\"menu__list-link\" href=\"#\">Соглашения</a>\r\n              </li>\r\n            </ul>\r\n          </nav>\r\n          <button class=\"login-button\">войти</button>\r\n          <button class=\"register\">зарегистрироваться</button>\r\n        </div>\r\n      </div>\r\n    </header>\r\n  </div>\r\n</body>\r\n</html>";
+var ___HTML_LOADER_REPLACEMENT_1___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_1___);
+var ___HTML_LOADER_REPLACEMENT_2___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_2___);
+var ___HTML_LOADER_REPLACEMENT_3___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_3___);
+var ___HTML_LOADER_REPLACEMENT_4___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_4___);
+var code = "<!DOCTYPE html>\r\n<html lang=\"ru\">\r\n<head>\r\n  <meta charset=\"UTF-8\">\r\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n  <link rel=\"shortcut icon\" href=\"" + ___HTML_LOADER_REPLACEMENT_0___ + "\" type=\"image/x-icon\">\r\n  <title>TOXIN</title>\r\n</head>\r\n<body>\r\n<div class=\"wrapper\">\r\n    <header class=\"header\">\r\n      <div class=\"container\">\r\n        <div class=\"header__inner\">\r\n          <a class=\"logo\" href=\"#\">\r\n            <img src=\"" + ___HTML_LOADER_REPLACEMENT_0___ + "\" alt=\"iogo\">\r\n            <img src=\"" + ___HTML_LOADER_REPLACEMENT_1___ + "\" alt=\"logo\">\r\n          </a>\r\n          <nav class=\"menu\">\r\n            <ul class=\"menu__list\">\r\n              <li class=\"menu__list-item\">\r\n                <a class=\"menu__list-link\" href=\"#\">О нас</a>\r\n              </li>\r\n              <li class=\"menu__list-item\">\r\n                <a class=\"menu__list-link\" href=\"#\">Услуги</a>\r\n              </li>\r\n              <li class=\"menu__list-item\">\r\n                <a class=\"menu__list-link\" href=\"#\">Вакансии</a>\r\n              </li>\r\n              <li class=\"menu__list-item\">\r\n                <a class=\"menu__list-link\" href=\"#\">Новости</a>\r\n              </li>\r\n              <li class=\"menu__list-item\">\r\n                <a class=\"menu__list-link\" href=\"#\">Соглашения</a>\r\n              </li>\r\n            </ul>\r\n          </nav>\r\n          <button class=\"login-button\">войти</button>\r\n          <button class=\"register\">зарегистрироваться</button>\r\n        </div>\r\n      </div>\r\n    </header>\r\n\r\n    <footer class=\"footer\">\r\n      <div class=\"footer__content\">\r\n        <div class=\"container\">\r\n          <div class=\"footer__logo-content\">\r\n            <a class=\"logo\" href=\"#\">\r\n              <img src=\"" + ___HTML_LOADER_REPLACEMENT_0___ + "\" alt=\"iogo\">\r\n              <img src=\"" + ___HTML_LOADER_REPLACEMENT_1___ + "\" alt=\"logo\">\r\n            </a>\r\n            <p class=\"footer__logo-content--text\">\r\n              Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»\r\n            </p>\r\n          </div>\r\n          <nav class=\"footer__menu\">\r\n            <h3 class=\"footer__menu-title\">навигация</h3>\r\n            <ul class=\"footer__menu-list\">\r\n              <li class=\"footer__menu-item\">\r\n                <a class=\"footer__menu-link\" href=\"#\">О нас</a>\r\n              </li>\r\n              <li class=\"footer__menu-item\">\r\n                <a class=\"footer__menu-link\" href=\"#\">Новости</a>\r\n              </li>\r\n              <li class=\"footer__menu-item\">\r\n                <a class=\"footer__menu-link\" href=\"#\">Служба поддержки</a>\r\n              </li>\r\n              <li class=\"footer__menu-item\">\r\n                <a class=\"footer__menu-link\" href=\"#\">Услуги</a>\r\n              </li>\r\n            </ul>\r\n          </nav>\r\n          <div class=\"footer__info\">\r\n            <h3 class=\"footer__info-title\">о нас</h3>\r\n            <ul class=\"footer__info-list\">\r\n              <li class=\"footer__info-item\">\r\n                <a class=\"footer__info-link\" href=\"#\">О сервисе</a>\r\n              </li>\r\n              <li class=\"footer__info-item\">\r\n                <a class=\"footer__info-link\" href=\"#\">Наша команда</a>\r\n              </li>\r\n              <li class=\"footer__info-item\">\r\n                <a class=\"footer__info-link\" href=\"#\">Вакансии</a>\r\n              </li>\r\n              <li class=\"footer__info-item\">\r\n                <a class=\"footer__info-link\" href=\"#\">Инвесторы</a>\r\n              </li>\r\n            </ul>\r\n          </div>\r\n          <div class=\"footer__support\">\r\n            <h3 class=\"footer__support-title\">Служба поддержки</h3>\r\n            <ul class=\"footer__support-list\">\r\n              <li class=\"footer__support-item\">\r\n                <a class=\"footer__support-link\" href=\"#\">Соглашения</a>\r\n              </li>\r\n              <li class=\"footer__support-item\">\r\n                <a class=\"footer__support-link\" href=\"#\">Сообщества</a>\r\n              </li>\r\n              <li class=\"footer__support-item\">\r\n                <a class=\"footer__support-link\" href=\"#\">Связь с нами</a>\r\n              </li>\r\n            </ul>\r\n          </div>\r\n          <div class=\"footer__subscription\">\r\n            <h3 class=\"footer__subscription-title\"></h3>\r\n            <p class=\"footer__subscription-content\"></p>\r\n            <form class=\"footer__form\" action=\"\">\r\n                <input class=\"footer__form-input\" type=\"text\" placeholder=\"Email\">\r\n                <button class=\"footer__form-button\" type=\"submit\"></button>\r\n            </form>\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"footer__copyright\">\r\n        <div class=\"container\">\r\n          <div class=\"footer__copyright-text\">\r\n            Copyright © 2018 Toxin отель. Все права защищены.\r\n          </div>\r\n          <div class=\"footer__copyright-social1\">\r\n            <div class=\"footer__social1-list\">\r\n              <div class=\"footer__social1-item\">\r\n                <a class=\"footer__social1-link\" href=\"#\">\r\n                  <img src=\"" + ___HTML_LOADER_REPLACEMENT_2___ + "\" alt=\"twitter\">\r\n                </a>\r\n              </div>\r\n              <div class=\"footer__social1-item\">\r\n                <a class=\"footer__social1-link\" href=\"#\">\r\n                  <img src=\"" + ___HTML_LOADER_REPLACEMENT_3___ + "\" alt=\"facebook\">\r\n                </a>\r\n              </div>\r\n              <div class=\"footer__social1-item\">\r\n                <a class=\"footer__social1-link\" href=\"#\">\r\n                  <img src=\"" + ___HTML_LOADER_REPLACEMENT_4___ + "\" alt=\"instagram\">\r\n                </a>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </footer>\r\n\r\n  </div>\r\n</body>\r\n</html>";
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);
 
@@ -58,13 +66,53 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./assets/favicon.ico":
-/*!****************************!*\
-  !*** ./assets/favicon.ico ***!
-  \****************************/
+/***/ "./img/Group.png":
+/*!***********************!*\
+  !*** ./img/Group.png ***!
+  \***********************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "img/28faaa7af5fb8932a114.ico";
+module.exports = __webpack_require__.p + "img/5b421543551ae3e89064.png";
+
+/***/ }),
+
+/***/ "./img/TOXIN.png":
+/*!***********************!*\
+  !*** ./img/TOXIN.png ***!
+  \***********************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "img/3847dcf424ce3d7a0022.png";
+
+/***/ }),
+
+/***/ "./img/facebook.png":
+/*!**************************!*\
+  !*** ./img/facebook.png ***!
+  \**************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "img/bf3c5e11d520b3120323.png";
+
+/***/ }),
+
+/***/ "./img/instagram.png":
+/*!***************************!*\
+  !*** ./img/instagram.png ***!
+  \***************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "img/fe9ea0a611fa12580907.png";
+
+/***/ }),
+
+/***/ "./img/twitter.png":
+/*!*************************!*\
+  !*** ./img/twitter.png ***!
+  \*************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "img/b7e3913ab6e7c611b53e.png";
 
 /***/ })
 
