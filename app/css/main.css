@@ -333,10 +333,11 @@ html {
   box-sizing: inherit; }
 
 body {
-  overflow-anchor: none;
-  font-family: "asd", sans-serif;
-  background-color: var(--color-white);
-  scroll-behavior: smooth; }
+  font-family: "Montserrat-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17.07px;
+  color: #1F204180 50%; }
 
 img {
   max-width: 100%; }
@@ -380,9 +381,11 @@ a {
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none; }
 
-body {
-  background-color: blue;
-  color: red; }
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px; }
 
 
 /*# sourceMappingURL=main.css.map*/
