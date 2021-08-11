@@ -1,163 +1,152 @@
-<head><script defer="defer" src="./js/vendors-node_modules_focus-visible_dist_focus-visible_js-node_modules_html-loader_dist_runtim-ca6faf.js"></script></head>Html Webpack Plugin:
-<pre>
-  Error: Child compilation failed:
-  Module build failed (from ../node_modules/mini-css-extract-plugin/dist/loader.js):
-  ValidationError: Invalid options object. Mini CSS Extract Plugin Loader has been initialized using an options object that does not match the API schema.
-   - options has an unknown property 'hmr'. These properties are valid:
-     object { publicPath?, emit?, esModule?, layer? }
-      at validate (C:\Users\ysbondarenko\Desktop\Work\1Self-study\39_MetaLamp\node_modules\schema-utils\dist\validate.js:105:11)
-      at Object.getOptions (C:\Users\ysbondarenko\Desktop\Work\1Self-study\39_MetaLamp\node_modules\webpack\lib\NormalModule.js:539:19)
-      at Object.pitch (C:\Users\ysbondarenko\Desktop\Work\1Self-study\39_MetaLamp\node_modules\mini-css-extract-plugin\dist\loader.js:38:24)
-  ModuleBuildError: Module build failed (from ../node_modules/mini-css-extract-plugin/dist/loader.js):
-  ValidationError: Invalid options object. Mini CSS Extract Plugin Loader has been initialized using an options object that does not match the API schema.
-   - options has an unknown property 'hmr'. These properties are valid:
-     object { publicPath?, emit?, esModule?, layer? }
-      at validate (C:\Users\ysbondarenko\Desktop\Work\1Self-study\39_MetaLamp\node_modules\schema-utils\dist\validate.js:105:11)
-      at Object.getOptions (C:\Users\ysbondarenko\Desktop\Work\1Self-study\39_MetaLamp\node_modules\webpack\lib\NormalModule.js:539:19)
-      at Object.pitch (C:\Users\ysbondarenko\Desktop\Work\1Self-study\39_MetaLamp\node_modules\mini-css-extract-plugin\dist\loader.js:38:24)
-      at processResult (C:\Users\ysbondarenko\Desktop\Work\1Self-study\39_MetaLamp\node_modules\webpack\lib\NormalModule.js:713:19)
-      at C:\Users\ysbondarenko\Desktop\Work\1Self-study\39_MetaLamp\node_modules\webpack\lib\NormalModule.js:819:5
-      at C:\Users\ysbondarenko\Desktop\Work\1Self-study\39_MetaLamp\node_modules\loader-runner\lib\LoaderRunner.js:399:11
-      at C:\Users\ysbondarenko\Desktop\Work\1Self-study\39_MetaLamp\node_modules\loader-runner\lib\LoaderRunner.js:195:20
-      at runSyncOrAsync (C:\Users\ysbondarenko\Desktop\Work\1Self-study\39_MetaLamp\node_modules\loader-runner\lib\LoaderRunner.js:156:3)
-      at C:\Users\ysbondarenko\Desktop\Work\1Self-study\39_MetaLamp\node_modules\loader-runner\lib\LoaderRunner.js:191:3
-      at handleResult (C:\Users\ysbondarenko\Desktop\Work\1Self-study\39_MetaLamp\node_modules\loader-runner\lib\loadLoader.js:53:2)
-      at loadLoader (C:\Users\ysbondarenko\Desktop\Work\1Self-study\39_MetaLamp\node_modules\loader-runner\lib\loadLoader.js:35:10)
-      at iteratePitchingLoaders (C:\Users\ysbondarenko\Desktop\Work\1Self-study\39_MetaLamp\node_modules\loader-runner\lib\LoaderRunner.js:182:2)
-      at runLoaders (C:\Users\ysbondarenko\Desktop\Work\1Self-study\39_MetaLamp\node_modules\loader-runner\lib\LoaderRunner.js:397:2)
-  Cannot read property 'get' of undefined
-  during rendering of asset asset/resource|C:\Users\ysbondarenko\Desktop\Work\1Self-study\39_MetaLamp\node_modules\mini-css-extract-plugin\dist\loader.js??ruleSet[1].rules  [1].use[0]!C:\Users\ysbondarenko\Desktop\Work\1Self-study\39_MetaLamp\node_modules\css-loader\dist\cjs.js!C:\Users\ysbondarenko\Desktop\Work\1Self-study\39_MetaLamp\src\  13_scss\css\main.css
-  ChunkRenderError: Cannot read property 'get' of undefined
-  during rendering of asset asset/resource|C:\Users\ysbondarenko\Desktop\Work\1Self-study\39_MetaLamp\node_modules\mini-css-extract-plugin\dist\loader.js??ruleSet[1].rules  [1].use[0]!C:\Users\ysbondarenko\Desktop\Work\1Self-study\39_MetaLamp\node_modules\css-loader\dist\cjs.js!C:\Users\ysbondarenko\Desktop\Work\1Self-study\39_MetaLamp\src\  13_scss\css\main.css
-      at C:\Users\ysbondarenko\Desktop\Work\1Self-study\39_MetaLamp\node_modules\webpack\lib\Compilation.js:3809:23
-      at symbolIterator (C:\Users\ysbondarenko\Desktop\Work\1Self-study\39_MetaLamp\node_modules\neo-async\async.js:3482:9)
-      at timesSync (C:\Users\ysbondarenko\Desktop\Work\1Self-study\39_MetaLamp\node_modules\neo-async\async.js:2297:7)
-      at Object.eachLimit (C:\Users\ysbondarenko\Desktop\Work\1Self-study\39_MetaLamp\node_modules\neo-async\async.js:3463:5)
-      at Compilation.createChunkAssets (C:\Users\ysbondarenko\Desktop\Work\1Self-study\39_MetaLamp\node_modules\webpack\lib\Compilation.js:3789:12)
-      at C:\Users\ysbondarenko\Desktop\Work\1Self-study\39_MetaLamp\node_modules\webpack\lib\Compilation.js:2553:14
-      at C:\Users\ysbondarenko\Desktop\Work\1Self-study\39_MetaLamp\node_modules\webpack\lib\Compilation.js:2685:5
-      at C:\Users\ysbondarenko\Desktop\Work\1Self-study\39_MetaLamp\node_modules\neo-async\async.js:2818:7
-      at done (C:\Users\ysbondarenko\Desktop\Work\1Self-study\39_MetaLamp\node_modules\neo-async\async.js:3522:9)
-      at C:\Users\ysbondarenko\Desktop\Work\1Self-study\39_MetaLamp\node_modules\webpack\lib\Compilation.js:2665:7
-  
-  - validate.js:105 validate
-    [39_MetaLamp]/[schema-utils]/dist/validate.js:105:11
-  
-  - NormalModule.js:539 Object.getOptions
-    [39_MetaLamp]/[webpack]/lib/NormalModule.js:539:19
-  
-  - loader.js:38 Object.pitch
-    [39_MetaLamp]/[mini-css-extract-plugin]/dist/loader.js:38:24
-  
-  - ModuleBuildError: Module build failed (from ../node_modules/mini-css-extract-plugin/dist/loader.js):
-  
-  - ValidationError: Invalid options object. Mini CSS Extract Plugin Loader has been initialized using an options object that does not match the API schema.
-  
-  - - options has an unknown property 'hmr'. These properties are valid:
-  
-  - object { publicPath?, emit?, esModule?, layer? }
-  
-  - validate.js:105 validate
-    [39_MetaLamp]/[schema-utils]/dist/validate.js:105:11
-  
-  - NormalModule.js:539 Object.getOptions
-    [39_MetaLamp]/[webpack]/lib/NormalModule.js:539:19
-  
-  - loader.js:38 Object.pitch
-    [39_MetaLamp]/[mini-css-extract-plugin]/dist/loader.js:38:24
-  
-  - NormalModule.js:713 processResult
-    [39_MetaLamp]/[webpack]/lib/NormalModule.js:713:19
-  
-  - NormalModule.js:819 
-    [39_MetaLamp]/[webpack]/lib/NormalModule.js:819:5
-  
-  - LoaderRunner.js:399 
-    [39_MetaLamp]/[loader-runner]/lib/LoaderRunner.js:399:11
-  
-  - LoaderRunner.js:195 
-    [39_MetaLamp]/[loader-runner]/lib/LoaderRunner.js:195:20
-  
-  - LoaderRunner.js:156 runSyncOrAsync
-    [39_MetaLamp]/[loader-runner]/lib/LoaderRunner.js:156:3
-  
-  - LoaderRunner.js:191 
-    [39_MetaLamp]/[loader-runner]/lib/LoaderRunner.js:191:3
-  
-  - loadLoader.js:53 handleResult
-    [39_MetaLamp]/[loader-runner]/lib/loadLoader.js:53:2
-  
-  - loadLoader.js:35 loadLoader
-    [39_MetaLamp]/[loader-runner]/lib/loadLoader.js:35:10
-  
-  - LoaderRunner.js:182 iteratePitchingLoaders
-    [39_MetaLamp]/[loader-runner]/lib/LoaderRunner.js:182:2
-  
-  - LoaderRunner.js:397 runLoaders
-    [39_MetaLamp]/[loader-runner]/lib/LoaderRunner.js:397:2
-  
-  - Cannot read property 'get' of undefined
-  
-  - during rendering of asset asset/resource|C:\Users\ysbondarenko\Desktop\Work\1Self-study\39_MetaLamp\node_modules\mini-css-extract-plugin\dist\loader.js??ruleSet[1].rul    es[1].use[0]!C:\Users\ysbondarenko\Desktop\Work\1Self-study\39_MetaLamp\node_modules\css-loader\dist\cjs.js!C:\Users\ysbondarenko\Desktop\Work\1Self-study\39_MetaLamp\    src\13_scss\css\main.css
-  
-  - ChunkRenderError: Cannot read property 'get' of undefined
-  
-  - during rendering of asset asset/resource|C:\Users\ysbondarenko\Desktop\Work\1Self-study\39_MetaLamp\node_modules\mini-css-extract-plugin\dist\loader.js??ruleSet[1].rul    es[1].use[0]!C:\Users\ysbondarenko\Desktop\Work\1Self-study\39_MetaLamp\node_modules\css-loader\dist\cjs.js!C:\Users\ysbondarenko\Desktop\Work\1Self-study\39_MetaLamp\    src\13_scss\css\main.css
-  
-  - Compilation.js:3809 
-    [39_MetaLamp]/[webpack]/lib/Compilation.js:3809:23
-  
-  - async.js:3482 symbolIterator
-    [39_MetaLamp]/[neo-async]/async.js:3482:9
-  
-  - async.js:2297 timesSync
-    [39_MetaLamp]/[neo-async]/async.js:2297:7
-  
-  - async.js:3463 Object.eachLimit
-    [39_MetaLamp]/[neo-async]/async.js:3463:5
-  
-  - Compilation.js:3789 Compilation.createChunkAssets
-    [39_MetaLamp]/[webpack]/lib/Compilation.js:3789:12
-  
-  - Compilation.js:2553 
-    [39_MetaLamp]/[webpack]/lib/Compilation.js:2553:14
-  
-  - Compilation.js:2685 
-    [39_MetaLamp]/[webpack]/lib/Compilation.js:2685:5
-  
-  - async.js:2818 
-    [39_MetaLamp]/[neo-async]/async.js:2818:7
-  
-  - async.js:3522 done
-    [39_MetaLamp]/[neo-async]/async.js:3522:9
-  
-  - Compilation.js:2665 
-    [39_MetaLamp]/[webpack]/lib/Compilation.js:2665:7
-  
-  - child-compiler.js:169 
-    [39_MetaLamp]/[html-webpack-plugin]/lib/child-compiler.js:169:18
-  
-  - Compiler.js:548 
-    [39_MetaLamp]/[webpack]/lib/Compiler.js:548:11
-  
-  - Compiler.js:1118 
-    [39_MetaLamp]/[webpack]/lib/Compiler.js:1118:17
-  
-  
-  - Hook.js:18 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
-    [39_MetaLamp]/[tapable]/lib/Hook.js:18:14
-  
-  - Compiler.js:1114 
-    [39_MetaLamp]/[webpack]/lib/Compiler.js:1114:33
-  
-  - Compilation.js:2254 finalCallback
-    [39_MetaLamp]/[webpack]/lib/Compilation.js:2254:11
-  
-  - Compilation.js:2545 
-    [39_MetaLamp]/[webpack]/lib/Compilation.js:2545:11
-  
-  
-  - Hook.js:18 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
-    [39_MetaLamp]/[tapable]/lib/Hook.js:18:14
-  
-</pre>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="shortcut icon" href="img/5b421543551ae3e89064.png" type="image/x-icon">
+  <link rel="stylesheet" href="b88d04fba731603756b1.css">
+  <title>TOXIN</title>
+<script defer="defer" src="./js/vendors-node_modules_focus-visible_dist_focus-visible_js-node_modules_html-loader_dist_runtim-ca6faf.js"></script><script defer="defer" src="./js/main.js"></script><link href="./css/main.css" rel="stylesheet"></head>
+<body>
+<div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__logo">
+          <a class="logo" href="#">
+            <img src="img/5b421543551ae3e89064.png" alt="iogo">
+            <img src="img/3847dcf424ce3d7a0022.png" alt="logo">
+          </a>
+          <div class="header__inner">
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__list-item">
+                  <a class="menu__list-link menu__list-link--active" href="#">О нас</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link menu__list-link--services" href="#">Услуги</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#">Вакансии</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#">Новости</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link menu__list-link--services" href="#">Соглашения</a>
+                </li>
+              </ul>
+            </nav>
+            <button class="login-button">войти</button>
+            <button class="register">зарегистрироваться</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__logo-content">
+            <a class="logo" href="#">
+              <img src="img/5b421543551ae3e89064.png" alt="iogo">
+              <img src="img/3847dcf424ce3d7a0022.png" alt="logo">
+            </a>
+            <p class="footer__logo-content--text">
+              Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
+            </p>
+          </div>
+          <nav class="footer__menu">
+            <h3 class="footer__menu-title">навигация</h3>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">О нас</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">Новости</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">Служба поддержки</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">Услуги</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__info">
+            <h3 class="footer__info-title">о нас</h3>
+            <ul class="footer__info-list">
+              <li class="footer__info-item">
+                <a class="footer__info-link" href="#">О сервисе</a>
+              </li>
+              <li class="footer__info-item">
+                <a class="footer__info-link" href="#">Наша команда</a>
+              </li>
+              <li class="footer__info-item">
+                <a class="footer__info-link" href="#">Вакансии</a>
+              </li>
+              <li class="footer__info-item">
+                <a class="footer__info-link" href="#">Инвесторы</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__support">
+            <h3 class="footer__support-title">Служба поддержки</h3>
+            <ul class="footer__support-list">
+              <li class="footer__support-item">
+                <a class="footer__support-link" href="#">Соглашения</a>
+              </li>
+              <li class="footer__support-item">
+                <a class="footer__support-link" href="#">Сообщества</a>
+              </li>
+              <li class="footer__support-item">
+                <a class="footer__support-link" href="#">Связь с нами</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__subscription">
+            <h3 class="footer__subscription-title">Подписка</h3>
+            <p class="footer__subscription-content">
+              Получайте специальные предложения и новости сервиса
+            </p>
+            <form class="footer__form" action="">
+                <input class="footer__form-input" type="text" placeholder="Email">
+                <button class="footer__form-button" type="submit"></button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <div class="container">
+          <div class="footer__copyright-text">
+            Copyright © 2018 Toxin отель. Все права защищены.
+          </div>
+          <div class="footer__copyright-social1">
+            <div class="footer__social1-list">
+              <div class="footer__social1-item">
+                <a class="footer__social1-link" href="#">
+                  <img src="img/b7e3913ab6e7c611b53e.png" alt="twitter">
+                </a>
+              </div>
+              <div class="footer__social1-item">
+                <a class="footer__social1-link" href="#">
+                  <img src="img/bf3c5e11d520b3120323.png" alt="facebook">
+                </a>
+              </div>
+              <div class="footer__social1-item">
+                <a class="footer__social1-link" href="#">
+                  <img src="img/fe9ea0a611fa12580907.png" alt="instagram">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>
