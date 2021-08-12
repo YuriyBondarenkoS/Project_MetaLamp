@@ -28,6 +28,27 @@ const optimization = () => {
   return configObj;
 };
 
+const cssLoaders = (extra) => {
+  const loaders = [
+    {
+      loader: MiniCssExtractPlugin.loader,
+      options: {
+        // hmr: isDev,
+        // reloadAll: true,
+      },
+    },
+    'css-loader'
+  ];
+
+  if (extra) {
+    loaders.push(extra);
+  }
+
+  return loaders;
+};
+
+const fileName = (ext) => (isDev ? `[name].${ext}` : `[name].[hash:8].${ext}`);
+
 const plugins = () => {
   const basePlugins = [
     new HTMLWebpackPlugin({
@@ -39,7 +60,8 @@ const plugins = () => {
     }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
-      filename: `./css/${filename('css')}`
+      filename: fileName('css')
+        //`./css/${filename('css')}`
     }),
   ];
 
@@ -76,16 +98,16 @@ module.exports = {
   mode: 'development',
   entry: './js/main.js',
   output: {
-    filename: `./js/${filename('js')}`,
-    path: path.resolve(__dirname, './app'),
+    filename: fileName('js'),
+    path: path.resolve(__dirname, 'app'),
     publicPath: ''
   },
   devServer: {
     historyApiFallback: true,
-    contentBase: path.resolve(__dirname, './app'),
+    contentBase: path.resolve(__dirname, 'app'),
     open: true,
     compress: true,
-    hot: true,
+    hot: isDev,
     port: 3000,
   },
   optimization: optimization(),
@@ -98,13 +120,12 @@ module.exports = {
         loader: 'html-loader',
       },
       {
-        test: /\.css$/i,
-        use: [
-          {
-            loader: MiniCssExtractPlugin.loader,
-          },
-          'css-loader'
-        ],
+        test: /\.css$/,
+        use: cssLoaders()
+      },
+      {
+        test: /\.less$/,
+        use: cssLoaders('less-loader')
       },
       {
         test: /\.s[ac]ss$/i,
@@ -115,6 +136,10 @@ module.exports = {
           'css-loader',
           'sass-loader'
         ],
+        generator: {
+          filename: 'css/[hash][ext]'
+        }
+        
       },
       {
         test: /\.js$/,
