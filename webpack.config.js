@@ -9,7 +9,8 @@ const ImageminPlugin = require('imagemin-webpack');
 const isDev = process.env.NODE_ENV === 'development';
 const isProd = !isDev;
 
-const filename = (ext) => isDev ? `[name].${ext}` : `[name].[contenthash].${ext}`;
+// const PAGES_DIR = `${PATHS.src}/pug/pages/`;
+// const PAGES = fs.readdirSync(PAGES_DIR).filter(fileNames => fileNames.endsWith('.pug'));
 
 const optimization = () => {
   const configObj = {
@@ -21,10 +22,9 @@ const optimization = () => {
   if (isProd) {
     configObj.minimizer = [
       new CssMinimizerWebpackPlugin(),
-      new TerserWebpackPlugin()
+      new TerserWebpackPlugin(),
     ];
   }
-
   return configObj;
 };
 
@@ -47,21 +47,21 @@ const cssLoaders = (extra) => {
   return loaders;
 };
 
-const fileName = (ext) => (isDev ? `[name].${ext}` : `[name].[hash:8].${ext}`);
+const fileName = (ext) => (isDev ? `[name].${ext}` : `[name].[fullhash:8].${ext}`);
 
 const plugins = () => {
   const basePlugins = [
     new HTMLWebpackPlugin({
-      template: path.resolve(__dirname, './src/index.html'),
-      filename: 'index.html',
+      filename: `html/${fileName('html')}`,
+      template : 'pug/puges/index.pug',
+      inject: true,
       minify: {
         collapseWhitespace: isProd
       }
     }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
-      filename: fileName('css')
-        //`./css/${filename('css')}`
+      filename: `./css/${filename('css')}`
     }),
   ];
 
@@ -88,7 +88,7 @@ const plugins = () => {
           ]
         }
       })
-    )
+    );
   }
   return basePlugins;
 };
@@ -121,43 +121,51 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: cssLoaders()
+        use: cssLoaders(),
       },
       {
         test: /\.less$/,
         use: cssLoaders('less-loader')
       },
       {
-        test: /\.s[ac]ss$/i,
+        test: /\.s[ac]ss$/,
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
+            options: {
+              publicPath: (resourcePath, context) => {
+                return path.relative(path.dirname(resourcePath), context) + '/';
+              },
+            }
           },
           'css-loader',
           'sass-loader'
         ],
-        generator: {
-          filename: 'css/[hash][ext]'
-        }
-        
+      },
+      {
+        test: /\.pug$/,
+        loader: 'pug-loader',
       },
       {
         test: /\.js$/,
         exclude: /node_modules/,
         use: ['babel-loader'],
+        generator: {
+          filename: 'js/[hash:8][ext]'
+        }
       },
       {
         test: /\.(?:|gif|png|jpg|jpeg|svg|ico)$/i,
         type: 'asset/resource',
         generator: {
-          filename: 'img/[hash][ext]'
+          filename: 'img/[hash:8][ext]'
         }
       },
       {
         test: /\.(?:|woff2|woff|eot|ttf|svg)$/i,
         include: path.resolve(__dirname, 'src/fonts'),
         generator: {
-          filename: 'fonts/[hash][ext]'
+          filename: 'fonts/[hash:8][ext]'
         }
       }
     ]
