@@ -3,7 +3,7 @@ import '../../node_modules/focus-visible/dist/focus-visible';
 import $ from 'jquery';
 
 import '../scss/main.scss';
-import '../index.html';
+import '../pug/puges/index.pug';
 import json from '../assets/json.json';
 
 // $('body').css('color', 'red');s

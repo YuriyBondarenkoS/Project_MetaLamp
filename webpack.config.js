@@ -61,7 +61,7 @@ const plugins = () => {
     }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
-      filename: `./css/${filename('css')}`
+      filename: `./css/${fileName('css')}`
     }),
   ];
 
@@ -104,7 +104,7 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: true,
-    contentBase: path.resolve(__dirname, 'app'),
+    contentBase: path.join(__dirname, 'app'),
     open: true,
     compress: true,
     hot: isDev,

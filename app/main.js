@@ -1,5 +1,4 @@
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./js/main.js":
@@ -8,13 +7,15 @@
   \********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_focus_visible_dist_focus_visible__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/focus-visible/dist/focus-visible */ "../node_modules/focus-visible/dist/focus-visible.js");
 /* harmony import */ var _node_modules_focus_visible_dist_focus_visible__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_focus_visible_dist_focus_visible__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ "../node_modules/jquery/dist/jquery.js");
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _scss_main_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../scss/main.scss */ "./scss/main.scss");
-/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../index.html */ "./index.html");
+/* harmony import */ var _pug_puges_index_pug__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../pug/puges/index.pug */ "./pug/puges/index.pug");
+/* harmony import */ var _pug_puges_index_pug__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_pug_puges_index_pug__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _assets_json_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../assets/json.json */ "./assets/json.json");
 
 
@@ -30,108 +31,39 @@ add();
 
 /***/ }),
 
-/***/ "./index.html":
-/*!********************!*\
-  !*** ./index.html ***!
-  \********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/html-loader/dist/runtime/getUrl.js */ "../node_modules/html-loader/dist/runtime/getUrl.js");
-/* harmony import */ var _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0__);
-// Imports
-
-var ___HTML_LOADER_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ./img/Group.png */ "./img/Group.png"), __webpack_require__.b);
-var ___HTML_LOADER_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ./css/css/main.css */ "./css/css/main.css"), __webpack_require__.b);
-var ___HTML_LOADER_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(/*! ./img/TOXIN.png */ "./img/TOXIN.png"), __webpack_require__.b);
-var ___HTML_LOADER_IMPORT_3___ = new URL(/* asset import */ __webpack_require__(/*! ./img/twitter.png */ "./img/twitter.png"), __webpack_require__.b);
-var ___HTML_LOADER_IMPORT_4___ = new URL(/* asset import */ __webpack_require__(/*! ./img/facebook.png */ "./img/facebook.png"), __webpack_require__.b);
-var ___HTML_LOADER_IMPORT_5___ = new URL(/* asset import */ __webpack_require__(/*! ./img/instagram.png */ "./img/instagram.png"), __webpack_require__.b);
-// Module
-var ___HTML_LOADER_REPLACEMENT_0___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_0___);
-var ___HTML_LOADER_REPLACEMENT_1___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_1___);
-var ___HTML_LOADER_REPLACEMENT_2___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_2___);
-var ___HTML_LOADER_REPLACEMENT_3___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_3___);
-var ___HTML_LOADER_REPLACEMENT_4___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_4___);
-var ___HTML_LOADER_REPLACEMENT_5___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_5___);
-var code = "<!DOCTYPE html>\r\n<html lang=\"ru\">\r\n<head>\r\n  <meta charset=\"UTF-8\">\r\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n  <link rel=\"shortcut icon\" href=\"" + ___HTML_LOADER_REPLACEMENT_0___ + "\" type=\"image/x-icon\">\r\n  <link rel=\"stylesheet\" href=\"" + ___HTML_LOADER_REPLACEMENT_1___ + "\">\r\n  <title>TOXIN</title>\r\n</head>\r\n<body>\r\n<div class=\"wrapper\">\r\n    <header class=\"header\">\r\n      <div class=\"container\">\r\n        <div class=\"header__logo\">\r\n          <a class=\"logo\" href=\"#\">\r\n            <img src=\"" + ___HTML_LOADER_REPLACEMENT_0___ + "\" alt=\"iogo\">\r\n            <img src=\"" + ___HTML_LOADER_REPLACEMENT_2___ + "\" alt=\"logo\">\r\n          </a>\r\n          <div class=\"header__inner\">\r\n            <nav class=\"menu\">\r\n              <ul class=\"menu__list\">\r\n                <li class=\"menu__list-item\">\r\n                  <a class=\"menu__list-link menu__list-link--active\" href=\"#\">О нас</a>\r\n                </li>\r\n                <li class=\"menu__list-item\">\r\n                  <a class=\"menu__list-link menu__list-link--services\" href=\"#\">Услуги</a>\r\n                </li>\r\n                <li class=\"menu__list-item\">\r\n                  <a class=\"menu__list-link\" href=\"#\">Вакансии</a>\r\n                </li>\r\n                <li class=\"menu__list-item\">\r\n                  <a class=\"menu__list-link\" href=\"#\">Новости</a>\r\n                </li>\r\n                <li class=\"menu__list-item\">\r\n                  <a class=\"menu__list-link menu__list-link--services\" href=\"#\">Соглашения</a>\r\n                </li>\r\n              </ul>\r\n            </nav>\r\n            <button class=\"login-button\">войти</button>\r\n            <button class=\"register\">зарегистрироваться</button>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </header>\r\n\r\n    <main class=\"main\">\r\n\r\n    </main>\r\n\r\n    <footer class=\"footer\">\r\n      <div class=\"container\">\r\n        <div class=\"footer__content\">\r\n          <div class=\"footer__logo-content\">\r\n            <a class=\"logo\" href=\"#\">\r\n              <img src=\"" + ___HTML_LOADER_REPLACEMENT_0___ + "\" alt=\"iogo\">\r\n              <img src=\"" + ___HTML_LOADER_REPLACEMENT_2___ + "\" alt=\"logo\">\r\n            </a>\r\n            <p class=\"footer__logo-content--text\">\r\n              Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»\r\n            </p>\r\n          </div>\r\n          <nav class=\"footer__menu\">\r\n            <h3 class=\"footer__menu-title\">навигация</h3>\r\n            <ul class=\"footer__menu-list\">\r\n              <li class=\"footer__menu-item\">\r\n                <a class=\"footer__menu-link\" href=\"#\">О нас</a>\r\n              </li>\r\n              <li class=\"footer__menu-item\">\r\n                <a class=\"footer__menu-link\" href=\"#\">Новости</a>\r\n              </li>\r\n              <li class=\"footer__menu-item\">\r\n                <a class=\"footer__menu-link\" href=\"#\">Служба поддержки</a>\r\n              </li>\r\n              <li class=\"footer__menu-item\">\r\n                <a class=\"footer__menu-link\" href=\"#\">Услуги</a>\r\n              </li>\r\n            </ul>\r\n          </nav>\r\n          <div class=\"footer__info\">\r\n            <h3 class=\"footer__info-title\">о нас</h3>\r\n            <ul class=\"footer__info-list\">\r\n              <li class=\"footer__info-item\">\r\n                <a class=\"footer__info-link\" href=\"#\">О сервисе</a>\r\n              </li>\r\n              <li class=\"footer__info-item\">\r\n                <a class=\"footer__info-link\" href=\"#\">Наша команда</a>\r\n              </li>\r\n              <li class=\"footer__info-item\">\r\n                <a class=\"footer__info-link\" href=\"#\">Вакансии</a>\r\n              </li>\r\n              <li class=\"footer__info-item\">\r\n                <a class=\"footer__info-link\" href=\"#\">Инвесторы</a>\r\n              </li>\r\n            </ul>\r\n          </div>\r\n          <div class=\"footer__support\">\r\n            <h3 class=\"footer__support-title\">Служба поддержки</h3>\r\n            <ul class=\"footer__support-list\">\r\n              <li class=\"footer__support-item\">\r\n                <a class=\"footer__support-link\" href=\"#\">Соглашения</a>\r\n              </li>\r\n              <li class=\"footer__support-item\">\r\n                <a class=\"footer__support-link\" href=\"#\">Сообщества</a>\r\n              </li>\r\n              <li class=\"footer__support-item\">\r\n                <a class=\"footer__support-link\" href=\"#\">Связь с нами</a>\r\n              </li>\r\n            </ul>\r\n          </div>\r\n          <div class=\"footer__subscription\">\r\n            <h3 class=\"footer__subscription-title\">Подписка</h3>\r\n            <p class=\"footer__subscription-content\">\r\n              Получайте специальные предложения и новости сервиса\r\n            </p>\r\n            <form class=\"footer__form\" action=\"\">\r\n                <input class=\"footer__form-input\" type=\"text\" placeholder=\"Email\">\r\n                <button class=\"footer__form-button\" type=\"submit\"></button>\r\n            </form>\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"footer__copyright\">\r\n        <div class=\"container\">\r\n          <div class=\"footer__copyright-text\">\r\n            Copyright © 2018 Toxin отель. Все права защищены.\r\n          </div>\r\n          <div class=\"footer__copyright-social1\">\r\n            <div class=\"footer__social1-list\">\r\n              <div class=\"footer__social1-item\">\r\n                <a class=\"footer__social1-link\" href=\"#\">\r\n                  <img src=\"" + ___HTML_LOADER_REPLACEMENT_3___ + "\" alt=\"twitter\">\r\n                </a>\r\n              </div>\r\n              <div class=\"footer__social1-item\">\r\n                <a class=\"footer__social1-link\" href=\"#\">\r\n                  <img src=\"" + ___HTML_LOADER_REPLACEMENT_4___ + "\" alt=\"facebook\">\r\n                </a>\r\n              </div>\r\n              <div class=\"footer__social1-item\">\r\n                <a class=\"footer__social1-link\" href=\"#\">\r\n                  <img src=\"" + ___HTML_LOADER_REPLACEMENT_5___ + "\" alt=\"instagram\">\r\n                </a>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </footer>\r\n\r\n  </div>\r\n</body>\r\n</html>";
-// Exports
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);
-
-/***/ }),
-
 /***/ "./scss/main.scss":
 /*!************************!*\
   !*** ./scss/main.scss ***!
   \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
 
 /***/ }),
 
-/***/ "./css/css/main.css":
-/*!**************************!*\
-  !*** ./css/css/main.css ***!
-  \**************************/
+/***/ "./pug/puges/index.pug":
+/*!*****************************!*\
+  !*** ./pug/puges/index.pug ***!
+  \*****************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "b88d04fba731603756b1.css";
+var pug = __webpack_require__(/*! !../../../node_modules/pug-runtime/index.js */ "../node_modules/pug-runtime/index.js");
+
+function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003C!DOCTYPE html\u003E\u003Chtml lang=\"ru\"\u003E\u003Chead\u003E\u003Cmeta charset=\"UTF-8\"\u003E\u003Cmeta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"\u003E\u003Clink rel=\"shortcut icon\" href=\"img\u002FGroup.png\" type=\"image\u002Fx-icon\"\u003E\u003Clink rel=\"stylesheet\" href=\"css\u002Fcss\u002Fmain.css\"\u003E\u003Ctitle\u003ETOXIN\u003C\u002Ftitle\u003E\u003C\u002Fhead\u003E\u003Cbody\u003E\u003Cdiv class=\"wrapper\"\u003E\u003Cheader class=\"header\"\u003E\u003Cdiv class=\"container\"\u003E\u003Cdiv class=\"header__logo\"\u003E\u003Ca class=\"logo\" href=\"#\"\u003E\u003Cimg src=\"img\u002FGroup.png\" alt=\"iogo\"\u003E\u003Cimg src=\"img\u002FTOXIN.png\" alt=\"logo\"\u003E\u003C\u002Fa\u003E\u003Cdiv class=\"header__inner\"\u003E\u003Cnav class=\"menu\"\u003E\u003Cul class=\"menu__list\"\u003E\u003Cli class=\"menu__list-item\"\u003E\u003Ca class=\"menu__list-link menu__list-link--active\" href=\"#\"\u003EО нас\u003C\u002Fa\u003E\u003C\u002Fli\u003E\u003Cli class=\"menu__list-item\"\u003E\u003Ca class=\"menu__list-link menu__list-link--services\" href=\"#\"\u003EУслуги\u003C\u002Fa\u003E\u003C\u002Fli\u003E\u003Cli class=\"menu__list-item\"\u003E\u003Ca class=\"menu__list-link\" href=\"#\"\u003EВакансии\u003C\u002Fa\u003E\u003C\u002Fli\u003E\u003Cli class=\"menu__list-item\"\u003E\u003Ca class=\"menu__list-link\" href=\"#\"\u003EНовости\u003C\u002Fa\u003E\u003C\u002Fli\u003E\u003Cli class=\"menu__list-item\"\u003E\u003Ca class=\"menu__list-link menu__list-link--services\" href=\"#\"\u003EСоглашения\u003C\u002Fa\u003E\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003C\u002Fnav\u003E\u003Cbutton class=\"login-button\"\u003Eвойти\u003C\u002Fbutton\u003E\u003Cbutton class=\"register\"\u003Eзарегистрироваться\u003C\u002Fbutton\u003E\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E\u003C\u002Fheader\u003E\u003Cmain class=\"main\"\u003E\u003C\u002Fmain\u003E\u003Cfooter class=\"footer\"\u003E\u003Cdiv class=\"container\"\u003E\u003Cdiv class=\"footer__content\"\u003E\u003Cdiv class=\"footer__logo-content\"\u003E\u003Ca class=\"logo\" href=\"#\"\u003E\u003Cimg src=\"img\u002FGroup.png\" alt=\"iogo\"\u003E\u003Cimg src=\"img\u002FTOXIN.png\" alt=\"logo\"\u003E\u003C\u002Fa\u003E\u003Cp class=\"footer__logo-content--text\"\u003EБронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»\u003C\u002Fp\u003E\u003C\u002Fdiv\u003E\u003Cnav class=\"footer__menu\"\u003E\u003Ch3 class=\"footer__menu-title\"\u003Eнавигация\u003C\u002Fh3\u003E\u003Cul class=\"footer__menu-list\"\u003E\u003Cli class=\"footer__menu-item\"\u003E\u003Ca class=\"footer__menu-link\" href=\"#\"\u003EО нас\u003C\u002Fa\u003E\u003C\u002Fli\u003E\u003Cli class=\"footer__menu-item\"\u003E\u003Ca class=\"footer__menu-link\" href=\"#\"\u003EНовости\u003C\u002Fa\u003E\u003C\u002Fli\u003E\u003Cli class=\"footer__menu-item\"\u003E\u003Ca class=\"footer__menu-link\" href=\"#\"\u003EСлужба поддержки\u003C\u002Fa\u003E\u003C\u002Fli\u003E\u003Cli class=\"footer__menu-item\"\u003E\u003Ca class=\"footer__menu-link\" href=\"#\"\u003EУслуги\u003C\u002Fa\u003E\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003C\u002Fnav\u003E\u003Cdiv class=\"footer__info\"\u003E\u003Ch3 class=\"footer__info-title\"\u003Eо нас\u003C\u002Fh3\u003E\u003Cul class=\"footer__info-list\"\u003E\u003Cli class=\"footer__info-item\"\u003E\u003Ca class=\"footer__info-link\" href=\"#\"\u003EО сервисе\u003C\u002Fa\u003E\u003C\u002Fli\u003E\u003Cli class=\"footer__info-item\"\u003E\u003Ca class=\"footer__info-link\" href=\"#\"\u003EНаша команда\u003C\u002Fa\u003E\u003C\u002Fli\u003E\u003Cli class=\"footer__info-item\"\u003E\u003Ca class=\"footer__info-link\" href=\"#\"\u003EВакансии\u003C\u002Fa\u003E\u003C\u002Fli\u003E\u003Cli class=\"footer__info-item\"\u003E\u003Ca class=\"footer__info-link\" href=\"#\"\u003EИнвесторы\u003C\u002Fa\u003E\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003C\u002Fdiv\u003E\u003Cdiv class=\"footer__support\"\u003E\u003Ch3 class=\"footer__support-title\"\u003EСлужба поддержки\u003C\u002Fh3\u003E\u003Cul class=\"footer__support-list\"\u003E\u003Cli class=\"footer__support-item\"\u003E\u003Ca class=\"footer__support-link\" href=\"#\"\u003EСоглашения\u003C\u002Fa\u003E\u003C\u002Fli\u003E\u003Cli class=\"footer__support-item\"\u003E\u003Ca class=\"footer__support-link\" href=\"#\"\u003EСообщества\u003C\u002Fa\u003E\u003C\u002Fli\u003E\u003Cli class=\"footer__support-item\"\u003E\u003Ca class=\"footer__support-link\" href=\"#\"\u003EСвязь с нами\u003C\u002Fa\u003E\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003C\u002Fdiv\u003E\u003Cdiv class=\"footer__subscription\"\u003E\u003Ch3 class=\"footer__subscription-title\"\u003EПодписка\u003C\u002Fh3\u003E\u003Cp class=\"footer__subscription-content\"\u003EПолучайте специальные предложения и новости сервиса\u003C\u002Fp\u003E\u003Cform class=\"footer__form\" action=\"\"\u003E\u003Cinput class=\"footer__form-input\" type=\"text\" placeholder=\"Email\"\u003E\u003Cbutton class=\"footer__form-button\" type=\"submit\"\u003E\u003C\u002Fbutton\u003E\u003C\u002Fform\u003E\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E\u003Cdiv class=\"footer__copyright\"\u003E\u003Cdiv class=\"container\"\u003E\u003Cdiv class=\"footer__copyright-text\"\u003ECopyright © 2018 Toxin отель. Все права защищены.\u003C\u002Fdiv\u003E\u003Cdiv class=\"footer__copyright-social1\"\u003E\u003Cdiv class=\"footer__social1-list\"\u003E\u003Cdiv class=\"footer__social1-item\"\u003E\u003Ca class=\"footer__social1-link\" href=\"#\"\u003E\u003Cimg src=\"img\u002Ftwitter.png\" alt=\"twitter\"\u003E\u003C\u002Fa\u003E\u003C\u002Fdiv\u003E\u003Cdiv class=\"footer__social1-item\"\u003E\u003Ca class=\"footer__social1-link\" href=\"#\"\u003E\u003Cimg src=\"img\u002Ffacebook.png\" alt=\"facebook\"\u003E\u003C\u002Fa\u003E\u003C\u002Fdiv\u003E\u003Cdiv class=\"footer__social1-item\"\u003E\u003Ca class=\"footer__social1-link\" href=\"#\"\u003E\u003Cimg src=\"img\u002Finstagram.png\" alt=\"instagram\"\u003E\u003C\u002Fa\u003E\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E\u003C\u002Ffooter\u003E\u003C\u002Fdiv\u003E\u003C\u002Fbody\u003E\u003C\u002Fhtml\u003E";;return pug_html;};
+module.exports = template;
 
 /***/ }),
 
-/***/ "./img/Group.png":
-/*!***********************!*\
-  !*** ./img/Group.png ***!
-  \***********************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ "?16ca":
+/*!********************!*\
+  !*** fs (ignored) ***!
+  \********************/
+/***/ (() => {
 
-module.exports = __webpack_require__.p + "img/5b421543.png";
-
-/***/ }),
-
-/***/ "./img/TOXIN.png":
-/*!***********************!*\
-  !*** ./img/TOXIN.png ***!
-  \***********************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "img/3847dcf4.png";
-
-/***/ }),
-
-/***/ "./img/facebook.png":
-/*!**************************!*\
-  !*** ./img/facebook.png ***!
-  \**************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "img/bf3c5e11.png";
-
-/***/ }),
-
-/***/ "./img/instagram.png":
-/*!***************************!*\
-  !*** ./img/instagram.png ***!
-  \***************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "img/fe9ea0a6.png";
-
-/***/ }),
-
-/***/ "./img/twitter.png":
-/*!*************************!*\
-  !*** ./img/twitter.png ***!
-  \*************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "img/b7e3913a.png";
+/* (ignored) */
 
 /***/ }),
 
@@ -141,6 +73,7 @@ module.exports = __webpack_require__.p + "img/b7e3913a.png";
   \**************************/
 /***/ ((module) => {
 
+"use strict";
 module.exports = JSON.parse('{"title":"This is json file"}');
 
 /***/ })
@@ -247,14 +180,9 @@ module.exports = JSON.parse('{"title":"This is json file"}');
 /******/ 		};
 /******/ 	})();
 /******/ 	
-/******/ 	/* webpack/runtime/publicPath */
-/******/ 	(() => {
-/******/ 		__webpack_require__.p = "";
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/jsonp chunk loading */
 /******/ 	(() => {
-/******/ 		__webpack_require__.b = document.baseURI || self.location.href;
+/******/ 		// no baseURI
 /******/ 		
 /******/ 		// object to store loaded and loading chunks
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
@@ -308,7 +236,7 @@ module.exports = JSON.parse('{"title":"This is json file"}');
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors-node_modules_focus-visible_dist_focus-visible_js-node_modules_html-loader_dist_runtim-ca6faf"], () => (__webpack_require__("./js/main.js")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors-node_modules_focus-visible_dist_focus-visible_js-node_modules_jquery_dist_jquery_js-n-cdf80b"], () => (__webpack_require__("./js/main.js")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
