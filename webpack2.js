@@ -53,7 +53,7 @@ const plugins = () => {
   const basePlugins = [
     new HTMLWebpackPlugin({
       filename: `${fileName('html')}`,
-      template : 'index.pug',
+      template : 'pug/puges/index.pug',
       inject: true,
       minify: {
         collapseWhitespace: isProd
@@ -99,12 +99,12 @@ module.exports = {
   entry: './js/main.js',
   output: {
     filename: fileName('js'),
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'app'),
     publicPath: ''
   },
   devServer: {
     historyApiFallback: true,
-    contentBase: path.join(__dirname, 'dist'),
+    contentBase: path.join(__dirname, 'app'),
     open: true,
     compress: true,
     hot: isDev,
