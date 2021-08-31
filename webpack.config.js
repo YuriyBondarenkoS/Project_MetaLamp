@@ -52,7 +52,7 @@ const fileName = (ext) => (isDev ? `[name].${ext}` : `[name].[fullhash:8].${ext}
 const plugins = () => {
   const basePlugins = [
     new HTMLWebpackPlugin({
-      filename: `html/${fileName('html')}`,
+      filename: `${fileName('html')}`,
       template : 'pug/puges/index.pug',
       inject: true,
       minify: {
