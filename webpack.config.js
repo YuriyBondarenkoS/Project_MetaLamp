@@ -52,12 +52,12 @@ const fileName = (ext) => (isDev ? `[name].${ext}` : `[name].[fullhash:8].${ext}
 const plugins = () => {
   const basePlugins = [
     new HTMLWebpackPlugin({
-      filename: `${fileName('html')}`,
+      filename: path.resolve(__dirname, 'dist/index.html'),
       template : 'index.pug',
-      inject: true,
-      minify: {
-        collapseWhitespace: isProd
-      }
+      //inject: true,
+      // minify: {
+      //   collapseWhitespace: isProd
+      // }
     }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
@@ -98,7 +98,7 @@ module.exports = {
   mode: 'development',
   entry: './js/main.js',
   output: {
-    filename: fileName('js'),
+    filename: `./js/${fileName('js')}`,
     path: path.resolve(__dirname, 'dist'),
     publicPath: ''
   },
