@@ -1,15 +1,10 @@
-@import "mixins";
-@import "fonts";
-@import "vendor";
-@import "vars";
-@import "settings";
-
 .header {
-  &__logo{
+  &__logo {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+
   &__inner {
     display: flex;
     justify-content: flex-end;
@@ -22,30 +17,34 @@
   display: flex;
   align-items: center;
   margin: 0;
+
   img:first-child {
     margin-right: 12.5px;
   }
 }
 
 .menu {
-  &__list{
+  &__list {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     list-style-type: none;
   }
-  &__list-link{
+
+  &__list-link {
     margin-right: 20px;
     position: relative;
   }
+
   &__list-link--services::after {
-    content: url('/img/expand_more.svg');
+    content: url('./images/expand_more.png');
     margin-left: 5px;
     width: 24px;
     height: 21px;
     top: 3px;
   }
-  &__list-link--active{
+
+  &__list-link--active {
     font-weight: bold;
     color: rgba(31, 32, 65, 0.5);
   }
@@ -53,8 +52,6 @@
 
 .login-button {
   border: 2px solid #BC9CFF;
-  // border-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%) 1;
-  //linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   width: 87px;
   height: 34px;
   border-radius: 22px;
@@ -72,37 +69,4 @@
   border-radius: 22px;
   color: #fff;
   font-weight: bold;
-}
-
-.main {
-  height: 100px;
-}
-
-.footer {
-  mmin-height: 372px;
-  &__content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-  &__menu-title {
-    margin-top: 0;
-    margin-bottom: 20px;
-  }
-  &__menu-line{
-    padding-left: 0;
-  }
-  &__menu-item{
-    list-style-type: none;
-    padding-bottom: 20px;
-  }
-  &__menu-link {
-
-  }
-  &__logo-content--text{
-    max-width: 260px;
-  }
-  &__subscription-content {
-    max-width: 260px;
-  }
 }
