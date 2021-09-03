@@ -41,52 +41,13 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./Ul_kit/Footer/footer.pug":
-/*!**********************************!*\
-  !*** ./Ul_kit/Footer/footer.pug ***!
-  \**********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-var pug = __webpack_require__(/*! !../../../node_modules/pug-runtime/index.js */ "../node_modules/pug-runtime/index.js");
-
-function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cfooter class=\"footer\"\u003E\u003Cdiv class=\"container\"\u003E\u003Cdiv class=\"footer__content\"\u003E\u003Cdiv class=\"footer__logo-content\"\u003E\u003Ca class=\"logo\" href=\"#\"\u003E\u003Cimg src=\"img\u002FGroup.png\" alt=\"iogo\"\u003E\u003Cimg src=\"img\u002FTOXIN.png\" alt=\"logo\"\u003E\u003C\u002Fa\u003E\u003Cp class=\"footer__logo-content--text\"\u003EБронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»\u003C\u002Fp\u003E\u003C\u002Fdiv\u003E\u003Cnav class=\"footer__menu\"\u003E\u003Ch3 class=\"footer__menu-title\"\u003Eнавигация\u003C\u002Fh3\u003E\u003Cul class=\"footer__menu-list\"\u003E\u003Cli class=\"footer__menu-item\"\u003E\u003Ca class=\"footer__menu-link\" href=\"#\"\u003EО нас\u003C\u002Fa\u003E\u003C\u002Fli\u003E\u003Cli class=\"footer__menu-item\"\u003E\u003Ca class=\"footer__menu-link\" href=\"#\"\u003EНовости\u003C\u002Fa\u003E\u003C\u002Fli\u003E\u003Cli class=\"footer__menu-item\"\u003E\u003Ca class=\"footer__menu-link\" href=\"#\"\u003EСлужба поддержки\u003C\u002Fa\u003E\u003C\u002Fli\u003E\u003Cli class=\"footer__menu-item\"\u003E\u003Ca class=\"footer__menu-link\" href=\"#\"\u003EУслуги\u003C\u002Fa\u003E\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003C\u002Fnav\u003E\u003Cdiv class=\"footer__info\"\u003E\u003Ch3 class=\"footer__info-title\"\u003Eо нас\u003C\u002Fh3\u003E\u003Cul class=\"footer__info-list\"\u003E\u003Cli class=\"footer__info-item\"\u003E\u003Ca class=\"footer__info-link\" href=\"#\"\u003EО сервисе\u003C\u002Fa\u003E\u003C\u002Fli\u003E\u003Cli class=\"footer__info-item\"\u003E\u003Ca class=\"footer__info-link\" href=\"#\"\u003EНаша команда\u003C\u002Fa\u003E\u003C\u002Fli\u003E\u003Cli class=\"footer__info-item\"\u003E\u003Ca class=\"footer__info-link\" href=\"#\"\u003EВакансии\u003C\u002Fa\u003E\u003C\u002Fli\u003E\u003Cli class=\"footer__info-item\"\u003E\u003Ca class=\"footer__info-link\" href=\"#\"\u003EИнвесторы\u003C\u002Fa\u003E\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003C\u002Fdiv\u003E\u003Cdiv class=\"footer__support\"\u003E\u003Ch3 class=\"footer__support-title\"\u003EСлужба поддержки\u003C\u002Fh3\u003E\u003Cul class=\"footer__support-list\"\u003E\u003Cli class=\"footer__support-item\"\u003E\u003Ca class=\"footer__support-link\" href=\"#\"\u003EСоглашения\u003C\u002Fa\u003E\u003C\u002Fli\u003E\u003Cli class=\"footer__support-item\"\u003E\u003Ca class=\"footer__support-link\" href=\"#\"\u003EСообщества\u003C\u002Fa\u003E\u003C\u002Fli\u003E\u003Cli class=\"footer__support-item\"\u003E\u003Ca class=\"footer__support-link\" href=\"#\"\u003EСвязь с нами\u003C\u002Fa\u003E\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003C\u002Fdiv\u003E\u003Cdiv class=\"footer__subscription\"\u003E\u003Ch3 class=\"footer__subscription-title\"\u003EПодписка\u003C\u002Fh3\u003E\u003Cp class=\"footer__subscription-content\"\u003EПолучайте специальные предложения и новости сервиса\u003C\u002Fp\u003E\u003Cform class=\"footer__form\" action=\"\"\u003E\u003Cinput class=\"footer__form-input\" type=\"text\" placeholder=\"Email\"\u003E\u003Cbutton class=\"footer__form-button\" type=\"submit\"\u003E\u003C\u002Fbutton\u003E\u003C\u002Fform\u003E\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E\u003Cdiv class=\"footer__copyright\"\u003E\u003Cdiv class=\"container\"\u003E\u003Cdiv class=\"footer__copyright-text\"\u003ECopyright © 2018 Toxin отель. Все права защищены.\u003C\u002Fdiv\u003E\u003Cdiv class=\"footer__copyright-social1\"\u003E\u003Cdiv class=\"footer__social1-list\"\u003E\u003Cdiv class=\"footer__social1-item\"\u003E\u003Ca class=\"footer__social1-link\" href=\"#\"\u003E\u003Cimg src=\"img\u002Ftwitter.png\" alt=\"twitter\"\u003E\u003C\u002Fa\u003E\u003C\u002Fdiv\u003E\u003Cdiv class=\"footer__social1-item\"\u003E\u003Ca class=\"footer__social1-link\" href=\"#\"\u003E\u003Cimg src=\"img\u002Ffacebook.png\" alt=\"facebook\"\u003E\u003C\u002Fa\u003E\u003C\u002Fdiv\u003E\u003Cdiv class=\"footer__social1-item\"\u003E\u003Ca class=\"footer__social1-link\" href=\"#\"\u003E\u003Cimg src=\"img\u002Finstagram.png\" alt=\"instagram\"\u003E\u003C\u002Fa\u003E\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E\u003C\u002Ffooter\u003E";;return pug_html;};
-module.exports = template;
-
-/***/ }),
-
-/***/ "./Ul_kit/Header/header.pug":
-/*!**********************************!*\
-  !*** ./Ul_kit/Header/header.pug ***!
-  \**********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-var pug = __webpack_require__(/*! !../../../node_modules/pug-runtime/index.js */ "../node_modules/pug-runtime/index.js");
-
-function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Cheader class=\"header\"\u003E\u003Cdiv class=\"container\"\u003E\u003Cdiv class=\"header__logo\"\u003E\u003Ca class=\"logo\" href=\"#\"\u003E\u003Cimg src=\"img\u002FGroup.png\" alt=\"iogo\"\u003E\u003Cimg src=\"img\u002FTOXIN.png\" alt=\"logo\"\u003E\u003C\u002Fa\u003E\u003Cdiv class=\"header__inner\"\u003E\u003Cnav class=\"menu\"\u003E\u003Cul class=\"menu__list\"\u003E\u003Cli class=\"menu__list-item\"\u003E\u003Ca class=\"menu__list-link menu__list-link--active\" href=\"#\"\u003EО нас\u003C\u002Fa\u003E\u003C\u002Fli\u003E\u003Cli class=\"menu__list-item\"\u003E\u003Ca class=\"menu__list-link menu__list-link--services\" href=\"#\"\u003EУслуги\u003C\u002Fa\u003E\u003C\u002Fli\u003E\u003Cli class=\"menu__list-item\"\u003E\u003Ca class=\"menu__list-link\" href=\"#\"\u003EВакансии\u003C\u002Fa\u003E\u003C\u002Fli\u003E\u003Cli class=\"menu__list-item\"\u003E\u003Ca class=\"menu__list-link\" href=\"#\"\u003EНовости\u003C\u002Fa\u003E\u003C\u002Fli\u003E\u003Cli class=\"menu__list-item\"\u003E\u003Ca class=\"menu__list-link menu__list-link--services\" href=\"#\"\u003EСоглашения\u003C\u002Fa\u003E\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003C\u002Fnav\u003E\u003Cbutton class=\"login-button\"\u003Eвойти\u003C\u002Fbutton\u003E\u003Cbutton class=\"register\"\u003Eзарегистрироваться\u003C\u002Fbutton\u003E\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E\u003C\u002Fheader\u003E";;return pug_html;};
-module.exports = template;
-
-/***/ }),
-
 /***/ "./index.pug":
 /*!*******************!*\
   !*** ./index.pug ***!
   \*******************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-var pug = __webpack_require__(/*! !../node_modules/pug-runtime/index.js */ "../node_modules/pug-runtime/index.js");
-
-function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003C!DOCTYPE html\u003E\u003Chtml lang=\"ru\"\u003E\u003Chead\u003E\u003Cmeta charset=\"UTF-8\"\u003E\u003Cmeta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"\u003E\u003Clink rel=\"shortcut icon\" href=\"img\u002FGroup.png\" type=\"image\u002Fx-icon\"\u003E\u003Clink rel=\"stylesheet\" href=\"css\u002Fcss\u002Fmain.css\"\u003E\u003Ctitle\u003ETOXIN\u003C\u002Ftitle\u003E\u003C\u002Fhead\u003E\u003Cbody\u003E\u003Cdiv class=\"wrapper\"\u003E" + (null == (pug_interp = __webpack_require__(/*! ./Ul_kit/Header/header.pug */ "./Ul_kit/Header/header.pug").call(this, locals)) ? "" : pug_interp) + "\u003Cmain class=\"main\"\u003E\u003C\u002Fmain\u003E" + (null == (pug_interp = __webpack_require__(/*! ./Ul_kit/Footer/footer.pug */ "./Ul_kit/Footer/footer.pug").call(this, locals)) ? "" : pug_interp) + "\u003C\u002Fdiv\u003E\u003C\u002Fbody\u003E\u003C\u002Fhtml\u003E";;return pug_html;};
-module.exports = template;
-
-/***/ }),
-
-/***/ "?16ca":
-/*!********************!*\
-  !*** fs (ignored) ***!
-  \********************/
 /***/ (() => {
 
-/* (ignored) */
+throw new Error("Module build failed (from ../node_modules/pug-loader/index.js):\nError: Can't resolve './layout.pug' in 'C:\\Users\\ysbondarenko\\Desktop\\Work\\1Self-study\\39_MetaLamp\\src'\n    at finishWithoutResolve (C:\\Users\\ysbondarenko\\Desktop\\Work\\1Self-study\\39_MetaLamp\\node_modules\\enhanced-resolve\\lib\\Resolver.js:293:18)\n    at C:\\Users\\ysbondarenko\\Desktop\\Work\\1Self-study\\39_MetaLamp\\node_modules\\enhanced-resolve\\lib\\Resolver.js:362:15\n    at C:\\Users\\ysbondarenko\\Desktop\\Work\\1Self-study\\39_MetaLamp\\node_modules\\enhanced-resolve\\lib\\Resolver.js:410:5\n    at eval (eval at create (C:\\Users\\ysbondarenko\\Desktop\\Work\\1Self-study\\39_MetaLamp\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:16:1)\n    at C:\\Users\\ysbondarenko\\Desktop\\Work\\1Self-study\\39_MetaLamp\\node_modules\\enhanced-resolve\\lib\\Resolver.js:410:5\n    at eval (eval at create (C:\\Users\\ysbondarenko\\Desktop\\Work\\1Self-study\\39_MetaLamp\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:27:1)\n    at C:\\Users\\ysbondarenko\\Desktop\\Work\\1Self-study\\39_MetaLamp\\node_modules\\enhanced-resolve\\lib\\DescriptionFilePlugin.js:87:43\n    at C:\\Users\\ysbondarenko\\Desktop\\Work\\1Self-study\\39_MetaLamp\\node_modules\\enhanced-resolve\\lib\\Resolver.js:410:5\n    at eval (eval at create (C:\\Users\\ysbondarenko\\Desktop\\Work\\1Self-study\\39_MetaLamp\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:15:1)\n    at C:\\Users\\ysbondarenko\\Desktop\\Work\\1Self-study\\39_MetaLamp\\node_modules\\enhanced-resolve\\lib\\Resolver.js:410:5");
 
 /***/ }),
 
@@ -259,7 +220,7 @@ module.exports = JSON.parse('{"title":"This is json file"}');
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors-node_modules_focus-visible_dist_focus-visible_js-node_modules_pug-runtime_index_js"], () => (__webpack_require__("./js/main.js")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors-node_modules_focus-visible_dist_focus-visible_js"], () => (__webpack_require__("./js/main.js")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
