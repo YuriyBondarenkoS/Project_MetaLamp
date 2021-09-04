@@ -3,8 +3,8 @@ header.header
   .container
     .header__logo
       a.logo(href='#')
-        img.image(src='./images/Group.png' alt='logo')
-        img.image(src='./images/TOXIN.png' alt='logo')
+        img(src=require('./images/Group.png').default alt='logo')
+        img(src=require('./images/TOXIN.png').default alt='logo')
       .header__inner
         nav.menu
           ul.menu__list

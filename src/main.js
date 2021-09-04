@@ -5,6 +5,7 @@ import './theme/main.scss';
 import './index.pug';
 
 import './components/header/header.js';
+import './components/footer/footer.js';
 
 import json from './assets/json.json';
 

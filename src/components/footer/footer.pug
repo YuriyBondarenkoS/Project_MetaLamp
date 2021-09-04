@@ -1,44 +1,62 @@
 //- Ul_kit/Footer/footer.pug
+
+mixin navMenu(href1, href2, href3, href4, title, item1, item2, item3, item4)
+  nav.footer__menu
+    h3.footer__menu-title= title
+        ul.footer__menu-list
+          li.footer__menu-item
+            a.footer__menu-link(href=href1)= item1
+          li.footer__menu-item
+            a.footer__menu-link(href=href2)= item2
+          li.footer__menu-item
+            a.footer__menu-link(href=href3)= item3
+          li.footer__menu-item
+            a.footer__menu-link(href=href4)= item4
+
 footer.footer
   .container
     .footer__content
       .footer__logo-content
         a.logo(href='#')
-          img(src='img/Group.png' alt='iogo')
-          img(src='img/TOXIN.png' alt='logo')
+          img(src=require('./images/Group.png').default alt='logo')
+          img(src=require('./images/TOXIN.png').default alt='logo')
         p.footer__logo-content--text
           | Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
-      nav.footer__menu
-        h3.footer__menu-title навигация
-        ul.footer__menu-list
-          li.footer__menu-item
-            a.footer__menu-link(href='#') О нас
-          li.footer__menu-item
-            a.footer__menu-link(href='#') Новости
-          li.footer__menu-item
-            a.footer__menu-link(href='#') Служба поддержки
-          li.footer__menu-item
-            a.footer__menu-link(href='#') Услуги
-      .footer__info
-        h3.footer__info-title о нас
-        ul.footer__info-list
-          li.footer__info-item
-            a.footer__info-link(href='#') О сервисе
-          li.footer__info-item
-            a.footer__info-link(href='#') Наша команда
-          li.footer__info-item
-            a.footer__info-link(href='#') Вакансии
-          li.footer__info-item
-            a.footer__info-link(href='#') Инвесторы
-      .footer__support
-        h3.footer__support-title Служба поддержки
-        ul.footer__support-list
-          li.footer__support-item
-            a.footer__support-link(href='#') Соглашения
-          li.footer__support-item
-            a.footer__support-link(href='#') Сообщества
-          li.footer__support-item
-            a.footer__support-link(href='#') Связь с нами
+      //- nav.footer__menu
+      //-   h3.footer__menu-title навигация
+      //-   ul.footer__menu-list
+      //-     li.footer__menu-item
+      //-       a.footer__menu-link(href='#') О нас
+      //-     li.footer__menu-item
+      //-       a.footer__menu-link(href='#') Новости
+      //-     li.footer__menu-item
+      //-       a.footer__menu-link(href='#') Служба поддержки
+      //-     li.footer__menu-item
+      //-       a.footer__menu-link(href='#') Услуги
+      +navMenu('href', 'href', 'href', 'href', 'навигация', 'О нас', 'Новости', 'Служба поддержки', 'Услуги')
+      +navMenu('href', 'href', 'href', 'href', 'о нас', 'О сервисе', 'Наша команда', 'Вакансии', 'Инвесторы')
+      +navMenu('href', 'href', 'href', '#', 'служба поддержки', 'Соглашения', 'Сообщества', 'Связь с нами', '')
+
+      //- .footer__info
+      //-   h3.footer__info-title о нас
+      //-   ul.footer__info-list
+      //-     li.footer__info-item
+      //-       a.footer__info-link(href='#') О сервисе
+      //-     li.footer__info-item
+      //-       a.footer__info-link(href='#') Наша команда
+      //-     li.footer__info-item
+      //-       a.footer__info-link(href='#') Вакансии
+      //-     li.footer__info-item
+      //-       a.footer__info-link(href='#') Инвесторы
+      //- .footer__support
+      //-   h3.footer__support-title Служба поддержки
+      //-   ul.footer__support-list
+      //-     li.footer__support-item
+      //-       a.footer__support-link(href='#') Соглашения
+      //-     li.footer__support-item
+      //-       a.footer__support-link(href='#') Сообщества
+      //-     li.footer__support-item
+      //-       a.footer__support-link(href='#') Связь с нами
       .footer__subscription
         h3.footer__subscription-title Подписка
         p.footer__subscription-content
@@ -54,10 +72,10 @@ footer.footer
         .footer__social1-list
           .footer__social1-item
             a.footer__social1-link(href='#')
-              img(src='img/twitter.png' alt='twitter')
+              img(src=require('./images/twitter.png').default alt='facebook')
           .footer__social1-item
             a.footer__social1-link(href='#')
-              img(src='img/facebook.png' alt='facebook')
+              img(src=require('./images/facebook.png').default alt='facebook')
           .footer__social1-item
             a.footer__social1-link(href='#')
-              img(src='img/instagram.png' alt='instagram')
+              img(src=require('./images/instagram.png').default alt='instagram')

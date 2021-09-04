@@ -4,35 +4,15 @@
 // @import "vars";
 // @import "settings";
 
-.main {
-  height: 100px;
+.wrapper {
+
 }
 
-.footer {
-  mmin-height: 372px;
-  &__content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-  &__menu-title {
-    margin-top: 0;
-    margin-bottom: 20px;
-  }
-  &__menu-line{
-    padding-left: 0;
-  }
-  &__menu-item{
-    list-style-type: none;
-    padding-bottom: 20px;
-  }
-  &__menu-link {
+.container {
+  width: 1150px;
+  margin: 0 auto;
+}
 
-  }
-  &__logo-content--text{
-    max-width: 260px;
-  }
-  &__subscription-content {
-    max-width: 260px;
-  }
+.main {
+  height: 100px;
 }

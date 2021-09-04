@@ -155,11 +155,15 @@ module.exports = {
         }
       },
       {
-        test: /\.(?:|gif|png|jpg|jpeg|svg|ico)$/i,
-        type: 'asset/resource',
-        generator: {
-          filename: 'img/[hash:8][ext]'
-        }
+        test: /\.(?:|gif|png|jpg|jpeg|svg|ico)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: "images/[name].[ext]"
+            }
+          }
+        ]
       },
       {
         test: /\.(?:|woff2|woff|eot|ttf|svg)$/i,
