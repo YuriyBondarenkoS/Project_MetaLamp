@@ -39,7 +39,8 @@
   }
 
   &__list-link--services::after {
-    content: url('./images/expand_more.png');
+    content: '';
+    background-image: url('~/images/expand_more.png');
     margin-left: 5px;
     width: 24px;
     height: 21px;

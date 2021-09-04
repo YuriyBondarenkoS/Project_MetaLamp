@@ -33,8 +33,8 @@ const cssLoaders = (extra) => {
     {
       loader: MiniCssExtractPlugin.loader,
       options: {
-        // hmr: isDev,
-        // reloadAll: true,
+        hmr: isDev,
+        reloadAll: true,
       },
     },
     'css-loader'
@@ -54,10 +54,10 @@ const plugins = () => {
     new HTMLWebpackPlugin({
       filename: path.resolve(__dirname, 'dist/index.html'),
       template : 'index.pug',
-      //inject: true,
-      // minify: {
-      //   collapseWhitespace: isProd
-      // }
+      inject: true,
+      minify: {
+        collapseWhitespace: isProd
+      }
     }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
@@ -136,10 +136,22 @@ module.exports = {
               publicPath: (resourcePath, context) => {
                 return path.relative(path.dirname(resourcePath), context) + '/';
               },
+            },  
+          },
+          {
+            loader: "css-loader",
+            options: {
+              url: true,
+            },
+          },
+          {
+            loader: 'resolve-url-loader',
+            options: {
+              url: true,
             }
           },
-          'css-loader',
-          'sass-loader'
+          'sass-loader',
+          
         ],
       },
       {
@@ -156,11 +168,14 @@ module.exports = {
       },
       {
         test: /\.(?:|gif|png|jpg|jpeg|svg|ico)$/,
+        // include: path.join(__dirname, './images'),
         use: [
           {
             loader: 'file-loader',
             options: {
-              name: "images/[name].[ext]"
+              name: "images/[name].[ext]",
+              // outputPath: './images',
+              // publicPath: './dist',
             }
           }
         ]

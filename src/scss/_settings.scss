@@ -20,10 +20,10 @@ img {
   max-width: 100%;
 }
 
-// a {
-//   text-decoration: none;
-//   color: inherit;
-// }
+.container {
+  width: 1150px;
+  margin: 0 auto;
+}
 
 .site-container {
   overflow: hidden;
@@ -50,11 +50,6 @@ img {
   padding: 0;
 }
 
-// .container {
-//   margin: 0 auto;
-//   padding: 0 15px;
-//   max-width: 1200px;
-// }
 
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;

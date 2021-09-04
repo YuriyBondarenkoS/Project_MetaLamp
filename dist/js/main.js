@@ -27,6 +27,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./components/layout/layout.js":
+/*!*************************************!*\
+  !*** ./components/layout/layout.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _layout_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./layout.scss */ "./components/layout/layout.scss");
+
+
+/***/ }),
+
 /***/ "./main.js":
 /*!*****************!*\
   !*** ./main.js ***!
@@ -37,12 +50,14 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var focus_visible__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! focus-visible */ "../node_modules/focus-visible/dist/focus-visible.js");
 /* harmony import */ var focus_visible__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(focus_visible__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _theme_main_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./theme/main.scss */ "./theme/main.scss");
+/* harmony import */ var _scss_main_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./scss/main.scss */ "./scss/main.scss");
 /* harmony import */ var _index_pug__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.pug */ "./index.pug");
 /* harmony import */ var _index_pug__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_index_pug__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _components_header_header_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/header/header.js */ "./components/header/header.js");
 /* harmony import */ var _components_footer_footer_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/footer/footer.js */ "./components/footer/footer.js");
-/* harmony import */ var _assets_json_json__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./assets/json.json */ "./assets/json.json");
+/* harmony import */ var _components_layout_layout_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/layout/layout.js */ "./components/layout/layout.js");
+/* harmony import */ var _assets_json_json__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./assets/json.json */ "./assets/json.json");
+
 
 
 
@@ -51,7 +66,7 @@ __webpack_require__.r(__webpack_exports__);
  // $('body').css('color', 'red');s
 
 function add() {
-  console.log('JSON', _assets_json_json__WEBPACK_IMPORTED_MODULE_5__);
+  console.log('JSON', _assets_json_json__WEBPACK_IMPORTED_MODULE_6__);
 }
 
 add();
@@ -189,10 +204,23 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./theme/main.scss":
-/*!*************************!*\
-  !*** ./theme/main.scss ***!
-  \*************************/
+/***/ "./components/layout/layout.scss":
+/*!***************************************!*\
+  !*** ./components/layout/layout.scss ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./scss/main.scss":
+/*!************************!*\
+  !*** ./scss/main.scss ***!
+  \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";

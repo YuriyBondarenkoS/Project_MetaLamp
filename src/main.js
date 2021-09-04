@@ -1,11 +1,12 @@
 import 'focus-visible';
 
-import './theme/main.scss';
+import './scss/main.scss';
 
 import './index.pug';
 
 import './components/header/header.js';
 import './components/footer/footer.js';
+import './components/layout/layout.js';
 
 import json from './assets/json.json';
 
