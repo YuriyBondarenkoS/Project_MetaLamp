@@ -94,11 +94,12 @@
   }
 
   &__form-button {
+    text-indent:-9999px;
     width: 42px;
     height: 42px;
     border: none;
     padding: 0;
-    background: url(images/arrow_forward.png) no-repeat 50% 50%;
+    background: url('./images/arrow_forward.svg') no-repeat 50% 50%;
   }
 
   &__copyright {

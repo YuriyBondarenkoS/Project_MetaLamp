@@ -117,6 +117,20 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.(?:|gif|png|jpg|jpeg|svg|ico)$/,
+        // include: path.join(__dirname, './images'),
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: './images/[name].[ext]',
+              outputPath: './',
+              // publicPath: './dist',
+            }
+          }
+        ]
+      },
+      {
         test: /\.html$/,
         loader: 'html-loader',
       },
@@ -134,23 +148,34 @@ module.exports = {
           {
             loader: MiniCssExtractPlugin.loader,
             options: {
+              // publicPath: '../',
               publicPath: (resourcePath, context) => {
                 return path.relative(path.dirname(resourcePath), context) + '/';
               },
             },  
           },
+          // 'css-loader',
           {
             loader: "css-loader",
             options: {
-              url: true,
+              url: false,
             },
           },
-          'resolve-url-loader',
+          {
+            loader: "resolve-url-loader"
+          },
           // {
           //   loader: 'resolve-url-loader',
           //   options: {
           //     sourceMap: true
           //   }
+          // },
+          // 'url-loader',
+          // {
+          //   loader: 'url-loader',
+          //   options: {
+          //     limit: 1000,
+          //   },
           // },
           'sass-loader',
           // { 
@@ -172,20 +197,6 @@ module.exports = {
         generator: {
           filename: '[hash:8][ext]'
         }
-      },
-      {
-        test: /\.(?:|gif|png|jpg|jpeg|svg|ico)$/,
-        // include: path.join(__dirname, './images'),
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: "images/[name].[ext]",
-              // outputPath: './',
-              // publicPath: './dist',
-            }
-          }
-        ]
       },
       {
         test: /\.(?:|woff2|woff|eot|ttf|svg)$/i,
