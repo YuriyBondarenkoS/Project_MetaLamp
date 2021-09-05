@@ -1,0 +1,33 @@
+@mixin color($transparency) {
+    @if($transparency == 1) {
+        color: #1F2041;
+    }
+    @if($transparency == 7) {
+        color: rgba(31, 32, 65, 0.75);
+    }
+    @if($transparency == 5) {
+        color: rgba(31, 32, 65, 0.5);
+    }
+    @if($transparency == 2) {
+        color: rgba(31, 32, 65, 0.25);
+    }
+    @if($transparency==2) {
+        color: rgba(31, 32, 65, 0.05);
+    }
+    @if($transparency=='p') {
+        color: #BC9CFF;
+    }
+    @if($transparency=='g') {
+        color: #6FCF97;
+    }
+    @if($transparency=='gg') {
+        background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    }
+    @if($transparency=='gp1') {
+        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    }
+    @if($transparency=='gp5') {
+        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        opacity: 0.5;
+    }
+}

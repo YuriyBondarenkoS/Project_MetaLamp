@@ -37,7 +37,8 @@ const cssLoaders = (extra) => {
         reloadAll: true,
       },
     },
-    'css-loader'
+    'css-loader',
+    'resolve-url-loader',
   ];
 
   if (extra) {
@@ -144,14 +145,20 @@ module.exports = {
               url: true,
             },
           },
-          {
-            loader: 'resolve-url-loader',
-            options: {
-              url: true,
-            }
-          },
+          'resolve-url-loader',
+          // {
+          //   loader: 'resolve-url-loader',
+          //   options: {
+          //     sourceMap: true
+          //   }
+          // },
           'sass-loader',
-          
+          // { 
+          //   loader: 'sass-loader', 
+          //   options: { 
+          //     sourceMap : true
+          //   } 
+          // }
         ],
       },
       {
@@ -174,7 +181,7 @@ module.exports = {
             loader: 'file-loader',
             options: {
               name: "images/[name].[ext]",
-              // outputPath: './images',
+              // outputPath: './',
               // publicPath: './dist',
             }
           }
