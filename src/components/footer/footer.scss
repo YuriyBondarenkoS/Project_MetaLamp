@@ -76,6 +76,31 @@
     max-width: 260px;
   }
 
+  &__form {
+    width: 260px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    min-height: 44px;
+  }
+
+  &__form-input {
+    border: none;
+    outline: none;
+    width: 213px;
+    vertical-align: middle;
+    &::placeholder {
+      @include color(5);
+      margin-left: 10px;
+    }
+  }
+
+  &__form-button {
+    width: 42px;
+    height: 42px;
+    border: none;
+    padding: 0;
+    background: url(images/arrow_forward.png) no-repeat 50% 50%;
+  }
+
   &__copyright {
     display: flex;
     align-items: center;
