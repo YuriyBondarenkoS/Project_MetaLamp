@@ -89,7 +89,7 @@
     vertical-align: middle;
     &::placeholder {
       @include color(5);
-      margin-left: 10px;
+      text-indent: 15px;
     }
   }
 
@@ -99,7 +99,7 @@
     height: 42px;
     border: none;
     padding: 0;
-    background: url('./images/arrow_forward.svg') no-repeat 50% 50%;
+    // background: url('./images/arrow_forward.svg') no-repeat 50% 50%;
   }
 
   &__copyright {
@@ -118,5 +118,32 @@
 
   &__social1-link {
     margin-left: 20px;
+  }
+}
+
+.copyright {
+  position: absolute;
+  top: 843px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: auto;
+  // height: 843px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // padding-top: 843px;
+  background: #FFFFFF;
+  width: 768px;
+  height: 367px;
+
+  &__logo {
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    margin-bottom: 25px;
   }
 }

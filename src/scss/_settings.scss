@@ -13,7 +13,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  @include color(5)
+  @include color(7)
 }
 
 img {
@@ -46,6 +46,7 @@ h3 {
 }
 
 .wrapper{
+  position: relative;
   background: #E5E5E5;
 }
 

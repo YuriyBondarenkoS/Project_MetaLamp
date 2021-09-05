@@ -5,6 +5,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerWebpackPlugin = require('css-minimizer-webpack-plugin');
 const TerserWebpackPlugin = require('terser-webpack-plugin');
 const ImageminPlugin = require('imagemin-webpack');
+const CopyPlugin = require("copy-webpack-plugin");
 
 const isDev = process.env.NODE_ENV === 'development';
 const isProd = !isDev;
@@ -37,8 +38,12 @@ const cssLoaders = (extra) => {
         reloadAll: true,
       },
     },
-    'css-loader',
-    'resolve-url-loader',
+    {
+      loader: "css-loader",
+      // options: {
+      //   url: false,
+      // },
+    },
   ];
 
   if (extra) {
@@ -52,6 +57,15 @@ const fileName = (ext) => (isDev ? `[name].${ext}` : `[name].[fullhash:8].${ext}
 
 const plugins = () => {
   const basePlugins = [
+    new CopyPlugin({
+      patterns: [
+        { from: "./components/header/images", to: "images" },
+        { from: "./components/footer/images", to: "images" },
+      ],
+      options: {
+        concurrency: 100,
+      },
+    }),
     new HTMLWebpackPlugin({
       filename: path.resolve(__dirname, 'dist/index.html'),
       template : 'index.pug',
@@ -117,20 +131,6 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(?:|gif|png|jpg|jpeg|svg|ico)$/,
-        // include: path.join(__dirname, './images'),
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: './images/[name].[ext]',
-              outputPath: './',
-              // publicPath: './dist',
-            }
-          }
-        ]
-      },
-      {
         test: /\.html$/,
         loader: 'html-loader',
       },
@@ -148,42 +148,18 @@ module.exports = {
           {
             loader: MiniCssExtractPlugin.loader,
             options: {
-              // publicPath: '../',
               publicPath: (resourcePath, context) => {
                 return path.relative(path.dirname(resourcePath), context) + '/';
               },
             },  
           },
-          // 'css-loader',
           {
             loader: "css-loader",
-            options: {
-              url: false,
-            },
+            // options: {
+            //   url: false,
+            // },
           },
-          {
-            loader: "resolve-url-loader"
-          },
-          // {
-          //   loader: 'resolve-url-loader',
-          //   options: {
-          //     sourceMap: true
-          //   }
-          // },
-          // 'url-loader',
-          // {
-          //   loader: 'url-loader',
-          //   options: {
-          //     limit: 1000,
-          //   },
-          // },
           'sass-loader',
-          // { 
-          //   loader: 'sass-loader', 
-          //   options: { 
-          //     sourceMap : true
-          //   } 
-          // }
         ],
       },
       {
@@ -199,12 +175,32 @@ module.exports = {
         }
       },
       {
-        test: /\.(?:|woff2|woff|eot|ttf|svg)$/i,
-        include: path.resolve(__dirname, 'src/fonts'),
-        generator: {
-          filename: 'fonts/[hash:8][ext]'
-        }
-      }
+        test: /\.(?:|gif|png|jpg|jpeg|svg|ico)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: './[name].[ext]',
+              outputPath: './images',
+            }
+          }
+        ]
+      },
+      // {
+      //   test: /\.(?:|woff2|woff|eot|ttf|svg)$/i,
+      //   include: path.resolve(__dirname, 'src/fonts'),
+      //   generator: {
+      //     filename: 'fonts/[hash:8][ext]'
+      //   }
+      // }
+      {
+        test: /\.(ttf|eot|woff|woff2)$/,
+        loader: 'file-loader',
+        options: {
+          name: 'fonts/[name].[ext]',
+          outputPath: './fonts',
+          }
+      },
     ]
   }
 };

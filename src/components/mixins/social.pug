@@ -1,0 +1,12 @@
+
+mixin social(href1, href2, href3, item1, item2, item3, link1, link2, link3)
+  .footer__social1-list
+    .footer__social1-item
+      a.footer__socia1l-link(href=href1)
+        img(src=require(link1).default alt=item1)
+    .footer__social1-item
+      a.footer__social1-link(href=href2)
+        img(src=require(link2).default alt=item2)
+    .footer__social1-item
+      a.footer__social1-link(href=href3)
+        img(src=require(link3).default alt=item3)
