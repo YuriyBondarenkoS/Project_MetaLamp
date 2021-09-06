@@ -1,3 +1,5 @@
+include ../../mixins/text_field
+
 doctype html
 html(lang='ru')
   head
@@ -11,6 +13,7 @@ html(lang='ru')
         .container 
             .buttons 
                 .buttons__text-field
+                  include ../../text_field/text_field.pug
                 .buttons__checkbox 
                 .buttons__buttons
             .dropdown 
