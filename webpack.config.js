@@ -10,9 +10,6 @@ const CopyPlugin = require("copy-webpack-plugin");
 const isDev = process.env.NODE_ENV === 'development';
 const isProd = !isDev;
 
-// const PAGES_DIR = `${PATHS.src}/pug/pages/`;
-// const PAGES = fs.readdirSync(PAGES_DIR).filter(fileNames => fileNames.endsWith('.pug'));
-
 const optimization = () => {
   const configObj = {
     splitChunks: {
@@ -29,43 +26,37 @@ const optimization = () => {
   return configObj;
 };
 
-const cssLoaders = (extra) => {
-  const loaders = [
-    {
-      loader: MiniCssExtractPlugin.loader,
-      options: {
-        hmr: isDev,
-        reloadAll: true,
-      },
-    },
-    {
-      loader: "css-loader",
-      // options: {
-      //   url: false,
-      // },
-    },
-  ];
+// const cssLoaders = (extra) => {
+//   const loaders = [
+//     {
+//       loader: MiniCssExtractPlugin.loader,
+//       options: {
+//         hmr: isDev,
+//       },
+//     },
+//     "css-loader",
+//   ];
 
-  if (extra) {
-    loaders.push(extra);
-  }
+//   if (extra) {
+//     loaders.push(extra);
+//   }
 
-  return loaders;
-};
+//   return loaders;
+// };
 
 const fileName = (ext) => (isDev ? `[name].${ext}` : `[name].[fullhash:8].${ext}`);
 
 const plugins = () => {
   const basePlugins = [
-    new CopyPlugin({
-      patterns: [
-        { from: "./components/header/images", to: "images" },
-        { from: "./components/footer/images", to: "images" },
-      ],
-      options: {
-        concurrency: 100,
-      },
-    }),
+    // new CopyPlugin({
+    //   patterns: [
+    //     { from: "./components/header/images", to: "images" },
+    //     { from: "./components/footer/images", to: "images" },
+    //   ],
+    //   options: {
+    //     concurrency: 100,
+    //   },
+    // }),
     new HTMLWebpackPlugin({
       filename: path.resolve(__dirname, 'dist/index.html'),
       template : 'index.pug',
@@ -122,7 +113,7 @@ module.exports = {
     contentBase: path.join(__dirname, 'dist'),
     open: true,
     compress: true,
-    hot: isDev,
+    hot: true,
     port: 3000,
   },
   optimization: optimization(),
@@ -136,11 +127,15 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: cssLoaders(),
-      },
-      {
-        test: /\.less$/,
-        use: cssLoaders('less-loader')
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              hmr: isDev
+            },
+          },
+          'css-loader'
+        ],
       },
       {
         test: /\.s[ac]ss$/,
@@ -153,12 +148,8 @@ module.exports = {
               },
             },  
           },
-          {
-            loader: "css-loader",
-            // options: {
-            //   url: false,
-            // },
-          },
+          "css-loader",
+          "resolve-url-loader",
           'sass-loader',
         ],
       },
@@ -180,25 +171,21 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: './[name].[ext]',
-              outputPath: './images',
+              name: `./images/${fileName('[ext]')}`,
+              publicPath: "http://localhost:3000/",
+              context: path.resolve(__dirname, "src/"),
+              outputPath: './',
+              useRelativePaths: true
             }
           }
         ]
       },
-      // {
-      //   test: /\.(?:|woff2|woff|eot|ttf|svg)$/i,
-      //   include: path.resolve(__dirname, 'src/fonts'),
-      //   generator: {
-      //     filename: 'fonts/[hash:8][ext]'
-      //   }
-      // }
       {
         test: /\.(ttf|eot|woff|woff2)$/,
         loader: 'file-loader',
         options: {
-          name: 'fonts/[name].[ext]',
-          outputPath: './fonts',
+          name: `./fonts/${fileName('[ext]')}`,
+          publicPath: "http://localhost:3000/",
           }
       },
     ]

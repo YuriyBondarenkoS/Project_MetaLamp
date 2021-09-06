@@ -6,7 +6,8 @@ import './index.pug';
 
 import './components/header/header.js';
 import './components/footer/footer.js';
-import './components/layout/layout.js';
+import './components/layout/layout_header_footer/layout';
+import './components/layout/layout_form_element/layout';
 
 import json from './assets/json.json';
 
