@@ -1,6 +1,6 @@
 @import "../../scss/mixins/color";
 
-.form_header {
+.form_text_field_header {
   display: flex;
   justify-content: space-between;
   text-transform: uppercase;
@@ -10,22 +10,25 @@
   margin-bottom: 5px;
   &__left {
     font-weight: bold;
-    @include color(1);
+    @include color('d', 1);
   }
   &__right {
-    @include color(5);
+    @include color('d', 0.5);
   }
 }
 
-.form {
+.form_text_field {
   width: 260px;
   border: 1px solid rgba(31, 32, 65, 0.25);
   min-height: 44px;
   box-sizing: border-box;
   border-radius: 4px;
+  &:hover {
+    border: 1px solid rgba(31, 32, 65, 0.5);
+  }
 }
 
-.form-input {
+.form_text_field-input {
   border: none;
   outline: none;
   width: 230px;
@@ -33,7 +36,7 @@
   margin-top: 13px;
   margin-left: 15px;
   &::placeholder {
-    @include color(5);
+    @include color('d', 0.25);
     // font-family: "Montserrat-Regular";
     font-style: normal;
     font-weight: normal;
@@ -41,6 +44,18 @@
     line-height: 24px;
   }
 }
+
+.form_text_field-focus {
+  width: 260px;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  min-height: 44px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  &:hover {
+    border: 1px solid rgba(31, 32, 65, 0.5);
+  }
+}
+
 
 // .form-button {
 //   text-indent:-9999px;

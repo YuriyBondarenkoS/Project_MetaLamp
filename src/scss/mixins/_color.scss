@@ -1,33 +1,21 @@
-@mixin color($transparency) {
-    @if($transparency == 1) {
-        color: #1F2041;
+@mixin color($color, $transparency) {
+    @if($color=='d') {
+        color: rgba(31, 32, 65, $transparency);
     }
-    @if($transparency == 7) {
-        color: rgba(31, 32, 65, 0.75);
-    }
-    @if($transparency == 5) {
-        color: rgba(31, 32, 65, 0.5);
-    }
-    @if($transparency == 2) {
-        color: rgba(31, 32, 65, 0.25);
-    }
-    @if($transparency==2) {
-        color: rgba(31, 32, 65, 0.05);
-    }
-    @if($transparency=='p') {
+    @if($color=='p') {
         color: #BC9CFF;
+        opacity: $transparency;
     }
-    @if($transparency=='g') {
+    @if($color=='g') {
         color: #6FCF97;
+        opacity: $transparency;
     }
-    @if($transparency=='gg') {
+    @if($color=='gg') {
         background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+        opacity: $transparency;
     }
-    @if($transparency=='gp1') {
+    @if($color=='gp') {
         background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-    }
-    @if($transparency=='gp5') {
-        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-        opacity: 0.5;
+        opacity: $transparency;
     }
 }

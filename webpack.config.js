@@ -48,15 +48,16 @@ const fileName = (ext) => (isDev ? `[name].${ext}` : `[name].[fullhash:8].${ext}
 
 const plugins = () => {
   const basePlugins = [
-    // new CopyPlugin({
-    //   patterns: [
-    //     { from: "./components/header/images", to: "images" },
-    //     { from: "./components/footer/images", to: "images" },
-    //   ],
-    //   options: {
-    //     concurrency: 100,
-    //   },
-    // }),
+    new CopyPlugin({
+      patterns: [
+        { from: "./components/header/images", to: "./images" },
+        { from: "./components/footer/images", to: "./images" },
+        { from: "./components/layout/layout_form_element/images", to: "./images" },
+      ],
+      options: {
+        concurrency: 100,
+      },
+    }),
     new HTMLWebpackPlugin({
       filename: path.resolve(__dirname, 'dist/index.html'),
       template : 'index.pug',
@@ -134,7 +135,8 @@ module.exports = {
               hmr: isDev
             },
           },
-          'css-loader'
+          'css-loader',
+          'resolve-url-loader',
         ],
       },
       {
@@ -148,8 +150,8 @@ module.exports = {
               },
             },  
           },
-          "css-loader",
-          "resolve-url-loader",
+          'css-loader',
+          'resolve-url-loader',
           'sass-loader',
         ],
       },
@@ -171,23 +173,23 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: `./images/${fileName('[ext]')}`,
-              publicPath: "http://localhost:3000/",
+              name: `./${fileName('[ext]')}`,
+              // publicPath: "./images",
               context: path.resolve(__dirname, "src/"),
-              outputPath: './',
+              outputPath: './images',
               useRelativePaths: true
             }
           }
         ]
       },
-      {
-        test: /\.(ttf|eot|woff|woff2)$/,
-        loader: 'file-loader',
-        options: {
-          name: `./fonts/${fileName('[ext]')}`,
-          publicPath: "http://localhost:3000/",
-          }
-      },
+      // {
+      //   test: /\.(ttf|eot|woff|woff2)$/,
+      //   loader: 'file-loader',
+      //   options: {
+      //     name: `./fonts/${fileName('[ext]')}`,
+      //     publicPath: "http://localhost:3000/",
+      //     }
+      // },
     ]
   }
 };
