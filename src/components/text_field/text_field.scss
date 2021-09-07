@@ -1,22 +1,5 @@
 @import "../../scss/mixins/color";
 
-.form_text_field_header {
-  display: flex;
-  justify-content: space-between;
-  text-transform: uppercase;
-  font-size: 12px;
-  line-height: 15px;
-  width: 260px;
-  margin-bottom: 5px;
-  &__left {
-    font-weight: bold;
-    @include color('d', 1);
-  }
-  &__right {
-    @include color('d', 0.5);
-  }
-}
-
 .form_text_field {
   width: 260px;
   border: 1px solid rgba(31, 32, 65, 0.25);
@@ -55,7 +38,6 @@
     border: 1px solid rgba(31, 32, 65, 0.5);
   }
 }
-
 
 // .form-button {
 //   text-indent:-9999px;

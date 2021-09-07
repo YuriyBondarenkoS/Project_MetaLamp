@@ -1,3 +1,5 @@
+@import "../../../scss/mixins/color";
+
 .wrapper {
   display: flex;
   position: relative;
@@ -31,11 +33,29 @@
     width: 320px;
     height: 635px;
   }
+  &__form_text_field {
+    margin-bottom: 20px;
+  }
+  &__text_field_header {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 15px;
+    width: 260px;
+    margin-bottom: 5px;
+  }
+  &__text_field_header_left {
+    font-weight: bold;
+    @include color('d', 1);
+  }
+  &__text_field_header_right {
+    @include color('d', 0.5);
+  }
   &__checkbox {
     background: rgb(105, 126, 84);
     width: 320px;
     height: 635px;
-
   }
   &__buttons {
     background: rgb(32, 177, 196);

@@ -13,8 +13,16 @@ html(lang='ru')
         .container 
             .buttons 
                 .buttons__text-field
-                  include ../../text_field/text_field.pug
-                  include ../../text_field/text_field.pug
+                  .buttons__form_text_field
+                    .buttons__text_field_header
+                      .buttons__text_field_header_left text field
+                      .buttons__text_field_header_right default
+                    include ../../text_field/text_field.pug
+                  .buttons__form_text_field 
+                    .buttons__text_field_header
+                      .buttons__text_field_header_left text field
+                      .buttons__text_field_header_right Hover / Focus
+                    include ../../text_field/text_field.pug
                 .buttons__checkbox 
                   
                 .buttons__buttons
