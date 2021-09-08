@@ -1,22 +1,25 @@
-import 'focus-visible';
+// import 'focus-visible';
 
-import './scss/main.scss';
 
 import './index.pug';
+import './scss/main.scss';
 
-import './components/header/header.js';
-import './components/footer/footer.js';
+// import './components/header/header.js';
+// import './components/footer/footer.js';
 
 import './components/text_field/text_field.js';
-
-import './components/layout/layout_header_footer/layout';
 import './components/layout/layout_form_element/layout';
+
+// import './components/layout/layout_header_footer/layout';
 
 import json from './assets/json.json';
 
-// $('body').css('color', 'red');s
+window.addEventListener('DOMContentLoaded', () => {
 
-function add() {
-    console.log('JSON', json);
-}
-add();
+    // $('body').css('color', 'red');s
+
+    function add() {
+        console.log('JSON', json);
+    }
+    add();
+});
