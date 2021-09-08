@@ -1,6 +1,10 @@
 @import "../../scss/mixins/color";
 
+<<<<<<< HEAD
 .form_text_field {
+=======
+.form {
+>>>>>>> 615be7ec1b31f5f15abee012ac178f815fd92a8e
   width: 260px;
   border: 1px solid rgba(31, 32, 65, 0.25);
   min-height: 44px;
@@ -12,7 +16,11 @@
   }
 }
 
+<<<<<<< HEAD
 .input_text_field {
+=======
+.input {
+>>>>>>> 615be7ec1b31f5f15abee012ac178f815fd92a8e
   border: none;
   outline: none;
   width: 230px;
@@ -28,20 +36,14 @@
   }
 }
 
+<<<<<<< HEAD
 .focus_text_field {
+=======
+.focus {
+>>>>>>> 615be7ec1b31f5f15abee012ac178f815fd92a8e
   width: 260px;
   border: 1px solid rgba(31, 32, 65, 0.5);
   min-height: 44px;
   box-sizing: border-box;
   border-radius: 4px;
 }
-
-
-// .form-button {
-//   text-indent:-9999px;
-//   width: 42px;
-//   height: 42px;
-//   border: none;
-//   padding: 0;
-//   // background-image: url('/Users/ysbondarenko/Desktop/Work/1Self-study/39_MetaLamp/src/components/footer/images/arrow_forward.png') no-repeat 50% 50%;
-// }
