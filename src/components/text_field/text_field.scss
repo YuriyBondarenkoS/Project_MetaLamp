@@ -1,6 +1,6 @@
 @import "../../scss/mixins/color";
 
-.form_text_field {
+.form {
   width: 260px;
   border: 1px solid rgba(31, 32, 65, 0.25);
   min-height: 44px;
@@ -11,7 +11,7 @@
   }
 }
 
-.form_text_field-input {
+.input {
   border: none;
   outline: none;
   width: 230px;
@@ -20,7 +20,6 @@
   margin-left: 15px;
   &::placeholder {
     @include color('d', 0.25);
-    // font-family: "Montserrat-Regular";
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -28,7 +27,7 @@
   }
 }
 
-.form_text_field-focus {
+.focus {
   width: 260px;
   border: 1px solid rgba(31, 32, 65, 0.5);
   min-height: 44px;
@@ -38,12 +37,3 @@
     border: 1px solid rgba(31, 32, 65, 0.5);
   }
 }
-
-// .form-button {
-//   text-indent:-9999px;
-//   width: 42px;
-//   height: 42px;
-//   border: none;
-//   padding: 0;
-//   // background-image: url('/Users/ysbondarenko/Desktop/Work/1Self-study/39_MetaLamp/src/components/footer/images/arrow_forward.png') no-repeat 50% 50%;
-// }
