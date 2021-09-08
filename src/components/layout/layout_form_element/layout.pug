@@ -13,16 +13,9 @@ html(lang='ru')
         .container 
             .buttons 
                 .buttons__text-field
-                  .buttons__form_text_field 
-                    .buttons__form_text_field_header
-                      .buttons__text_field_header-left text field
-                      .buttons__text_field_header-right default
-                    include ../../text_field/text_field.pug
-                  .buttons__form_text_field 
-                    .buttons__form_text_field_header
-                      .buttons__text_field_header-left text field
-                      .buttons__text_field_header-right Hover / Focus
-                    include ../../text_field/text_field.pug
+                  +textField('action', 'text', 'Email', 'text field', 'default')
+                  
+                  +textField('action', 'text', 'This is pretty awesome', 'text field', 'Hover / Focus')
                 .buttons__checkbox 
                   
                 .buttons__buttons
