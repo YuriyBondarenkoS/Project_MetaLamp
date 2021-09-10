@@ -55,7 +55,11 @@ h3 {
 }
 
 .is-hidden {
-  display: none !important; // stylelint-disable-line declaration-no-important
+  display: none; //  stylelint-disable-line declaration-no-important
+}
+
+.is-show {
+  display: block;
 }
 
 .visually-hidden {
