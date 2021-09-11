@@ -1,5 +1,5 @@
 
-mixin dropdown(action, text, Email, titleLeft)
+mixin masked_text_field(action, text, Email, titleLeft)
     .buttons__form_text_field 
         .buttons__form_text_field_header
             .buttons__text_field_header-left=titleLeft
@@ -8,15 +8,7 @@ mixin dropdown(action, text, Email, titleLeft)
                 type=text
                 placeholder=Email
             )
-            button.form__btn(
-                style="backraund-image"
-                type="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-            )
-                svg(width='12' height='8' viewbox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg')
-                    path.form__dropdown-svg(d='M10.5938 0.578125L12 1.98438L6 7.98438L0 1.98438L1.40625 0.578125L6 5.17188L10.5938 0.578125Z')
+
     .dropdown__menu.is-hidden#dropdown__menu
         .dropdown__guests
             .dropdown__family-members

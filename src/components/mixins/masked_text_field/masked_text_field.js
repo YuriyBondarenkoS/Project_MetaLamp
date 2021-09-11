@@ -1,4 +1,4 @@
-import './dropdown.scss';
+import './masked_text_field.scss';
 
 const clickBtnDropdown = document.querySelector('.form__btn'),
     dropdownMenu = document.querySelector('.dropdown__menu'),

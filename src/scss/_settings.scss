@@ -63,7 +63,11 @@ h3 {
 }
 
 .visually-hidden {
-  @include visually-hidden;
+  visibility: hidden;
+}
+
+.visually-visible {
+  visibility: visible;
 }
 
 .btn-reset {
