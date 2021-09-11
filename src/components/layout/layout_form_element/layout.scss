@@ -23,7 +23,7 @@
 .buttons {
   display: flex;
   justify-content: space-between;
-  background: blue;
+  background: rgb(253, 238, 31);
   width: 1158px;
   height: 635px;
   margin-top: 140px;
@@ -39,7 +39,7 @@
     text-transform: uppercase;
     font-size: 12px;
     line-height: 15px;
-    width: 260px;
+    width: 320px;
     margin-bottom: 5px;
   }
   &__text_field_header-left {

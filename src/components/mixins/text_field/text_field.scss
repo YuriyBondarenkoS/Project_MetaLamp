@@ -1,7 +1,8 @@
-@import "../../scss/mixins/color";
+@import "../../../scss/mixins/color";
 
 .form_text_field {
-  width: 260px;
+  position: relative;
+  width: 320px;
   border: 1px solid rgba(31, 32, 65, 0.25);
   min-height: 44px;
   box-sizing: border-box;
@@ -15,7 +16,7 @@
 .input_text_field {
   border: none;
   outline: none;
-  width: 230px;
+  width: 290px;
   vertical-align: middle;
   margin-top: 13px;
   margin-left: 15px;
@@ -29,7 +30,7 @@
 }
 
 .focus_text_field {
-  width: 260px;
+  width: 320px;
   border: 1px solid rgba(31, 32, 65, 0.5);
   min-height: 44px;
   box-sizing: border-box;

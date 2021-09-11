@@ -1,4 +1,6 @@
-include ../../mixins/text_field
+include ../../mixins/text_field/text_field
+include ../../mixins/dropdown/dropdown
+include ../../mixins/masked_text_field/masked_text_field
 
 doctype html
 html(lang='ru')
@@ -14,8 +16,9 @@ html(lang='ru')
             .buttons 
                 .buttons__text-field
                   +textField('action', 'text', 'Email', 'text field', 'default')
-                  
                   +textField('action', 'text', 'This is pretty awesome', 'text field', 'Hover / Focus')
+                  +dropdown('action', 'text', 'Сколько гостей', 'dropdown', '')
+                  +masked_text_field('action', 'date', 'ДД.ММ.ГГГГ', 'masked text field', '')
                 .buttons__checkbox 
                   
                 .buttons__buttons
