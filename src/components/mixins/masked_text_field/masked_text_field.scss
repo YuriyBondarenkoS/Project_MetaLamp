@@ -4,6 +4,22 @@
   margin-top: 22px;
 }
 
+.datepicker-here {
+    border: none;
+    outline: none;
+    width: 290px;
+    vertical-align: middle;
+    margin: 12px 15px 11px 15px;
+
+    &::placeholder {
+        @include color('d', 0.75);
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
 .form {
 
     &__dropdown {
@@ -17,22 +33,6 @@
 
         &:hover {
             border: 1px solid rgba(31, 32, 65, 0.5);
-        }
-    }
-
-    &__input_dropdown {
-        border: none;
-        outline: none;
-        width: 290px;
-        vertical-align: middle;
-        margin: 12px 15px 11px 15px;
-
-        &::placeholder {
-            @include color('d', 0.75);
-            font-style: normal;
-            font-weight: normal;
-            font-size: 14px;
-            line-height: 24px;
         }
     }
 
