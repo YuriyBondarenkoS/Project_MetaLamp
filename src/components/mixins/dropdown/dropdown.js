@@ -124,5 +124,7 @@ dropdownFormClear.addEventListener('click', () => {
     babyGuestesNumber.innerHTML = 0;
     dropdownFormClear.classList.remove('visually-visible');
     dropdownFormClear.classList.add('visually-hidden');
-    guestNumber = 0;
+    adultsNumber = 0;
+    childNumber = 0;
+    babyNumber = 0;
 });

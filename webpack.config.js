@@ -10,6 +10,8 @@ const CopyPlugin = require("copy-webpack-plugin");
 const isDev = process.env.NODE_ENV === 'development';
 const isProd = !isDev;
 
+var webpack = require("webpack");
+
 const optimization = () => {
   const configObj = {
     splitChunks: {
@@ -25,24 +27,6 @@ const optimization = () => {
   }
   return configObj;
 };
-
-// const cssLoaders = (extra) => {
-//   const loaders = [
-//     {
-//       loader: MiniCssExtractPlugin.loader,
-//       options: {
-//         hmr: isDev,
-//       },
-//     },
-//     "css-loader",
-//   ];
-
-//   if (extra) {
-//     loaders.push(extra);
-//   }
-
-//   return loaders;
-// };
 
 const fileName = (ext) => (isDev ? `[name].${ext}` : `[name].[fullhash:8].${ext}`);
 
@@ -69,6 +53,10 @@ const plugins = () => {
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: `./css/${fileName('css')}`
+    }),
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
     }),
   ];
 
@@ -131,9 +119,9 @@ module.exports = {
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
-            options: {
-              hmr: isDev
-            },
+            // options: {
+            //   hmr: isDev
+            // },
           },
           'css-loader',
           'resolve-url-loader',
@@ -174,7 +162,6 @@ module.exports = {
             loader: 'file-loader',
             options: {
               name: `./${fileName('[ext]')}`,
-              // publicPath: "./images",
               context: path.resolve(__dirname, "src/"),
               outputPath: './images',
               useRelativePaths: true
@@ -182,14 +169,6 @@ module.exports = {
           }
         ]
       },
-      // {
-      //   test: /\.(ttf|eot|woff|woff2)$/,
-      //   loader: 'file-loader',
-      //   options: {
-      //     name: `./fonts/${fileName('[ext]')}`,
-      //     publicPath: "http://localhost:3000/",
-      //     }
-      // },
     ]
   }
 };

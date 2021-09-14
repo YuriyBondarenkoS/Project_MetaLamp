@@ -1,4 +1,5 @@
-// import 'focus-visible';
+import $ from 'jquery';
+import 'air-datepicker';
 
 import './index.pug';
 import './scss/main.scss';
@@ -12,16 +13,19 @@ import './components/mixins/masked_text_field/masked_text_field.js';
 import './components/layout/layout_form_element/layout';
 // import './components/text_field/text_field.js';
 
+
 // import './components/layout/layout_header_footer/layout';
 
 import json from './assets/json.json';
 
-window.addEventListener('DOMContentLoaded', () => {
+// var $ = require('../node_modules/jquery/src/jquery.js');
 
-    // $('body').css('color', 'red');s
+// window.addEventListener('DOMContentLoaded', () => {
 
-    function add() {
-        console.log('JSON', json);
-    }
-    add();
-});
+//     // $('body').css('color', 'red');s
+
+//     function add() {
+//         console.log('JSON', json);
+//     }
+//     add();
+// });
