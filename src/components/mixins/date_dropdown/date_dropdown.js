@@ -1,12 +1,12 @@
-import './masked_text_field.scss';
+import './date_dropdown.scss';
 
 import '../../../../node_modules/air-datepicker/dist/css/datepicker.css';
-import '../../../../node_modules/air-datepicker/dist/js/datepicker.js';
+import 'air-datepicker/dist/js/datepicker';
 
 
-let myDatepicker = $('#my-datepicker').datepicker().data('datepicker');
+let myDatepicker = $('#date_dropdown-datepicker').datepicker().data('datepicker');
 
-$('#my-datepicker').datepicker({
+$('#date_dropdown-datepicker').datepicker({
     todayButton: true,
     clearButton: true,
 });

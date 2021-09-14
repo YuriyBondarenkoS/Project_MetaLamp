@@ -7,6 +7,7 @@ import './scss/main.scss';
 // import './components/header/header.js';
 // import './components/footer/footer.js';
 
+import './components/mixins/date_dropdown/date_dropdown.js';
 import './components/mixins/text_field/text_field.js';
 import './components/mixins/dropdown/dropdown.js';
 import './components/mixins/masked_text_field/masked_text_field.js';

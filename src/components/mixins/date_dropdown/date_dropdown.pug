@@ -1,0 +1,20 @@
+
+mixin date_dropdown(titlePrev, titleNext)
+    .date_dropdown
+        .date_dropdown__prev
+            .date_dropdown__header=titlePrev
+            form.date_dropdown__form(action=action)
+                input.my-datepicker#date_dropdown-datepicker(
+                    type='text'
+                    placeholder='ДД.ММ.ГГГГ'
+                    data-language='ru'
+                )
+
+        .date_dropdown__next
+            .date_dropdown__header=titleNext
+            form.date_dropdown__form(action=action)
+                input.my-datepicker#date_dropdown-datepicker(
+                    type='text'
+                    placeholder='ДД.ММ.ГГГГ'
+                    data-language='ru'
+                )
