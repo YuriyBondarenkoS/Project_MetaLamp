@@ -1,0 +1,21 @@
+
+mixin filter_date_dropdown(title)
+    .filter_date_dropdown
+        .filter_date_dropdown__header=title
+        form.filter_date_dropdown__form(action=action)
+            input.filter_date_dropdown__input#filter_date_dropdown-datepicker(
+                type='text'
+                data-range="true"
+                data-multiple-dates-separator=" - "
+                placeholder='ДД.ММ - ДД.ММ'
+                data-language='ru'
+            )
+            button.filter_date_dropdown__btn(
+            style="backraund-image"
+            type="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+            )
+                svg(width='12' height='8' viewbox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg')
+                    path.filter_date_dropdown__svg(d='M10.5938 0.578125L12 1.98438L6 7.98438L0 1.98438L1.40625 0.578125L6 5.17188L10.5938 0.578125Z')
