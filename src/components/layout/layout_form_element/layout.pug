@@ -1,5 +1,7 @@
 include ../../mixins/text_field/text_field
 include ../../mixins/dropdown/dropdown
+include ../../mixins/date_dropdown/date_dropdown
+include ../../mixins/filter_date_dropdown/filter_date_dropdown
 include ../../mixins/masked_text_field/masked_text_field
 
 doctype html
@@ -19,6 +21,8 @@ html(lang='ru')
                   +textField('action', 'text', 'This is pretty awesome', 'text field', 'Hover / Focus')
                   +dropdown('action', 'text', 'Сколько гостей', 'dropdown', '')
                   +masked_text_field('masked text field')
+                  +date_dropdown('date Dropdown', 'date Dropdown')
+                  +filter_date_dropdown('filter date Dropdown')
                 .buttons__checkbox 
                   
                 .buttons__buttons
