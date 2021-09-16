@@ -1,0 +1,44 @@
+@import "../../../scss/mixins/color";
+
+.checkbox_buttons {
+  margin-top: 20px;
+
+  &__title {
+    font-family: Montserrat-bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    @include color('d', 1);
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+  }
+
+  &__rectangle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+
+  &__svg {
+    overflow: visible;
+    z-index: 99999;
+  }
+}
+
+.focus-subscript-input {
+  width: 266px;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  min-height: 44px;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
