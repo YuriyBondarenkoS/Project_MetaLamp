@@ -17,10 +17,6 @@ $('.datepicker--button[data-action="today"]').on('click', () => {
     myDatepickerPiev.hide();
 });
 
-// $('#date_dropdown-datepicker-next').on('click', () => {
-//     myDatepickerPiev.show();
-// });
-
 $('.filter_date_dropdown__btn').on('click', () => {
     myDatepickerPiev.show();
 });

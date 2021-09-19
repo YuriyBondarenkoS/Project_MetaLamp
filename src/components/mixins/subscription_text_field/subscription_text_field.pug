@@ -1,0 +1,22 @@
+
+
+mixin subscription_text_field(title)
+    .subscription_text_field
+        .subscription_text_field__header=title
+        form.subscription_text_field__form(action=action)
+            input.subscription_text_field__input(
+                type='text'
+                data-range="true"
+                placeholder='Email'
+                data-language='ru'
+            )
+            button.subscription_text_field__btn(
+            style="backraund-image"
+            type="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+            )
+                svg(width='17', height='18', viewbox='0 0 17 18', fill='none', xmlns='http://www.w3.org/2000/svg')
+                    path(d='M8.36301 0.984375L16.3786 9L8.36301 17.0156L6.95676 15.6094L12.5349 9.98438H0.347383V8.01562H12.5349L6.95676 2.39062L8.36301 0.984375Z', fill='#BC9CFF')
+

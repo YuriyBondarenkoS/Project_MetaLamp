@@ -2,7 +2,9 @@ include ../../mixins/text_field/text_field
 include ../../mixins/dropdown/dropdown
 include ../../mixins/date_dropdown/date_dropdown
 include ../../mixins/filter_date_dropdown/filter_date_dropdown
+include ../../mixins/subscription_text_field/subscription_text_field
 include ../../mixins/masked_text_field/masked_text_field
+include ../../mixins/checkbox_buttons/checkbox_buttons
 
 doctype html
 html(lang='ru')
@@ -23,7 +25,9 @@ html(lang='ru')
                   +masked_text_field('masked text field')
                   +date_dropdown('date Dropdown', 'date Dropdown')
                   +filter_date_dropdown('filter date Dropdown')
+                  +subscription_text_field('subscription text field')
                 .buttons__checkbox 
+                  +checkbox_buttons()
                   
                 .buttons__buttons
             .dropdown 
