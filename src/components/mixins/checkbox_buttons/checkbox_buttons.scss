@@ -1,7 +1,7 @@
 @import "../../../scss/mixins/color";
 
 .checkbox_buttons {
-  margin-top: 20px;
+  margin: 20px 0 17px 0;
 
   &__title {
     font-family: Montserrat-bold;
@@ -11,11 +11,15 @@
     line-height: 15px;
     text-transform: uppercase;
     @include color('d', 1);
+    margin-bottom: 17px;
   }
 
   &__item {
     position: relative;
     display: flex;
+    line-height: 18px;
+    @include color('d', 0.5);
+    margin-bottom: 10px;
   }
 
   &__rectangle {
@@ -27,11 +31,14 @@
     border: 1px solid rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
     border-radius: 4px;
+    margin-right: 10px;
   }
 
   &__svg {
-    overflow: visible;
-    z-index: 99999;
+    display: none;
+    // overflow: hidden;
+    // z-index: 99999;
+    // background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   }
 }
 
