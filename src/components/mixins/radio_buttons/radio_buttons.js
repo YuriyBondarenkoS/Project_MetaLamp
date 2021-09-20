@@ -8,6 +8,10 @@ const maleBtnBall = document.querySelector('#male_buttons__ball'),
     btnGenderFemale = document.querySelector('.radio_buttons__btn_female');
 
 function radioBtnGender() {
+    // console.log(maleBtnBall.classList.toggle('radio_buttons__ball-off'));
+    // console.log(femaleBtnBall.classList.toggle('radio_buttons__ball-off'));
+    // console.log(maleBtnCircle.classList.toggle('radio_buttons__circle-off'));
+    // console.log(femaleBtnCircle.classList.toggle('radio_buttons__circle-off'));
     maleBtnBall.classList.toggle('radio_buttons__ball-off');
     femaleBtnBall.classList.toggle('radio_buttons__ball-off');
     maleBtnCircle.classList.toggle('radio_buttons__circle-off');
