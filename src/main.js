@@ -10,6 +10,7 @@ import './scss/main.scss';
 import './components/mixins/checkbox_buttons/checkbox_buttons.js';
 import './components/mixins/radio_buttons/radio_buttons.js';
 import './components/mixins/toggle_btn/toggle_btn.js';
+import './components/mixins/like_button/like_button.js';
 
 import './components/mixins/subscription_text_field/subscription_text_field.js';
 import './components/mixins/filter_date_dropdown/filter_date_dropdown.js';

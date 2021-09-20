@@ -1,0 +1,54 @@
+@import "../../../scss/mixins/color";
+
+.like_button {
+  margin: 20px 0 17px 0;
+
+  &__title {
+    font-family: Montserrat-bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    @include color('d', 1);
+    margin-bottom: 17px;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: space-between;
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    border: 1px solid #BC9CFF;
+    background: #fff;
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+    transition-duration: 1s00ms;
+  }
+
+  &__counter {
+    height: 18px;
+    width: 20px;
+    font-size: 10px;
+    line-height: 16px;
+    @include color('p', 1);
+    margin: 0;
+    padding: 1.5px 0 0 3px;
+  }
+
+  &__button-off {
+    border: 1px solid rgba(31, 32, 65, 0.25);
+  }
+
+  &__svg-off {
+    fill-opacity: 0;
+  }
+
+  &__counter-off {
+    @include color('d', 0.25);
+  }
+}
