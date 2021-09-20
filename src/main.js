@@ -8,6 +8,7 @@ import './scss/main.scss';
 // import './components/footer/footer.js';
 
 import './components/mixins/checkbox_buttons/checkbox_buttons.js';
+import './components/mixins/radio_buttons/radio_buttons.js';
 
 import './components/mixins/subscription_text_field/subscription_text_field.js';
 import './components/mixins/filter_date_dropdown/filter_date_dropdown.js';
