@@ -39,9 +39,15 @@ let star1ClickCounter = 0,
 // });
 
 rateBtn1off.addEventListener('mouseenter', () => {
-    star1ClickCounter = 0;
-    rateBtn1off.classList.add('rate_button__item-off');
-    rateBtn1on.classList.remove('rate_button__item-off');
+    let pathStar1 = document.createElement('path');
+    pathStar1.innerHTML = `<path d="M10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25Z" fill="url(#paint0_linear)"></path>`;
+    rateBtn1off.before(pathStar1);
+    rateBtn1off.remove();
+    
+    
+    // star1ClickCounter = 0;
+    // rateBtn1off.classList.add('rate_button__item-off');
+    // rateBtn1on.classList.remove('rate_button__item-off');
 });
 
 rateBtn1off.addEventListener('mouseleave', () => {
