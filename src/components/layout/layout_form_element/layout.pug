@@ -9,6 +9,7 @@ include ../../mixins/radio_buttons/radio_buttons
 include ../../mixins/toggle_btn/toggle_btn
 include ../../mixins/like_button/like_button
 include ../../mixins/rate_button/rate_button
+include ../../mixins/button/button
 
 doctype html
 html(lang='ru')
@@ -37,6 +38,7 @@ html(lang='ru')
                   +like_button()
                   +rate_button()
                 .buttons__buttons
+                  +button('зарегистрироваться')(class="button__default")
             .dropdown 
                 .dropdown__block1
                 .dropdown__block2

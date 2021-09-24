@@ -3,25 +3,28 @@ import './checkbox_buttons.scss';
 const checkboxBtnRectangleSmoke = document.querySelector('#checkbox_buttons__rectangle_smoke'),
     checkboxBtnRectanglePets = document.querySelector('#checkbox_buttons__rectangle_pets'),
     checkboxBtnRectangleGuests = document.querySelector('#checkbox_buttons__rectangle_guests'),
-    checkboxBtnSvgSmoke = document.querySelector('#checkbox_buttons__svg_smoke'),
-    checkboxBtnSvgPets = document.querySelector('#checkbox_buttons__svg_pets'),
-    checkboxBtnSvgGuests = document.querySelector('#checkbox_buttons__svg_guests');
+    checkboxBtnPathSmoke1 = document.querySelector('#checkbox_buttons__path_smoke1'),
+    checkboxBtnPathSmoke2 = document.querySelector('#checkbox_buttons__path_smoke2'),
+    checkboxBtnPathPets1 = document.querySelector('#checkbox_buttons__path_pets1'),
+    checkboxBtnPathPets2 = document.querySelector('#checkbox_buttons__path_pets2'),
+    checkboxBtnPathGuests1 = document.querySelector('#checkbox_buttons__path_guests1'),
+    checkboxBtnPathGuests2 = document.querySelector('#checkbox_buttons__path_guests2');
 
-function checkboxButtons(btnCheckbox, svgCheckbox) {
+function checkboxButtons(btnCheckbox, path1Checkbox, path2Checkbox) {
     btnCheckbox.classList.toggle('checkbox_buttons__rectangle-off');
     btnCheckbox.classList.toggle('checkbox_buttons__rectangle-on');
-    // svgCheckbox.classList.toggle('checkbox_buttons__svg-off');
-    // svgCheckbox.classList.toggle('checkbox_buttons__svg-on');
+    path1Checkbox.classList.toggle('checkbox_buttons__path-off');
+    path2Checkbox.classList.toggle('checkbox_buttons__path-off');
 }
 
 checkboxBtnRectangleSmoke.addEventListener('click', () => {
-    checkboxButtons(checkboxBtnRectangleSmoke, checkboxBtnSvgSmoke);
+    checkboxButtons(checkboxBtnRectangleSmoke, checkboxBtnPathSmoke1, checkboxBtnPathSmoke2);
 });
 
 checkboxBtnRectanglePets.addEventListener('click', () => {
-    checkboxButtons(checkboxBtnRectanglePets, checkboxBtnSvgPets);
+    checkboxButtons(checkboxBtnRectanglePets, checkboxBtnPathPets1, checkboxBtnPathPets2);
 });
 
 checkboxBtnRectangleGuests.addEventListener('click', () => {
-    checkboxButtons(checkboxBtnRectangleGuests, checkboxBtnSvgGuests);
+    checkboxButtons(checkboxBtnRectangleGuests, checkboxBtnPathGuests1, checkboxBtnPathGuests2);
 });
