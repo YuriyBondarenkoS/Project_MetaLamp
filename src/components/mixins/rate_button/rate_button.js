@@ -1,7 +1,7 @@
 import './rate_button.scss';
 
 
-const rateBtn1 = document.getElementById("rate_btn__1"),
+const rateBtn1 = document.querySelector("#rate_btn__1"),
     rateBtn2 = document.querySelector('#rate_btn__2'),
     rateBtn3 = document.querySelector('#rate_btn__3'),
     rateBtn4 = document.querySelector('#rate_btn__4'),
@@ -11,7 +11,8 @@ let star1ClickCounter = 0,
     star2ClickCounter = 0,
     star3ClickCounter = 0,
     star4ClickCounter = 0,
-    star5ClickCounter = 0;
+    star5ClickCounter = 0,
+    arrRateBtn = [rateBtn1, rateBtn2, rateBtn3, rateBtn4, rateBtn5];
 
 function starOn(idStar) {
     idStar.setAttribute("d", "M10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25Z");
@@ -30,25 +31,32 @@ function offClick() {
     star3ClickCounter = 0;
     star4ClickCounter = 0;
     star5ClickCounter = 0;
-    starOff(rateBtn1);
-    starOff(rateBtn2);
-    starOff(rateBtn3);
-    starOff(rateBtn4);
-    starOff(rateBtn5);
+    starOffAll(5);
+}
+
+function starOffAll(numStar) {
+    for (let i = 0; i < numStar; i++) {
+        starOff(arrRateBtn[i]);
+    }
+}
+
+function starOnAll(numStar) {
+    for (let i = 0; i < numStar; i++) {
+        starOn(arrRateBtn[i]);
+    }
 }
 
 rateBtn1.addEventListener('click', () => {
     offClick();
     star1ClickCounter += 1;
-    starOn(rateBtn1);
+    starOnAll(1);
 });
 
 rateBtn2.addEventListener('click', () => {
     offClick();
     star1ClickCounter += 1;
     star2ClickCounter += 1;
-    starOn(rateBtn1);
-    starOn(rateBtn2);
+    starOnAll(2);
 });
 
 rateBtn3.addEventListener('click', () => {
@@ -56,9 +64,7 @@ rateBtn3.addEventListener('click', () => {
     star1ClickCounter += 1;
     star2ClickCounter += 1;
     star3ClickCounter += 1;
-    starOn(rateBtn1);
-    starOn(rateBtn2);
-    starOn(rateBtn3);
+    starOnAll(3);
 });
  
 rateBtn4.addEventListener('click', () => {
@@ -67,10 +73,7 @@ rateBtn4.addEventListener('click', () => {
     star2ClickCounter += 1;
     star3ClickCounter += 1;
     star4ClickCounter += 1;
-    starOn(rateBtn1);
-    starOn(rateBtn2);
-    starOn(rateBtn3);
-    starOn(rateBtn4);
+    starOnAll(4);
 });
 
 rateBtn5.addEventListener('click', () => {
@@ -80,71 +83,45 @@ rateBtn5.addEventListener('click', () => {
     star3ClickCounter += 1;
     star4ClickCounter += 1;
     star5ClickCounter += 1;
-    starOn(rateBtn1);
-    starOn(rateBtn2);
-    starOn(rateBtn3);
-    starOn(rateBtn4);
-    starOn(rateBtn5);
+    starOnAll(5);
 });
  
 rateBtn1.addEventListener('mouseenter', () => {
-    starOn(rateBtn1);
+    starOnAll(1);
 });
 
 rateBtn2.addEventListener('mouseenter', () => {
-    starOn(rateBtn1);
-    starOn(rateBtn2);
+    starOnAll(2);
 });
 
 rateBtn3.addEventListener('mouseenter', () => {
-    starOn(rateBtn1);
-    starOn(rateBtn2);
-    starOn(rateBtn3);
+    starOnAll(3);
 });
 
 rateBtn4.addEventListener('mouseenter', () => {
-    starOn(rateBtn1);
-    starOn(rateBtn2);
-    starOn(rateBtn3);
-    starOn(rateBtn4);
+    starOnAll(4);
 });
 
 rateBtn5.addEventListener('mouseenter', () => {
-    starOn(rateBtn1);
-    starOn(rateBtn2);
-    starOn(rateBtn3);
-    starOn(rateBtn4);
-    starOn(rateBtn5);
+    starOnAll(5);
 });
 
 rateBtn1.addEventListener('mouseleave', () => {
-    if (star1ClickCounter === 0) {
-        starOff(rateBtn1); 
-    }
+    starOffAll(1);
 });
 
 rateBtn2.addEventListener('mouseleave', () => {
-    starOff(rateBtn1);
-    starOff(rateBtn2);
+    starOffAll(2);
 });
 
 rateBtn3.addEventListener('mouseleave', () => {
-    starOff(rateBtn1);
-    starOff(rateBtn2);
-    starOff(rateBtn3);
+    starOffAll(3);
 });
 
 rateBtn4.addEventListener('mouseleave', () => {
-    starOff(rateBtn1);
-    starOff(rateBtn2);
-    starOff(rateBtn3);
-    starOff(rateBtn4);
+    starOffAll(4);
 });
 
 rateBtn5.addEventListener('mouseleave', () => {
-    starOff(rateBtn1);
-    starOff(rateBtn2);
-    starOff(rateBtn3);
-    starOff(rateBtn4);
-    starOff(rateBtn5);
+    starOffAll(5);
 });

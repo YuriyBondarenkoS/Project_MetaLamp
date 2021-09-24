@@ -29,7 +29,7 @@
     align-items: center;
     width: 20px;
     height: 20px;
-    background: red;
+    background: #fff;
     border: 1px solid rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
     border-radius: 4px;
@@ -53,13 +53,7 @@
     z-index: 1;
   }
 
-  &__svg-on {
-    position: absolute;
-    display: block;
-    z-index: 2;
-  }
-
-  &__svg-off {
+  &__path-off {
     display: none;
   }
 }
