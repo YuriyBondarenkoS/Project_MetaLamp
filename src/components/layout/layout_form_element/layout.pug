@@ -10,6 +10,9 @@ include ../../mixins/toggle_btn/toggle_btn
 include ../../mixins/like_button/like_button
 include ../../mixins/rate_button/rate_button
 include ../../mixins/button/button
+include ../../mixins/btn_additional/btn_additional
+include ../../mixins/link_main/link_main
+include ../../mixins/pagination/pagination
 
 doctype html
 html(lang='ru')
@@ -38,7 +41,31 @@ html(lang='ru')
                   +like_button()
                   +rate_button()
                 .buttons__buttons
-                  +button('зарегистрироваться')(class="button__default")
+                  .buttons__buttons_renge_slider
+                    h3 Range Slider
+                  .buttons__buttons_buttons 
+                    h3 buttons
+                    .buttons__buttons_item
+                      .buttons__btn_1
+                        +btn_additional('click me')(class="btn_additional__default")
+                      .buttons__btn_2
+                        +btn_additional('click me')(class="btn_additional__default")
+                    .buttons__buttons_item
+                      .buttons__btn_transparent_1
+                        +btn_additional('click me')(class="btn_additional__transparent")
+                      .buttons__btn_transparent_2
+                        +btn_additional('click me')(class="btn_additional__transparent")
+                    .buttons__buttons_item
+                      .buttons__buttons_link_1
+                        +link_main('click me')(class="link_main__default")
+                      .buttons__buttons_link_2
+                        +link_main('click me')(class="link_main__default")
+                    .buttons__buttons_item
+                      +button('перейти к оплате')(class="button__default_pathOn")
+                    .buttons__buttons_item.buttons__buttons_pagination
+                      h3 pagination
+                      .buttons__pagination
+                        +pagination('15')(class="pagination__default_pathOn")
             .dropdown 
                 .dropdown__block1
                 .dropdown__block2

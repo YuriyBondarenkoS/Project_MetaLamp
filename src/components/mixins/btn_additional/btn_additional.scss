@@ -1,14 +1,14 @@
 @import "../../../scss/mixins/color";
 
 
-.button {
+.btn_additional {
 
   &__default {
     display: flex;
     align-items: center;
     justify-content: center;
     border: none;
-    width: 320px;
+    width: 99px;
     height: 44px;
     @include color('gp', 1);
     border-radius: 22px;
@@ -25,23 +25,26 @@
     }
   }
 
-  &__default_text {
-    position: absolute;
-    text-align: center;
-  }
-
-  &__default_svg {
+  &__transparent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid;
+    width: 99px;
     height: 44px;
-    width: 44px;
-    padding: 13px;
-    margin: 0 0 0 267px;
-  }
+    background: #fff;
+    border-radius: 22px;
+    color: #BC9CFF;
+    font-family: Montserrat-bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
 
-  &__default_path {
-    display: none;
-  }
-
-  &__default_pathOn {
-    // position: absolute;
+    &:hover {
+      opacity: 0.5;
+    }
   }
 }

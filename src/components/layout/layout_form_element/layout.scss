@@ -61,6 +61,26 @@
     width: 320px;
     height: 635px;
   }
+  &__buttons_item {
+    display: flex;
+    margin: 0 0 30px 0;
+  }
+
+  &__btn_1 {
+    margin: 0 19px 0 0;
+  }
+
+  &__btn_transparent_1 {
+    margin: 0 19px 0 0;
+  }
+
+  &__buttons_link_1 {
+    margin: 0 19px 0 0;
+  }
+
+  &__buttons_pagination {
+    flex-direction: column;
+  }
 }
 
 .dropdown {
