@@ -15,11 +15,8 @@ function signaturePaginationNum(clickBtn1) {
 
 function clickLastPage(clickBtn1, clickBtn5, nowClickBtn) {
     if (clickBtn1 === (clickBtn5 - 4)) {
-        console.log(paginationBtnAll);
 
         paginationBtnAll.forEach(element => {
-            console.log(element);
-
             element.classList.remove('pagination__item_start');
         });
 
@@ -38,10 +35,7 @@ paginationBtn2.addEventListener('click', () => {
     let clickBtn1 = Number(paginationBtn1.innerHTML),
         clickBtn2 = Number(paginationBtn2.innerHTML),
         clickBtn5 = Number(paginationBtn5.innerHTML);
-    console.log(clickBtn1);
-    console.log(clickBtn5);
-    console.log(paginationBtn2);
-    
+
     clickLastPage(clickBtn1, clickBtn5, paginationBtn2);
     
     if ((clickBtn2 + 4) < clickBtn5) {

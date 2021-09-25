@@ -1,0 +1,68 @@
+
+mixin dropdown_facilities(action, text, Email, titleLeft)
+    .dropdown_facilities__form_text_field 
+        .dropdown_facilities__form_text_field_header
+            .dropdown_facilities__text_field_header-left
+                h3=titleLeft
+        form.dropdown_facilities__form_dropdown#form_text_field(action=action)
+            input.dropdown_facilities__form_input_dropdown#input_text_field(
+                type=text
+                placeholder=Email
+            )
+            button.dropdown_facilities__form_btn(
+                style="backraund-image"
+                type="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+            )
+                svg(width='12' height='8' viewbox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg')
+                    path.dropdown_facilities__form_dropdown_svg(d='M10.5938 0.578125L12 1.98438L6 7.98438L0 1.98438L1.40625 0.578125L6 5.17188L10.5938 0.578125Z')
+    .dropdown_facilities__menu.is-hidden#dropdown__menu
+        .dropdown_facilities__guests
+            .dropdown_facilities__family-members
+                .dropdown_facilities__family-item спальни
+                .dropdown_facilities__family-item кровати
+                .dropdown_facilities__family-item ванные комнаты
+            .dropdown_facilities__buttons
+                .dropdown_facilities__buttons-item
+                    buttons.dropdown_facilities__adults-minus 
+                        svg(width='30' height='30' viewbox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg')
+                            g.dropdown_facilities__adults-minus-svg(opacity='0.38')
+                                path(d='M0.5 15C0.5 6.99187 6.99187 0.5 15 0.5C23.0081 0.5 29.5 6.99187 29.5 15C29.5 23.0081 23.0081 29.5 15 29.5C6.99187 29.5 0.5 23.0081 0.5 15Z' stroke='#1F2041' stroke-opacity='0.25')
+                                path(d='M12.6435 15.564H17.3595V16.68H12.6435V15.564Z' fill='#1F2041' fill-opacity='0.5')
+                    .dropdown_facilities__number-guests.dropdown_facilities__number-adults 0
+                    buttons.dropdown_facilities__adults-plus 
+                        svg(width='30' height='31' viewbox='0 0 30 31' fill='none' xmlns='http://www.w3.org/2000/svg')
+                            path(d='M0.5 15.5576C0.5 7.54949 6.99187 1.05762 15 1.05762C23.0081 1.05762 29.5 7.54949 29.5 15.5576C29.5 23.5657 23.0081 30.0576 15 30.0576C6.99187 30.0576 0.5 23.5657 0.5 15.5576Z' stroke='#1F2041' stroke-opacity='0.25')
+                            path(d='M18.9132 15.7976H15.5652V19.0736H14.4312V15.7976H11.0832V14.7356H14.4312V11.4416H15.5652V14.7356H18.9132V15.7976Z' fill='#1F2041' fill-opacity='0.5')
+
+                .dropdown_facilities__buttons-item
+                    buttons.dropdown_facilities__children-minus 
+                        svg(width='30' height='30' viewbox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg')
+                            g.dropdown_facilities__children-minus-svg(opacity='0.38')
+                                path(d='M0.5 15C0.5 6.99187 6.99187 0.5 15 0.5C23.0081 0.5 29.5 6.99187 29.5 15C29.5 23.0081 23.0081 29.5 15 29.5C6.99187 29.5 0.5 23.0081 0.5 15Z' stroke='#1F2041' stroke-opacity='0.25')
+                                path(d='M12.6435 15.564H17.3595V16.68H12.6435V15.564Z' fill='#1F2041' fill-opacity='0.5')
+                    .dropdown_facilities__number-guests.dropdown_facilities__number-children 0
+                    buttons.dropdown_facilities__cildren-plus 
+                        svg(width='30' height='31' viewbox='0 0 30 31' fill='none' xmlns='http://www.w3.org/2000/svg')
+                            path(d='M0.5 15.5576C0.5 7.54949 6.99187 1.05762 15 1.05762C23.0081 1.05762 29.5 7.54949 29.5 15.5576C29.5 23.5657 23.0081 30.0576 15 30.0576C6.99187 30.0576 0.5 23.5657 0.5 15.5576Z' stroke='#1F2041' stroke-opacity='0.25')
+                            path(d='M18.9132 15.7976H15.5652V19.0736H14.4312V15.7976H11.0832V14.7356H14.4312V11.4416H15.5652V14.7356H18.9132V15.7976Z' fill='#1F2041' fill-opacity='0.5')
+
+                .dropdown_facilities__buttons-item
+                    buttons.dropdown_facilities__baby-minus 
+                        svg(width='30' height='30' viewbox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg')
+                            g.dropdown_facilities__baby-minus-svg(opacity='0.38')
+                                path(d='M0.5 15C0.5 6.99187 6.99187 0.5 15 0.5C23.0081 0.5 29.5 6.99187 29.5 15C29.5 23.0081 23.0081 29.5 15 29.5C6.99187 29.5 0.5 23.0081 0.5 15Z' stroke='#1F2041' stroke-opacity='0.25')
+                                path(d='M12.6435 15.564H17.3595V16.68H12.6435V15.564Z' fill='#1F2041' fill-opacity='0.5')
+                    .dropdown_facilities__number-guests.dropdown_facilities__number-baby 0
+                    buttons.dropdown_facilities__baby-plus 
+                        svg(width='30' height='31' viewbox='0 0 30 31' fill='none' xmlns='http://www.w3.org/2000/svg')
+                            path(d='M0.5 15.5576C0.5 7.54949 6.99187 1.05762 15 1.05762C23.0081 1.05762 29.5 7.54949 29.5 15.5576C29.5 23.5657 23.0081 30.0576 15 30.0576C6.99187 30.0576 0.5 23.5657 0.5 15.5576Z' stroke='#1F2041' stroke-opacity='0.25')
+                            path(d='M18.9132 15.7976H15.5652V19.0736H14.4312V15.7976H11.0832V14.7356H14.4312V11.4416H15.5652V14.7356H18.9132V15.7976Z' fill='#1F2041' fill-opacity='0.5')
+        .dropdown_facilities__input_guests 
+            buttons.dropdown_facilities__clear.visually-hidden очистить
+            buttons.dropdown_facilities__apply применить
+
+
+        
