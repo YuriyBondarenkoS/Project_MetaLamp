@@ -29,11 +29,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid;
+    border: none;
     width: 99px;
     height: 44px;
     background: #fff;
-    border-radius: 22px;
     color: #BC9CFF;
     font-family: Montserrat-bold;
     font-style: normal;
@@ -46,5 +45,13 @@
     &:hover {
       opacity: 0.5;
     }
+  }
+
+  &__svg {
+    position: absolute;
+  }
+
+  &__path_off {
+    display: none;
   }
 }

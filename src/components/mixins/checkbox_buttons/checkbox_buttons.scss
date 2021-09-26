@@ -34,8 +34,6 @@
     box-sizing: border-box;
     border-radius: 4px;
     margin-right: 10px;
-    padding: 0;
-    z-index: 10 !important;
   }
 
   &__rectangle-on {
@@ -49,11 +47,18 @@
     box-sizing: border-box;
     border-radius: 4px;
     margin-right: 10px;
-    padding: 0;
-    z-index: 1;
   }
 
-  &__path-off {
+  &__path_off {
     display: none;
+  }
+
+  &__title_item {
+    font-family: Montserrat-Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: none;
   }
 }

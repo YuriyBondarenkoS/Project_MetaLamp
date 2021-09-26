@@ -15,6 +15,7 @@ include ../../mixins/btn_additional/btn_additional
 include ../../mixins/link_main/link_main
 include ../../mixins/pagination/pagination
 include ../../mixins/dropdown_facilities/dropdown_facilities
+include ../../mixins/range_slider/range_slider
 
 doctype html
 html(lang='ru')
@@ -45,13 +46,14 @@ html(lang='ru')
                 .buttons__buttons
                   .buttons__buttons_renge_slider
                     h3 Range Slider
+                    +range_slider()
                   .buttons__buttons_buttons 
                     h3 buttons
                     .buttons__buttons_item
                       .buttons__btn_1
-                        +btn_additional('click me')(class="btn_additional__default")
+                        +btn_additional('click me', 'btn_additional__path_off')(class="btn_additional__default")
                       .buttons__btn_2
-                        +btn_additional('click me')(class="btn_additional__default")
+                        +btn_additional('click me', 'btn_additional__path_off')(class="btn_additional__default")
                     .buttons__buttons_item
                       .buttons__btn_transparent_1
                         +btn_additional('click me')(class="btn_additional__transparent")
@@ -71,15 +73,16 @@ html(lang='ru')
             .dropdown 
                 .dropdown__block1
                   +dropdown_facilities('action', 'text', 'Сколько спален', 'dropdown', '')
-                  .dropdown__block11
-                    +dropdown_facilities('action', 'text', 'Сколько спален', 'dropdown', '')
+                  +dropdown_facilities('action', 'text', 'Сколько спален', 'dropdown', '')
                 .dropdown__block2
                 .dropdown__block3
             .checkbox 
                 .checkbox__block1 
                   +checkbox_list()
                 .checkbox__block2 
+                  +dropdown('action', 'text', 'Сколько гостей', 'dropdown', '')
                 .checkbox__block3 
+                  +dropdown('action', 'text', 'Сколько гостей', 'dropdown', '')
             .comments 
                 .comments__block1 
                 .comments__block2 
