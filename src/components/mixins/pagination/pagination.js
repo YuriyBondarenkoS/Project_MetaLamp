@@ -10,16 +10,15 @@ const paginationBtn1 = document.querySelector('#pagination_btn_1'),
     paginationBtnAll = document.querySelectorAll('.pagination__item');
 
 function signaturePaginationNum(clickBtn1) {
+    console.log(clickBtn1);
+
     paginationSignature.innerHTML = `${(clickBtn1 - 1) * 12 + 1} – ${clickBtn1 * 12} из 100+ вариантов аренды`;
 }
 
 function clickLastPage(clickBtn1, clickBtn5, nowClickBtn) {
     if (clickBtn1 === (clickBtn5 - 4)) {
-        console.log(paginationBtnAll);
 
         paginationBtnAll.forEach(element => {
-            console.log(element);
-
             element.classList.remove('pagination__item_start');
         });
 
@@ -27,21 +26,23 @@ function clickLastPage(clickBtn1, clickBtn5, nowClickBtn) {
     }
 }
 
-paginationBtn1.addEventListener('click', () => {
+paginationBtn1.addEventListener('click', (e) => {
     let clickBtn1 = Number(paginationBtn1.innerHTML),
-        clickBtn5 = Number(paginationBtn5.innerHTML);
+        clickBtn5 = Number(paginationBtn5.innerHTML),
+        Btn1OneClick = e.target.innerHTML;
     
     clickLastPage(clickBtn1, clickBtn5, paginationBtn1);
+    signaturePaginationNum(Btn1OneClick);
 });
       
-paginationBtn2.addEventListener('click', () => {
+paginationBtn2.addEventListener('click', (e) => {
+    console.log(e.target.innerHTML);
+
     let clickBtn1 = Number(paginationBtn1.innerHTML),
         clickBtn2 = Number(paginationBtn2.innerHTML),
-        clickBtn5 = Number(paginationBtn5.innerHTML);
-    console.log(clickBtn1);
-    console.log(clickBtn5);
-    console.log(paginationBtn2);
-    
+        clickBtn5 = Number(paginationBtn5.innerHTML),
+        Btn1OneClick = e.target.innerHTML;
+
     clickLastPage(clickBtn1, clickBtn5, paginationBtn2);
     
     if ((clickBtn2 + 4) < clickBtn5) {
@@ -55,13 +56,14 @@ paginationBtn2.addEventListener('click', () => {
         paginationBtn4.innerHTML = (clickBtn2 + 3);
     }
 
-    signaturePaginationNum(paginationBtn1.innerHTML);
+    signaturePaginationNum(Btn1OneClick);
 });
 
-paginationBtn3.addEventListener('click', () => {
+paginationBtn3.addEventListener('click', (e) => {
     let clickBtn1 = Number(paginationBtn1.innerHTML),
         clickBtn3 = Number(paginationBtn3.innerHTML),
-        clickBtn5 = Number(paginationBtn5.innerHTML);
+        clickBtn5 = Number(paginationBtn5.innerHTML),
+        Btn1OneClick = e.target.innerHTML;
     
     clickLastPage(clickBtn1, clickBtn5, paginationBtn3);
 
@@ -76,25 +78,31 @@ paginationBtn3.addEventListener('click', () => {
         paginationBtn4.innerHTML = (clickBtn3 + 3);
     }
 
-    signaturePaginationNum(paginationBtn1.innerHTML);
+    signaturePaginationNum(Btn1OneClick);
 });
 
-paginationBtn4.addEventListener('click', () => {
+paginationBtn4.addEventListener('click', (e) => {
     let clickBtn1 = Number(paginationBtn1.innerHTML),
-        clickBtn5 = Number(paginationBtn5.innerHTML);
+        clickBtn5 = Number(paginationBtn5.innerHTML),
+        Btn1OneClick = e.target.innerHTML;
     
     clickLastPage(clickBtn1, clickBtn5, paginationBtn4);
+    signaturePaginationNum(Btn1OneClick);
 });
 
-paginationBtn5.addEventListener('click', () => {
+paginationBtn5.addEventListener('click', (e) => {
     let clickBtn1 = Number(paginationBtn1.innerHTML),
-        clickBtn5 = Number(paginationBtn5.innerHTML);
+        clickBtn5 = Number(paginationBtn5.innerHTML),
+        Btn1OneClick = e.target.innerHTML;
     
     clickLastPage(clickBtn1, clickBtn5, paginationBtn5);
+    signaturePaginationNum(Btn1OneClick);
 });
 
 paginationBtnLast.addEventListener('click', () => {
-    let clickBtn5 = Number(paginationBtn5.innerHTML);
+    let clickBtn1 = Number(paginationBtn1.innerHTML),
+        clickBtn5 = Number(paginationBtn5.innerHTML);
+
     paginationBtn1.innerHTML = (clickBtn5 - 4);
     paginationBtn2.innerHTML = (clickBtn5 - 3);
     paginationBtn3.innerHTML = (clickBtn5 - 2);
