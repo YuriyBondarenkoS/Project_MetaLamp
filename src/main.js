@@ -18,6 +18,7 @@ import './components/mixins/button/button.js';
 import './components/mixins/btn_additional/btn_additional.js';
 import './components/mixins/link_main/link_main.js';
 import './components/mixins/pagination/pagination.js';
+import './components/mixins/range_slider/range_slider.js';
 
 import './components/mixins/subscription_text_field/subscription_text_field.js';
 import './components/mixins/filter_date_dropdown/filter_date_dropdown.js';

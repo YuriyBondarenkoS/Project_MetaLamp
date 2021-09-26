@@ -2,44 +2,38 @@
 mixin checkbox_buttons()
     .checkbox_buttons
         .checkbox_buttons__title Checkbox Buttons
-        .checkbox_buttons__item
-            button.checkbox_buttons__rectangle-off#checkbox_buttons__rectangle_smoke
-                svg(width='10' height='11' viewbox='0 0 10 11' fill='none' xmlns='http://www.w3.org/2000/svg')
-                    path.checkbox_buttons__path-off#checkbox_buttons__path_smoke1(d='M1.46439 4.40768L5.70703 8.65032L4.29282 10.0645L0.0501771 5.82189L1.46439 4.40768Z' fill='url(#paint0_linear)')
-                    path.checkbox_buttons__path-off#checkbox_buttons__path_smoke2(d='M8.53546 2.99347L9.94967 4.40768L4.29282 10.0645L2.8786 8.65032L8.53546 2.99347Z' fill='url(#paint1_linear)')
-                    defs
-                        lineargradient#paint0_linear(x1='7.82835' y1='2.28636' x2='2.1715' y2='7.94321' gradientunits='userSpaceOnUse')
-                            stop(stop-color='#BC9CFF')
-                            stop(offset='1' stop-color='#8BA4F9')
-                        lineargradient#paint1_linear(x1='7.82835' y1='2.28636' x2='2.1715' y2='7.94321' gradientunits='userSpaceOnUse')
-                            stop(stop-color='#BC9CFF')
-                            stop(offset='1' stop-color='#8BA4F9')
-            .checkbox_buttons__title_smoke Можно курить
-        .checkbox_buttons__item
-            button.checkbox_buttons__rectangle-off#checkbox_buttons__rectangle_pets
-                svg(width='10' height='11' viewbox='0 0 10 11' fill='none' xmlns='http://www.w3.org/2000/svg')
-                    path.checkbox_buttons__path-off#checkbox_buttons__path_pets1(d='M1.46439 4.40768L5.70703 8.65032L4.29282 10.0645L0.0501771 5.82189L1.46439 4.40768Z' fill='url(#paint0_linear)')
-                    path.checkbox_buttons__path-off#checkbox_buttons__path_pets2(d='M8.53546 2.99347L9.94967 4.40768L4.29282 10.0645L2.8786 8.65032L8.53546 2.99347Z' fill='url(#paint1_linear)')
-                    defs
-                        lineargradient#paint0_linear(x1='7.82835' y1='2.28636' x2='2.1715' y2='7.94321' gradientunits='userSpaceOnUse')
-                            stop(stop-color='#BC9CFF')
-                            stop(offset='1' stop-color='#8BA4F9')
-                        lineargradient#paint1_linear(x1='7.82835' y1='2.28636' x2='2.1715' y2='7.94321' gradientunits='userSpaceOnUse')
-                            stop(stop-color='#BC9CFF')
-                            stop(offset='1' stop-color='#8BA4F9')
-            .checkbox_buttons__title_pet Можно с питомцами
-        .checkbox_buttons__item
-            button.checkbox_buttons__rectangle-off#checkbox_buttons__rectangle_guests
-                svg#checkbox_buttons__svg_guests(width='10' height='11' viewbox='0 0 10 11' fill='none' xmlns='http://www.w3.org/2000/svg')
-                    path.checkbox_buttons__path-off#checkbox_buttons__path_guests1(d='M1.46439 4.40768L5.70703 8.65032L4.29282 10.0645L0.0501771 5.82189L1.46439 4.40768Z' fill='url(#paint0_linear)')
-                    path.checkbox_buttons__path-off#checkbox_buttons__path_guests2(d='M8.53546 2.99347L9.94967 4.40768L4.29282 10.0645L2.8786 8.65032L8.53546 2.99347Z' fill='url(#paint1_linear)')
-                    defs
-                        lineargradient#paint0_linear(x1='7.82835' y1='2.28636' x2='2.1715' y2='7.94321' gradientunits='userSpaceOnUse')
-                            stop(stop-color='#BC9CFF')
-                            stop(offset='1' stop-color='#8BA4F9')
-                        lineargradient#paint1_linear(x1='7.82835' y1='2.28636' x2='2.1715' y2='7.94321' gradientunits='userSpaceOnUse')
-                            stop(stop-color='#BC9CFF')
-                            stop(offset='1' stop-color='#8BA4F9')
-            .checkbox_buttons__title_guests
-                |Можно пригласить гостей 
-                |(до 10 человек)
+        .checkbox_buttons__items
+            - const db_chbox_btn_arr = [
+            -    {
+            -        chbox_btn_id_btn: 'checkbox_buttons__rectangle_smoke',
+            -        chbox_btn_id_path1: 'checkbox_buttons__path_smoke1',
+            -        chbox_btn_id_path2: 'checkbox_buttons__path_smoke2',
+            -        chbox_btn_cont_item: 'Можно курить'
+            -    },
+            -    {
+            -        chbox_btn_id_btn: 'checkbox_buttons__rectangle_pets',
+            -        chbox_btn_id_path1: 'checkbox_buttons__path_pets1',
+            -        chbox_btn_id_path2: 'checkbox_buttons__path_pets2',
+            -        chbox_btn_cont_item: 'Можно с питомцами'
+            -    },
+            -    {
+            -        chbox_btn_id_btn: 'checkbox_buttons__rectangle_guests',
+            -        chbox_btn_id_path1: 'checkbox_buttons__path_guests1',
+            -        chbox_btn_id_path2: 'checkbox_buttons__path_guests2',
+            -        chbox_btn_cont_item: 'Можно пригласить гостей (до 10 человек)'
+            -    }
+            -]
+            each val_chbox_btn in db_chbox_btn_arr
+                .checkbox_buttons__item
+                    button.checkbox_buttons__rectangle-off(id=val_chbox_btn.chbox_btn_id_btn)
+                        svg(width='10' height='11' viewbox='0 0 10 11' fill='none' xmlns='http://www.w3.org/2000/svg')
+                            path.checkbox_buttons__path_off(id=val_chbox_btn.chbox_btn_id_path1)(d='M1.46439 4.40768L5.70703 8.65032L4.29282 10.0645L0.0501771 5.82189L1.46439 4.40768Z' fill='url(#paint0_linear)')
+                            path.checkbox_buttons__path_off(id=val_chbox_btn.chbox_btn_id_path2)(d='M8.53546 2.99347L9.94967 4.40768L4.29282 10.0645L2.8786 8.65032L8.53546 2.99347Z' fill='url(#paint1_linear)')
+                            defs
+                                lineargradient#paint0_linear(x1='7.82835' y1='2.28636' x2='2.1715' y2='7.94321' gradientunits='userSpaceOnUse')
+                                    stop(stop-color='#BC9CFF')
+                                    stop(offset='1' stop-color='#8BA4F9')
+                                lineargradient#paint1_linear(x1='7.82835' y1='2.28636' x2='2.1715' y2='7.94321' gradientunits='userSpaceOnUse')
+                                    stop(stop-color='#BC9CFF')
+                                    stop(offset='1' stop-color='#8BA4F9')
+                    .checkbox_buttons__title_item!=val_chbox_btn.chbox_btn_cont_item

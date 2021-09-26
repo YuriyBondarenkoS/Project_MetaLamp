@@ -13,8 +13,8 @@ const checkboxBtnRectangleSmoke = document.querySelector('#checkbox_buttons__rec
 function checkboxButtons(btnCheckbox, path1Checkbox, path2Checkbox) {
     btnCheckbox.classList.toggle('checkbox_buttons__rectangle-off');
     btnCheckbox.classList.toggle('checkbox_buttons__rectangle-on');
-    path1Checkbox.classList.toggle('checkbox_buttons__path-off');
-    path2Checkbox.classList.toggle('checkbox_buttons__path-off');
+    path1Checkbox.classList.toggle('checkbox_buttons__path_off');
+    path2Checkbox.classList.toggle('checkbox_buttons__path_off');
 }
 
 checkboxBtnRectangleSmoke.addEventListener('click', () => {
