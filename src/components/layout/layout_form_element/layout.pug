@@ -5,6 +5,7 @@ include ../../mixins/filter_date_dropdown/filter_date_dropdown
 include ../../mixins/subscription_text_field/subscription_text_field
 include ../../mixins/masked_text_field/masked_text_field
 include ../../mixins/checkbox_buttons/checkbox_buttons
+include ../../mixins/checkbox_list/checkbox_list
 include ../../mixins/radio_buttons/radio_buttons
 include ../../mixins/toggle_btn/toggle_btn
 include ../../mixins/like_button/like_button
@@ -76,6 +77,7 @@ html(lang='ru')
                 .dropdown__block3
             .checkbox 
                 .checkbox__block1 
+                  +checkbox_list()
                 .checkbox__block2 
                 .checkbox__block3 
             .comments 

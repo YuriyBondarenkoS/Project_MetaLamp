@@ -141,7 +141,7 @@ babyGuestesBtnMinus.addEventListener('click', () => {
 });
 
 dropdownFormClear.addEventListener('click', () => {
-    formInputDropdown.placeholder = `Сколько гостей`;
+    formInputDropdown.placeholder = `Сколько спален`;
     adultsBtnMinusSvg.style.opacity = 0.5;
     childBtnMinusSvg.style.opacity = 0.5;
     babyBtnMinusSvg.style.opacity = 0.5;
