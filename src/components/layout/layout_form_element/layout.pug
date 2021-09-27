@@ -17,6 +17,7 @@ include ../../mixins/pagination/pagination
 include ../../mixins/dropdown_facilities/dropdown_facilities
 include ../../mixins/range_slider/range_slider
 include ../../mixins/rich_chkbox_btn/rich_chkbox_btn
+include ../../mixins/information_block/information_block
 
 doctype html
 html(lang='ru')
@@ -87,4 +88,5 @@ html(lang='ru')
                 .checkbox__block3 
             .comments 
                 .comments__block1 
+                  +information_block()
                 .comments__block2 
