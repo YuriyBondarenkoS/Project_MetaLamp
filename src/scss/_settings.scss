@@ -49,6 +49,7 @@ h3 {
   line-height: 15px;
   text-transform: uppercase;
   @include color('d', 1);
+  margin: 0;
 }
 
 .container {

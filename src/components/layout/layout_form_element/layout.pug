@@ -16,6 +16,7 @@ include ../../mixins/link_main/link_main
 include ../../mixins/pagination/pagination
 include ../../mixins/dropdown_facilities/dropdown_facilities
 include ../../mixins/range_slider/range_slider
+include ../../mixins/rich_chkbox_btn/rich_chkbox_btn
 
 doctype html
 html(lang='ru')
@@ -45,7 +46,7 @@ html(lang='ru')
                   +rate_button()
                 .buttons__buttons
                   .buttons__buttons_renge_slider
-                    h3 Range Slider
+
                     +range_slider()
                   .buttons__buttons_buttons 
                     h3 buttons
@@ -75,14 +76,15 @@ html(lang='ru')
                   +dropdown_facilities('action', 'text', 'Сколько спален', 'dropdown', '')
                   +dropdown_facilities('action', 'text', 'Сколько спален', 'dropdown', '')
                 .dropdown__block2
+                  +dropdown('action', 'text', 'Сколько гостей', 'dropdown', '')
                 .dropdown__block3
+                  +dropdown('action', 'text', 'Сколько гостей', 'dropdown', '')
             .checkbox 
                 .checkbox__block1 
                   +checkbox_list()
                 .checkbox__block2 
-                  +dropdown('action', 'text', 'Сколько гостей', 'dropdown', '')
+                  +rich_chkbox_btn()
                 .checkbox__block3 
-                  +dropdown('action', 'text', 'Сколько гостей', 'dropdown', '')
             .comments 
                 .comments__block1 
                 .comments__block2 

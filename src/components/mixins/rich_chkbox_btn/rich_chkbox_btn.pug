@@ -1,0 +1,36 @@
+
+mixin rich_chkbox_btn()
+    .rich_chkbox_btn
+        .rich_chkbox_btn__title rich Checkbox Buttons
+        .rich_chkbox_btn__items
+            - const db_rich_ch_btn_arr = [
+            -    {
+            -        rich_ch_btn_id_btn: 'rich_chkbox_btn__rectangle_corridor',
+            -        rich_ch_btn_id_path1: 'rich_chkbox_btn__path_corridor1',
+            -        rich_ch_btn_id_path2: 'rich_chkbox_btn__path_corridor2',
+            -        rich_ch_btn_tit_item: 'Широкий коридор',
+            -        rich_ch_btn_content: 'Ширина коридоров в номере не менее 91 см.'
+            -    },
+            -    {
+            -        rich_ch_btn_id_btn: 'rich_chkbox_btns__rectangle_invalid',
+            -        rich_ch_btn_id_path1: 'rich_chkbox_btn__path_invalid1',
+            -        rich_ch_btn_id_path2: 'rich_chkbox_btn__path_invalid2',
+            -        rich_ch_btn_tit_item: 'Помощник для инвалидов',
+            -        rich_ch_btn_content: 'На 1 этаже вас встретит специалист  и проводит до номера.'
+            -    },
+            -]
+            each val_rich_ch_btn in db_rich_ch_btn_arr
+                .rich_chkbox_btn__item
+                    button.rich_chkbox_btn__rectangle-off(id=val_rich_ch_btn.rich_ch_btn_id_btn)
+                        svg(width='10' height='11' viewbox='0 0 10 11' fill='none' xmlns='http://www.w3.org/2000/svg')
+                            path.rich_chkbox_btn__path_off(id=val_rich_ch_btn.rich_ch_btn_id_path1)(d='M1.46439 4.40768L5.70703 8.65032L4.29282 10.0645L0.0501771 5.82189L1.46439 4.40768Z' fill='url(#paint0_linear)')
+                            path.rich_chkbox_btn__path_off(id=val_rich_ch_btn.rich_ch_btn_id_path2)(d='M8.53546 2.99347L9.94967 4.40768L4.29282 10.0645L2.8786 8.65032L8.53546 2.99347Z' fill='url(#paint1_linear)')
+                            defs
+                                lineargradient#paint0_linear(x1='7.82835' y1='2.28636' x2='2.1715' y2='7.94321' gradientunits='userSpaceOnUse')
+                                    stop(stop-color='#BC9CFF')
+                                    stop(offset='1' stop-color='#8BA4F9')
+                                lineargradient#paint1_linear(x1='7.82835' y1='2.28636' x2='2.1715' y2='7.94321' gradientunits='userSpaceOnUse')
+                                    stop(stop-color='#BC9CFF')
+                                    stop(offset='1' stop-color='#8BA4F9')
+                    .rich_chkbox_btn__title_item!=val_rich_ch_btn.rich_ch_btn_tit_item
+                .rich_chkbox_btn__content!=val_rich_ch_btn.rich_ch_btn_content
