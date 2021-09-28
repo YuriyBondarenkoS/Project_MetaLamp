@@ -1,4 +1,4 @@
-import './facilities_block.scss';
+import './information_block.scss';
 
 const checkboxBtnRectangleCorridor = document.querySelector('#rich_chkbox_btn__rectangle_corridor'),
     checkboxBtnRectangleInvalid = document.querySelector('#rich_chkbox_btns__rectangle_invalid'),
