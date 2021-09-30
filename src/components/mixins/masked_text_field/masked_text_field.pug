@@ -2,7 +2,8 @@
 mixin masked_text_field(titleLeft)
     .buttons__form_text_field 
         .buttons__form_text_field_header
-            .buttons__text_field_header-left=titleLeft
+            .buttons__text_field_header-left
+                h3=titleLeft
         form.form__dropdown#form_text_field(action=action)
             input.datepicker-here#my-datepicker(
                 type='text'

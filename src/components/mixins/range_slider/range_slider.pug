@@ -1,3 +1,21 @@
 
 mixin range_slider()
-    input.js-range-slider(type='text' name='my_range' value='' data-type='double' data-min='0' data-max='1000' data-from='200' data-to='500' data-grid='true')
+    .range_slider
+        .range_slider__header
+            .range_slider__title
+                h3 Range Slider
+            .range_slider__content#range_slider__content
+                |5000₽ - 10000₽
+        .range_slider__slider
+            input.js-range-slider(
+                type='single' 
+                name='my_range' 
+                value='' 
+                data-type='double' 
+                data-min='0' 
+                data-max='16000' 
+                data-from='5000' 
+                data-to='10000' 
+                data-grid='false'
+                data-postfix=' &#8381'
+            )

@@ -27,6 +27,16 @@
     font-size: 14px;
     line-height: 24px;
   }
+
+  &__focus {
+    position: relative;
+    width: 320px;
+    border: 1px solid rgba(31, 32, 65, 0.5);
+    min-height: 44px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
 }
 
 .focus_text_field {
