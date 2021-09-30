@@ -5,13 +5,16 @@ import 'air-datepicker/dist/js/datepicker';
 
 
 let myDatepickerPiev = $('#date_dropdown-datepicker').datepicker().data('datepicker');
-let myDatepickerNext = $('#date_dropdown-datepicker-next').datepicker().data('datepicker');
+
+// myDatepickerPiev.currentDate(new Date());
 
 $('#date_dropdown-datepicker').datepicker({
     todayButton: true,
     clearButton: true,
     range: true,
-    onSelect: function (fd, d, picker) { 
+    inline: true,
+    // minDate: new Date(),
+    onSelect: function (fd) { 
         $("#date_dropdown-datepicker").val(fd.split("-")[0]);
         $("#date_dropdown-datepicker-next").val(fd.split("-")[1]);
     }
@@ -22,7 +25,10 @@ $('.datepicker--button[data-action="today"]').on('click', () => {
 });
 
 $('#date_dropdown-datepicker-next').on('click', () => {
-    myDatepickerNext.destroy();
+    myDatepickerPiev.show();
+});
+
+$('#date_dropdown-datepicker-next').on('focus', () => {
     myDatepickerPiev.show();
 });
 

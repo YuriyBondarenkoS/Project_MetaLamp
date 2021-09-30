@@ -21,7 +21,7 @@
     @include color('d', 0.5);
   }
 
-  &__rectangle-off {
+  &__rectangle_off {
     position: relative;
     display: flex;
     justify-content: center;
@@ -35,7 +35,7 @@
     margin-right: 10px;
   }
 
-  &__rectangle-on {
+  &__rectangle_on {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,6 +51,10 @@
   &__path_off {
     display: none;
   }
+
+  // &__path_on {
+  //   display: none;
+  // }
 
   &__title_item {
     font-family: Montserrat-Bold;

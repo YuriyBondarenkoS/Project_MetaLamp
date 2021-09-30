@@ -7,17 +7,17 @@ const checkboxBtnRectangleCorridor = document.querySelector('#rich_chkbox_btn__r
     checkboxBtnPathInvalid1 = document.querySelector('#rich_chkbox_btn__path_invalid1'),
     checkboxBtnPathInvalid2 = document.querySelector('#rich_chkbox_btn__path_invalid2');
 
-function checkboxButtons(btnCheckbox, path1Checkbox, path2Checkbox) {
-    btnCheckbox.classList.toggle('rich_chkbox_btn__rectangle-off');
-    btnCheckbox.classList.toggle('rich_chkbox_btn__rectangle-on');
-    path1Checkbox.classList.toggle('rich_chkbox_btn__path_off');
-    path2Checkbox.classList.toggle('rich_chkbox_btn__path_off');
+function chkboxBtnRich(btnChkboxRich, path1ChkboxRich, path2ChkboxRich) {
+    btnChkboxRich.classList.toggle('rich_chkbox_btn__rectangle_off');
+    btnChkboxRich.classList.toggle('rich_chkbox_btn__rectangle_on');
+    path1ChkboxRich.classList.toggle('rich_chkbox_btn__path_off');
+    path2ChkboxRich.classList.toggle('rich_chkbox_btn__path_off');
 }
 
 checkboxBtnRectangleCorridor.addEventListener('click', () => {
-    checkboxButtons(checkboxBtnRectangleCorridor, checkboxBtnPathCorridor1, checkboxBtnPathCorridor2);
+    chkboxBtnRich(checkboxBtnRectangleCorridor, checkboxBtnPathCorridor1, checkboxBtnPathCorridor2);
 });
 
 checkboxBtnRectangleInvalid.addEventListener('click', () => {
-    checkboxButtons(checkboxBtnRectangleInvalid, checkboxBtnPathInvalid1, checkboxBtnPathInvalid2);
+    chkboxBtnRich(checkboxBtnRectangleInvalid, checkboxBtnPathInvalid1, checkboxBtnPathInvalid2);
 });
