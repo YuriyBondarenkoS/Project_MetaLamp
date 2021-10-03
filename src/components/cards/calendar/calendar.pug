@@ -3,4 +3,8 @@ include ../../mixins/dropdown/dropdown
 include ../../mixins/button/button
 
 mixin calendar()
-    .calendar
+    .calendar.datepicker-here(
+            type='text' 
+            data-position='right top'
+            inline=true
+        )
