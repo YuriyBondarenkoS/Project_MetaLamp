@@ -1,0 +1,13 @@
+include ../../mixins/date_dropdown/date_dropdown
+include ../../mixins/dropdown/dropdown
+include ../../mixins/button/button
+
+mixin card_enter()
+    .card_enter
+        h1.card_enter__title Найдём номера под ваши пожелания
+        .card_enter__date_dropdown
+            +date_dropdown('прибытие', 'выезд')
+        .card_enter__dropdown
+            +dropdown('action', 'text', 'Сколько гостей', 'гости', '')
+        .card_enter__btn
+            +button('подобрать номер')(class="button__default_pathOn")

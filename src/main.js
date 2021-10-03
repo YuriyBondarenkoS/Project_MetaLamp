@@ -29,7 +29,16 @@ import './components/mixins/text_field/text_field.js';
 import './components/mixins/dropdown/dropdown.js';
 import './components/mixins/dropdown_facilities/dropdown_facilities.js';
 import './components/mixins/masked_text_field/masked_text_field.js';
+
+import './components/cards/card_search_num/card_search_num.js';
+import './components/cards/card_account_reg/card_account_reg.js';
+import './components/cards/card_booking/card_booking.js';
+import './components/cards/calendar/calendar.js';
+import './components/cards/card_enter/card_enter.js';
+import './components/cards/card_room/card_room.js';
+
 import './components/layout/layout_form_element/layout';
+import './components/layout/layout_cards/layout_cards';
 // import './components/text_field/text_field.js';
 
 

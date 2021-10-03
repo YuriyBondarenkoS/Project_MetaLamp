@@ -13,7 +13,6 @@ $('#date_dropdown-datepicker').datepicker({
     clearButton: true,
     range: true,
     inline: true,
-    // minDate: new Date(),
     onSelect: function (fd) { 
         $("#date_dropdown-datepicker").val(fd.split("-")[0]);
         $("#date_dropdown-datepicker-next").val(fd.split("-")[1]);

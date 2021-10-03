@@ -1,0 +1,33 @@
+include ../../mixins/date_dropdown/date_dropdown
+include ../../mixins/dropdown/dropdown
+include ../../mixins/button/button
+include ../../mixins/radio_buttons/radio_buttons
+include ../../mixins/text_field/text_field
+include ../../mixins/masked_text_field/masked_text_field
+include ../../mixins/toggle_btn/toggle_btn
+include ../../mixins/btn_additional/btn_additional
+
+mixin card_account_reg()
+    .card_account_reg
+        h1.card_account_reg__title Регистрация аккаунта
+        .card_account_reg__input_name.jcsb
+            +textField("action", "", "Имя", "", "")
+        .card_account_reg__input_surname.jcsb
+            +textField("action", "", "Фамилия", "", "")
+        .card_account_reg__radio.jcsb
+            +radio_buttons()
+        .card_account_reg__date_masked.jcsb
+            +masked_text_field("дата прождения")
+        h3.card_account_reg__input_title данные для входа в сервис
+        .card_account_reg__input_email.jcsb
+            +textField("action", "", "Email", "", "")
+        .card_account_reg__input_password.jcsb
+            +textField("action", "", "Пароль", "", "")
+        .card_account_reg__toggle.jcsb
+            +toggle()
+        .card_account_reg__btn.jcsb
+            +button("перейти к оплате")
+        .card_account_reg__btn_enter.jcsb
+            .card_account_reg__text Уже есть аккаунт на Toxin
+            .card_account_reg__btn_additional
+                +btn_additional("войти")(class="btn_additional__transparent")

@@ -1,0 +1,149 @@
+@import "../../../scss/mixins/color";
+
+.card_booking {
+  width: 380px;
+  height: 512px;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    font-family: Montserrat-Bold;
+    font-style: normal;
+    font-weight: bold;
+    width: 320px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #1F2041;
+  }
+
+  &__left {
+    font-family: Montserrat-Bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  &__num_room {
+    font-size: 24px;
+  }
+
+  &__comfort {
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #BC9CFF;
+  }
+
+  &__right {
+    font-family: Montserrat-Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.5);
+  }
+
+  &__price_num_day {
+    font-family: Montserrat-Bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.5);
+  }
+
+  &__date_dropdown {
+    width: 320px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__dropdown {
+    width: 320px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__price_day {
+    margin-top: 20px;
+  }
+
+  &__price_fees {
+    margin-top: 10px;
+  }
+
+  &__price_fees_left {
+    width: 214px;
+  }
+  
+  &__price_fees_left::after {
+    content: "i";
+    position: absolute;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    font-family: Montserrat-Bold;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 12px;
+    color: rgba(31, 32, 65, 0.25);
+    margin: 2px 0 0 5px;
+  }
+
+  &__price_services {
+    position: relative;
+    margin-top: 10px;
+  }
+  
+  &__price_services_left {
+    position: relative;
+    width: 214px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &__price_services_left::after {
+    content: "i";
+    position: absolute;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    font-family: Montserrat-Bold;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 12px;
+    color: rgba(31, 32, 65, 0.25);
+    margin: 0 0 0 170px;
+  }
+
+  &__price_total {
+    font-family: Montserrat-Bold;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 23px;
+    margin-top: 30px;
+    color: #1F2041;
+  }
+
+  &__btn {
+    width: 320px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
