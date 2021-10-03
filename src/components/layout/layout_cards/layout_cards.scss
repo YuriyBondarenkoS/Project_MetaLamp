@@ -24,9 +24,27 @@
   grid-template-columns: 380px 380px 320px;
   grid-column-gap: 40px;
   grid-row-gap: 40px;
+  grid-template-areas: 
+  "a b c";
   background: rgb(253, 238, 31);
   width: 1160px;
   height: 1350px;
   margin-top: 150px;
   margin-bottom: 140px;
+
+  &__account_reg {
+    margin-top: 40px;
+  }
+
+  &__enter {
+    margin-top: 40px;
+  }
+
+  &__room {
+    margin-top: 40px;
+  }
+
+  &__item_room {
+    margin-bottom: 40px;
+  }
 }

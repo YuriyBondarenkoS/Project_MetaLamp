@@ -2,6 +2,8 @@ include ../../cards/card_search_num/card_search_num
 include ../../cards/card_account_reg/card_account_reg
 include ../../cards/card_booking/card_booking
 include ../../cards/calendar/calendar
+include ../../cards/card_enter/card_enter
+include ../../cards/card_room/card_room
 
 doctype html
 html(lang='ru')
@@ -15,7 +17,19 @@ html(lang='ru')
     .wrapper
       .container 
         .cards_container
-          +card_search_num()
-          +card_booking()
-          +calendar()
-          +card_account_reg()
+          .item1
+            +card_search_num()
+            .cards_container__account_reg
+              +card_account_reg()
+          .item2
+            +card_booking()
+            .cards_container__enter
+              +card_enter()
+          .item3
+            +calendar()
+            .cards_container__room
+              .cards_container__item_room
+                +card_room()
+              .cards_container__item_room
+                +card_room()
+            
