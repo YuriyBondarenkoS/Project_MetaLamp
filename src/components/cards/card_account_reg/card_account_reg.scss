@@ -10,31 +10,47 @@
   border-radius: 4px;
 
   &__title {
+    font-family: Montserrat-Bold;
+    font-style: normal;
+    font-weight: bold;
     width: 320px;
     margin-top: 40px;
+    margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
   }
 
-  &__date_dropdown {
-    width: 320px;
-    margin-top: 21px;
-    margin-left: auto;
-    margin-right: auto;
+  &__input_name {
+    margin-bottom: 10px;
   }
 
-  &__dropdown {
-    width: 320px;
-    margin-top: 21px;
-    margin-left: auto;
-    margin-right: auto;
+  &__input_surname {
+    margin-bottom: 10px;
+  }
+
+  &__radio {
+    margin-bottom: 20px;
+  }
+
+  &__input_title {
+    display: inline-block;
+    margin: 20px 0 5px 30px;
+  }
+
+  &__input_email {
+    margin-bottom: 10px;
+  }
+
+  &__toggle {
+    margin: 10px auto 24px auto;
   }
 
   &__btn {
-    width: 320px;
-    margin-top: 31px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-bottom: 30px;
   }
 
+  &__text {
+    display: inline;
+    text-align: center;
+  }
 }
