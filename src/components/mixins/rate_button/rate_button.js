@@ -86,7 +86,9 @@ rateBtn5.addEventListener('click', () => {
     starOnAll(5);
 });
  
-rateBtn1.addEventListener('mouseenter', () => {
+rateBtn1.addEventListener('mouseenter', (e) => {
+    // console.log(e.target);
+    // console.log(rateBtn1);
     starOnAll(1);
 });
 

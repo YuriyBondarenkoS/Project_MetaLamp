@@ -1,10 +1,8 @@
 
 mixin radio_buttons()
-    //- .radio_buttons
-    //-     .radio_buttons__title radio buttons
     .radio_buttons__gender 
         .radio_buttons__male
-            button.radio_buttons__btn_male
+            button.radio_buttons__btn_male#radio_buttons__btn_male
                 svg(width='20' height='20' viewbox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg')
                     rect#male_buttons__circle(x='0.5' y='0.5' width='19' height='19' rx='9.5' fill='white' stroke='#BC9CFF')
                     svg#male_buttons__ball(width='20' height='16' viewbox='0 -4 12 16' fill='none' xmlns='http://www.w3.org/2000/svg')
@@ -13,10 +11,10 @@ mixin radio_buttons()
                             lineargradient#paint0_linear(x1='6' y1='0' x2='6' y2='12' gradientunits='userSpaceOnUse')
                                 stop(stop-color='#BC9CFF')
                                 stop(offset='1' stop-color='#8BA4F9')
-
             .radio_buttons__text Мужчина
+
         .radio_buttons__female
-            button.radio_buttons__btn_female
+            button.radio_buttons__btn_female#radio_buttons__btn_female
                 svg(width='20' height='20' viewbox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg')
                     rect.radio_buttons__circle-off#female_buttons__circle(x='0.5' y='0.5' width='19' height='19' rx='9.5' fill='white' stroke='#BC9CFF')
                     svg.radio_buttons__ball-off#female_buttons__ball(width='20' height='16' viewbox='0 -4 12 16' fill='none' xmlns='http://www.w3.org/2000/svg')

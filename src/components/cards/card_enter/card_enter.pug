@@ -1,13 +1,19 @@
 include ../../mixins/date_dropdown/date_dropdown
 include ../../mixins/dropdown/dropdown
 include ../../mixins/button/button
+include ../../mixins/text_field/text_field
+include ../../mixins/btn_additional/btn_additional
 
 mixin card_enter()
     .card_enter
-        h1.card_enter__title Найдём номера под ваши пожелания
-        .card_enter__date_dropdown
-            +date_dropdown('прибытие', 'выезд')
-        .card_enter__dropdown
-            +dropdown('action', 'text', 'Сколько гостей', 'гости', '')
-        .card_enter__btn
-            +button('подобрать номер')(class="button__default_pathOn")
+        h1.card_enter__title Войти
+        .card_enter__input_email.jcsb
+            +textField("action", "", "Email", "", "")
+        .card_enter__input_password.jcsb
+            +textField("action", "", "Пароль", "", "")
+        .card_enter__btn.jcsb
+            +button("перейти к оплате")
+        .card_enter__btn_enter.jcsb
+            .card_enter__text Уже есть аккаунт на Toxin
+            .card_enter__btn_additional
+                +btn_additional("войти")(class="btn_additional__transparent")
