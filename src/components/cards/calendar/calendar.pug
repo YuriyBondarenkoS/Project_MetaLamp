@@ -1,10 +1,11 @@
-include ../../mixins/date_dropdown/date_dropdown
-include ../../mixins/dropdown/dropdown
-include ../../mixins/button/button
 
 mixin calendar()
-    .calendar.datepicker-here(
-            type='text' 
-            data-position='right top'
-            inline=true
+    .calendar
+        .datepicker-here#datepicker_card(
+            type='text'
+            placeholder='ДД.ММ.ГГГГ'
+            data-language='ru'
+            todayButton='true'
+            clearButton='true'
+            range='true'
         )
