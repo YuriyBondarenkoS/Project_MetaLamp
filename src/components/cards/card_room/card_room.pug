@@ -1,7 +1,20 @@
-include ../../mixins/date_dropdown/date_dropdown
-include ../../mixins/dropdown/dropdown
-include ../../mixins/button/button
+include ../../mixins/rate_button/rate_button
 
 mixin card_room()
     .card_room
-        h1.card_room__title Найдём номера под ваши пожелания
+        .card_room__slider
+        .card_room__title
+            .card_room__left № 
+                span.card_room__num_room 888 
+                span.card_room__comfort люкс
+            .card_room__right
+                span.card_room__price_num_day 9 990₽ 
+                |в сутки
+        .card_room__rate
+            .card_room__star
+                +rate_button()
+            .card_room__review
+                span.card_room__review_count 145 
+                .card_room__review_text Отзывов
+                
+
