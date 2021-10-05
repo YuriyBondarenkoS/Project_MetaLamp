@@ -1,7 +1,11 @@
 @import "../../../scss/mixins/color";
 
 .radio_buttons {
-  margin: 20px 0 17px 0;
+  position: relative;
+  display: flex;
+  line-height: 18px;
+  @include color('d', 0.5);
+  // margin: 20px 0 17px 0;
 
   &__title {
     font-family: Montserrat-bold;
@@ -12,13 +16,6 @@
     text-transform: uppercase;
     @include color('d', 1);
     margin-bottom: 17px;
-  }
-
-  &__gender {
-    position: relative;
-    display: flex;
-    line-height: 18px;
-    @include color('d', 0.5);
   }
 
   &__male {
