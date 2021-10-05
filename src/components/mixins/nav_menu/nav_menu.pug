@@ -1,0 +1,13 @@
+
+mixin nav_menu(href1, href2, href3, href4, title, item1, item2, item3, item4)
+  nav.nav_menu
+    h3.nav_menu__title= title
+        ul.nav_menu__list
+          li.nav_menu__item
+            a.nav_menu__link(href=href1)= item1
+          li.nav_menu__item
+            a.nav_menu__link(href=href2)= item2
+          li.nav_menu__item
+            a.nav_menu__link(href=href3)= item3
+          li.nav_menu__item
+            a.nav_menu__link(href=href4)= item4

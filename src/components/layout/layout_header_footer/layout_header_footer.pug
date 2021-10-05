@@ -8,6 +8,11 @@ html(lang='ru')
     title TOXIN
   body
     .wrapper
-      include ../../header/header.pug
-      include ../../content/content.pug
-      include ../../footer/footer.pug
+      .layout_header
+        include ../../header/header.pug
+      .layout_content
+        include ../../content/content.pug
+      .layout_footer
+        include ../../footer/footer.pug
+      .layout_copyright
+        include ../../copyright/copyright.pug

@@ -15,43 +15,9 @@
     padding-bottom: 100px;
   }
 
-  &__menu {
-    max-width: 160px;
-  }
-
   &__logo-content {
     @include color('d', 0.75);
     padding-right: 20;
-  }
-
-  &__menu-title {
-    @include color('d', 1);
-    text-transform: uppercase;
-    font-size: 12px;
-    line-height: 15px;
-    margin-top: 4px;
-    margin-left: 0;
-  }
-
-  &__menu-list {
-    padding-top: 21px;
-    padding-left: 0;
-    margin: 0;
-  }
-
-  &__menu-item {
-    list-style-type: none;
-    margin-bottom: 20px;
-  }
-
-  &__menu-link {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 17px;
-    @include color('d', 0.5);
-    text-transform: none;
-    text-decoration: none;
   }
 
   &__copyright {
@@ -74,32 +40,8 @@
     line-height: 24px;
     @include color('d', 0.75);
     max-width: 260px;
-  }
-
-  &__form {
-    width: 260px;
-    border: 1px solid rgba(31, 32, 65, 0.25);
-    min-height: 44px;
-  }
-
-  &__form-input {
-    border: none;
-    outline: none;
-    width: 213px;
-    vertical-align: middle;
-    &::placeholder {
-      @include color('d', 0.5);
-      text-indent: 15px;
-    }
-  }
-
-  &__form-button {
-    text-indent:-9999px;
-    width: 42px;
-    height: 42px;
-    border: none;
-    padding: 0;
-    background-image: url('/Users/ysbondarenko/Desktop/Work/1Self-study/39_MetaLamp/src/components/footer/images/arrow_forward.png') no-repeat 50% 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   &__copyright {
@@ -129,7 +71,6 @@
   right: 0;
   margin: auto;
   width: auto;
-  // height: 843px;
   display: flex;
   flex-direction: column;
   justify-content: center;

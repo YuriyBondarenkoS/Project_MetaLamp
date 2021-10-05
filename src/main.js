@@ -4,17 +4,14 @@ import 'air-datepicker';
 import './index.pug';
 import './scss/main.scss';
 
-// import './components/header/header.js';
-// import './components/footer/footer.js';
-
 // import './components/layout/layout_form_element/layout_form_element';
 // import './components/layout/layout_form_element/layout_form_element.js';
-import './components/layout/layout_cards/layout_cards';
-import './components/layout/layout_cards/layout_cards.js';
 
+// import './components/layout/layout_cards/layout_cards';
+// import './components/layout/layout_cards/layout_cards.js';
 
-
-// import './components/layout/layout_header_footer/layout';
+import './components/layout/layout_header_footer/layout_header_footer';
+import './components/layout/layout_header_footer/layout_header_footer.js';
 
 import json from './assets/json.json';
 

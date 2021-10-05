@@ -1,0 +1,23 @@
+.copyright {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #FFFFFF;
+  width: 768px;
+  height: 367px;
+
+  &__logo {
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    // margin-bottom: 25px;
+  }
+}

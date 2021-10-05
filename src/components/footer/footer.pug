@@ -1,5 +1,6 @@
-include ../mixins/navMenu
+include ../mixins/nav_menu/nav_menu
 include ../mixins/social
+include ../mixins/subscription_text_field/subscription_text_field
 
 footer.footer
   .footer__footer
@@ -11,16 +12,15 @@ footer.footer
             img(src=require('./images/TOXIN.png').default alt='logo')
           p.footer__logo-content--text
             | Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
-        +navMenu('href', 'href', 'href', 'href', 'навигация', 'О нас', 'Новости', 'Служба поддержки', 'Услуги')
-        +navMenu('href', 'href', 'href', 'href', 'о нас', 'О сервисе', 'Наша команда', 'Вакансии', 'Инвесторы')
-        +navMenu('href', 'href', 'href', '#', 'служба поддержки', 'Соглашения', 'Сообщества', 'Связь с нами', '')
+        +nav_menu('href', 'href', 'href', 'href', 'навигация', 'О нас', 'Новости', 'Служба поддержки', 'Услуги')
+        +nav_menu('href', 'href', 'href', 'href', 'о нас', 'О сервисе', 'Наша команда', 'Вакансии', 'Инвесторы')
+        +nav_menu('href', 'href', 'href', '#', 'служба поддержки', 'Соглашения', 'Сообщества', 'Связь с нами', '')
         .footer__subscription
           h3.footer__subscription-title Подписка
           p.footer__subscription-content
             | Получайте специальные предложения и новости сервиса
-          form.footer__form(action='')
-            input.footer__form-input(type='text' placeholder='Email')
-            input.footer__form-button(type='submit')
+          .footer__subscription_text_field
+            +subscription_text_field()
   .footer__copyright
     .container
       .footer__copyright-inner
@@ -37,21 +37,3 @@ footer.footer
             .footer__social1-item
               a.footer__social1-link(href='#')
                 img(src=require('./images/instagram.png').default alt='instagram')
-  .copyright
-    .copyright__logo
-      a.logo(href='#')
-        img(src=require('./images/Group.png').default alt='logo')
-        img(src=require('./images/TOXIN.png').default alt='logo')
-    .copyright__text
-      | Copyright © 2018 Toxin отель. Все права защищены.
-    .footer__copyright-social1
-      .footer__social1-list
-        .footer__social1-item
-          a.footer__socia1l-link(href='#')
-            img(src=require('./images/twitter.png').default alt='facebook')
-        .footer__social1-item
-          a.footer__social1-link(href='#')
-            img(src=require('./images/facebook.png').default alt='facebook')
-        .footer__social1-item
-          a.footer__social1-link(href='#')
-            img(src=require('./images/instagram.png').default alt='instagram')
