@@ -1,3 +1,5 @@
+include ../../header/header
+
 doctype html
 html(lang='ru')
   head
@@ -7,12 +9,15 @@ html(lang='ru')
     link(rel='stylesheet')
     title TOXIN
   body
-    .wrapper
-      .layout_header
-        include ../../header/header.pug
-      .layout_content
-        include ../../content/content.pug
-      .layout_footer
-        include ../../footer/footer.pug
-      .layout_copyright
-        include ../../copyright/copyright.pug
+    //- .wrapper
+    .layout_header
+      +header()
+        button.login_button войти
+        button.register зарегистрироваться
+    .layout_header_reg
+      +header()
+        .header__user Юрий Бондаренко
+    .layout_footer
+      include ../../footer/footer.pug
+    .layout_copyright
+      include ../../copyright/copyright.pug

@@ -1,5 +1,5 @@
 html {
-  box-sizing: border-box;
+  // box-sizing: border-box;
 }
 
 *,
@@ -13,7 +13,8 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  @include color('d', 0.75)
+  @include color('d', 0.75);
+  background: #E5E5E5;
 }
 
 img {
@@ -52,11 +53,6 @@ h3 {
   margin: 0;
 }
 
-.container {
-  width: 1150px;
-  margin: 0 auto;
-}
-
 .site-container {
   overflow: hidden;
 }
@@ -77,27 +73,10 @@ h3 {
   visibility: visible;
 }
 
-.btn-reset {
-  border: none;
-  padding: 0;
-  background: transparent;
-  cursor: pointer;
-}
-
-.list-reset {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
 .jcsb {
   display: flex;
   justify-content: space-between;
   width: 320px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.js-focus-visible :focus:not(.focus-visible) {
-  outline: none;
 }
