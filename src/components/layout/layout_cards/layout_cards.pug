@@ -29,7 +29,16 @@ html(lang='ru')
             +calendar()
             .cards_container__room
               .cards_container__item_room
-                +card_room()
-              .cards_container__item_room
-                +card_room()
+                +card_room('888', ' люкс', '9 990₽', '145')
+                  .card_room__slider_item
+                    img.card_room__img(src=require('./images/card_room(1).png').default alt='logo')
+                  .card_room__slider_item
+                    img.card_room__img(src=require('./images/card_room(2).png').default alt='logo')
+                  .card_room__slider_item
+                    img.card_room__img(src=require('./images/card_room(3).png').default alt='logo')
+                  .card_room__slider_item
+                    img.card_room__img(src=require('./images/card_room(4).png').default alt='logo')
+              //- .cards_container__item_room
+              //-   +card_room('840', ' люкс', '9 990₽', '145')
+              //-     img.card_room__img(src=require('./images/card_room(2).png').default alt='logo')
             

@@ -1,20 +1,31 @@
 include ../../mixins/rate_button/rate_button
 
-mixin card_room()
+mixin card_room(numRoom, comfortRoom, priceRoom, countReview)
     .card_room
         .card_room__slider
+            .card_room__btns
+                button.card_room__btns_back
+                    svg(width='8' height='13' viewBox='0 0 8 13' fill='none' xmlns='http://www.w3.org/2000/svg')
+                        path(d='M7.42188 11.0928L6.01563 12.499L0.0156253 6.49902L6.01563 0.499024L7.42188 1.90527L2.82813 6.49902L7.42188 11.0928Z' fill='white')
+                button.card_room__btns_forward
+                    svg(width='8' height='13' viewBox='0 0 8 13' fill='none' xmlns='http://www.w3.org/2000/svg')
+                        path(d='M0.578125 1.90527L1.98438 0.499024L7.98438 6.49902L1.98438 12.499L0.578125 11.0928L5.17188 6.49902L0.578125 1.90527Z' fill='white')
+            if block 
+                block 
+            else 
+                p нет контента
         .card_room__title
             .card_room__left № 
-                span.card_room__num_room 888 
-                span.card_room__comfort люкс
+                span.card_room__num_room=numRoom 
+                span.card_room__comfort=comfortRoom
             .card_room__right
-                span.card_room__price_num_day 9 990₽ 
+                span.card_room__price_num_day=priceRoom 
                 |в сутки
         .card_room__rate
             .card_room__star
                 +rate_button()
             .card_room__review
-                span.card_room__review_count 145 
+                span.card_room__review_count=countReview 
                 .card_room__review_text Отзывов
                 
 

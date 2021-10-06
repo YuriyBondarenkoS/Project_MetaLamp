@@ -10,10 +10,39 @@
   border-radius: 4px;
 
   &__slider {
+    position: relative;
     width: 270px;
     height: 151px;
-    background: rgb(83, 210, 248);
+    border-radius: 4px 4px 0 0;
+  }
 
+  &__btns {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    margin-top: 53px;
+  }
+  &__btns_forward {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    margin-left: 224px;
+    border: none;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0);
+  }
+  &__btns_back {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    border: none;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0);
+  }
+
+  &__img {
+    border-radius: 4px 4px 0 0;
+    margin: -1px 0 0 -1px;
   }
 
   &__title {
