@@ -1,40 +1,42 @@
-
-header.header
-  .container
-    .header__logo
-      a.logo(href='#')
-        img(src=require('./images/Group.png').default alt='logo')
-        img(src=require('./images/TOXIN.png').default alt='logo')
-      .header__inner
-        nav.menu
-          ul.menu__list
-            li.menu__list_item
-              a.menu__list_link.menu__list_link_active(href='#') О нас
-            li.menu__list_item
-              a.menu__list_link(href='#') Услуги
-              button.menu__list_btn(
-                style="backraund-image"
-                type="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              )
-                svg(width='12' height='8' viewbox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg')
-                    path(d='M10.5938 0.578125L12 1.98438L6 7.98438L0 1.98438L1.40625 0.578125L6 5.17188L10.5938 0.578125Z' fill='#1F2041' fill-opacity='0.5')
-            li.menu__list_item
-              a.menu__list_link(href='#') Вакансии
-            li.menu__list_item
-              a.menu__list_link(href='#') Новости
-            li.menu__list_item
-              a.menu__list_link(href='#') Соглашения
-              button.menu__list_btn(
-                style="backraund-image"
-                type="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              )
-                svg(width='12' height='8' viewbox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg')
-                    path(d='M10.5938 0.578125L12 1.98438L6 7.98438L0 1.98438L1.40625 0.578125L6 5.17188L10.5938 0.578125Z' fill='#1F2041' fill-opacity='0.5')
-        button.login_button войти
-        button.register зарегистрироваться
+mixin header()
+  header.header
+    .container
+      .header__logo
+        a.logo(href='#')
+          img(src=require('./images/Group.png').default alt='logo')
+          img(src=require('./images/TOXIN.png').default alt='logo')
+        .header__inner
+          nav.menu
+            ul.menu__list
+              li.menu__list_item
+                a.menu__list_link.menu__list_link_active(href='#') О нас
+              li.menu__list_item
+                a.menu__list_link(href='#') Услуги
+                button.menu__list_btn(
+                  style="backraund-image"
+                  type="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                )
+                  svg(width='12' height='8' viewbox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg')
+                      path(d='M10.5938 0.578125L12 1.98438L6 7.98438L0 1.98438L1.40625 0.578125L6 5.17188L10.5938 0.578125Z' fill='#1F2041' fill-opacity='0.5')
+              li.menu__list_item
+                a.menu__list_link(href='#') Вакансии
+              li.menu__list_item
+                a.menu__list_link(href='#') Новости
+              li.menu__list_item
+                a.menu__list_link(href='#') Соглашения
+                button.menu__list_btn(
+                  style="backraund-image"
+                  type="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                )
+                  svg(width='12' height='8' viewbox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg')
+                      path(d='M10.5938 0.578125L12 1.98438L6 7.98438L0 1.98438L1.40625 0.578125L6 5.17188L10.5938 0.578125Z' fill='#1F2041' fill-opacity='0.5')
+          if block 
+            block 
+          else 
+            p нет контента для отображения

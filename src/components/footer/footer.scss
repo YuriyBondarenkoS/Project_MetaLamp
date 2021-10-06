@@ -2,6 +2,7 @@
 
 .footer {
   min-height: 372px;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
 
   &__footer {
     background: #FFFFFF;
@@ -50,6 +51,7 @@
   }
 
   &__copyright-inner {
+    width: 100%;
     display: flex;
     justify-content: space-between;
   }
@@ -60,31 +62,5 @@
 
   &__social1-link {
     margin-left: 20px;
-  }
-}
-
-.copyright {
-  position: absolute;
-  top: 843px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  // padding-top: 843px;
-  background: #FFFFFF;
-  width: 768px;
-  height: 367px;
-
-  &__logo {
-    margin-bottom: 20px;
-  }
-
-  &__text {
-    margin-bottom: 25px;
   }
 }
