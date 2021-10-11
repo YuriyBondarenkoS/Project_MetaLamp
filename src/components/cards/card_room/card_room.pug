@@ -2,6 +2,11 @@ include ../../mixins/rate_button/rate_button
 
 mixin card_room(numRoom, comfortRoom, priceRoom, countReview)
     .card_room
+        .card_room__controls
+            label.card_room__dots.card_room__dots--active(for='card_room_slider1')
+            label.card_room__dots(for='card_room_slider3')
+            label.card_room__dots(for='card_room_slider4')
+            label.card_room__dots(for='card_room_slider2')
         .card_room__slider
             .card_room__btns
                 button.card_room__btns_back
