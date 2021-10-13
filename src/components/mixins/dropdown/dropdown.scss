@@ -64,6 +64,10 @@
 }
 
 .dropdown {
+
+    &__header {
+        margin-bottom: 5px;
+    }
     
     &__menu {
         position: absolute;
@@ -74,7 +78,7 @@
         border-bottom: 1px solid rgba(31, 32, 65, 0.5);
         border-left: 1px solid rgba(31, 32, 65, 0.5);
         border-right: 1px solid rgba(31, 32, 65, 0.5);
-        width: 320px;
+        width: 318px;
         height: 159px;
         background: #FFFFFF;
     }

@@ -1,9 +1,8 @@
 
 mixin dropdown(action, text, Email, titleLeft)
-    .buttons__form_text_field 
-        .buttons__form_text_field_header
-            .buttons__text_field_header-left
-                h3=titleLeft
+    .dropdown__main 
+        .dropdown__header
+            h3.dropdown__header_text=titleLeft   
         form.form__dropdown#form_text_field(action=action)
             input.form__input_dropdown#input_text_field(
                 type=text
