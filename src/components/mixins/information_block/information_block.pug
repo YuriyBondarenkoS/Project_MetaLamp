@@ -3,20 +3,19 @@ mixin information_block()
   .information_block
     - const db_info_bl_arr = [
     -    {
-    //- -        info_bl_img: "img(src=require('./images/insert_emoticon.svg'))";
-    -        info_bl_tit: 'Комфорт',
-    -        info_bl_cont: 'Шумопоглощающие стены'
+    -        info_bl_img: 'insert_emoticon', info_bl_tit: 'Комфорт', info_bl_cont: 'Шумопоглощающие стены'
     -    },
     -    {
-    //- -        info_bl_img: "img(src=require('./images/location_city.svg'))";
-    -        info_bl_tit: 'Удобство',
-    -        info_bl_cont: 'Окно в каждой из спален'
+    -        info_bl_img: 'location_city', info_bl_tit: 'Удобство', info_bl_cont: 'Окно в каждой из спален'
     -    },
     -]
     each val_info_bl in db_info_bl_arr
       .information_block__item
         .information_block__img 
-          //- img(src=require('./images/information_block.png').default alt='information_block')
+          img(
+            src=require(`./images/${val_info_bl.info_bl_img}.png`).default 
+            alt=`${val_info_bl.info_bl_img}`
+          )
 
         .information_block__text
           .information_block__title!=val_info_bl.info_bl_tit
