@@ -1,0 +1,47 @@
+@import "../../scss/mixins/color";
+
+.form_text_field {
+  position: relative;
+  width: 320px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  min-height: 44px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  &:hover {
+    border: 1px solid rgba(31, 32, 65, 0.5);
+  }
+}
+
+.input_text_field {
+  border: none;
+  outline: none;
+  width: 290px;
+  vertical-align: middle;
+  margin-top: 13px;
+  margin-left: 15px;
+  &::placeholder {
+    @include color('d', 0.25);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  &__focus {
+    position: relative;
+    width: 320px;
+    border: 1px solid rgba(31, 32, 65, 0.5);
+    min-height: 44px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+}
+
+.focus_text_field {
+  width: 320px;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  min-height: 44px;
+  box-sizing: border-box;
+  border-radius: 4px;
+}

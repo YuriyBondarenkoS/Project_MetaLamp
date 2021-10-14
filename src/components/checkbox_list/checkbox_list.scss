@@ -1,0 +1,87 @@
+@import "../../scss/mixins/color";
+
+.checkbox_list {
+  margin: 20px 0 17px 0;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    width: 266px;
+  }
+
+  &__title {
+    font-family: Montserrat-bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    @include color('d', 1);
+    margin-bottom: 17px;
+  }
+  
+  &__btn {
+    // position: absolute;
+    width: 42px;
+    height: 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 0;
+  }
+
+  &__btn_path {
+    fill:#1F2041;
+    fill-opacity: 0.5;
+  }
+
+  &__menu {
+    width: 266px;
+    height: 180px;
+    background: #FFFFFF;
+    // border: 1px solid rgba(31, 32, 65, 0.5);
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    line-height: 18px;
+    @include color('d', 0.5);
+    margin-bottom: 10px;
+  }
+
+  &__rectangle-off {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-right: 10px;
+    padding: 0;
+    z-index: 10 !important;
+  }
+
+  &__rectangle-on {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #BC9CFF;
+    background: #fff;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-right: 10px;
+    padding: 0;
+    z-index: 1;
+  }
+
+  &__path-off {
+    display: none;
+  }
+}

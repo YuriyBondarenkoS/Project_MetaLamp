@@ -1,23 +1,23 @@
-include ../../mixins/text_field/text_field
-include ../../mixins/dropdown/dropdown
-include ../../mixins/date_dropdown/date_dropdown
-include ../../mixins/filter_date_dropdown/filter_date_dropdown
-include ../../mixins/subscription_text_field/subscription_text_field
-include ../../mixins/masked_text_field/masked_text_field
-include ../../mixins/checkbox_buttons/checkbox_buttons
-include ../../mixins/checkbox_list/checkbox_list
-include ../../mixins/radio_buttons/radio_buttons
-include ../../mixins/toggle_btn/toggle_btn
-include ../../mixins/like_button/like_button
-include ../../mixins/rate_button/rate_button
-include ../../mixins/button/button
-include ../../mixins/btn_additional/btn_additional
-include ../../mixins/link_main/link_main
-include ../../mixins/pagination/pagination
-include ../../mixins/dropdown_facilities/dropdown_facilities
-include ../../mixins/range_slider/range_slider
-include ../../mixins/rich_chkbox_btn/rich_chkbox_btn
-include ../../mixins/information_block/information_block
+include ../../text_field/text_field
+include ../../dropdown/dropdown
+include ../../date_dropdown/date_dropdown
+include ../../filter_date_dropdown/filter_date_dropdown
+include ../../subscription_text_field/subscription_text_field
+include ../../masked_text_field/masked_text_field
+include ../../checkbox_buttons/checkbox_buttons
+include ../../checkbox_list/checkbox_list
+include ../../radio_buttons/radio_buttons
+include ../../toggle_btn/toggle_btn
+include ../../like_button/like_button
+include ../../rate_button/rate_button
+include ../../button/button
+include ../../btn_additional/btn_additional
+include ../../link_main/link_main
+include ../../pagination/pagination
+include ../../dropdown_facilities/dropdown_facilities
+include ../../range_slider/range_slider
+include ../../rich_chkbox_btn/rich_chkbox_btn
+include ../../information_block/information_block
 
 doctype html
 html(lang='ru')
@@ -81,20 +81,20 @@ html(lang='ru')
                       .buttons__pagination
                         +pagination('15')(class="pagination__default_pathOn")
             .dropdown 
-                .dropdown__block1
-                  +dropdown_facilities('action', 'text', 'Сколько спален', 'dropdown', '')
-                  +dropdown_facilities('action', 'text', 'Сколько спален', 'dropdown', '')
-                .dropdown__block2
-                  +dropdown('action', 'text', 'Сколько гостей', 'dropdown', '')
-                .dropdown__block3
-                  +dropdown('action', 'text', 'Сколько гостей', 'dropdown', '')
+              .dropdown__block1
+                +dropdown_facilities('action', 'text', 'Сколько спален', 'dropdown', '')
+                +dropdown_facilities('action', 'text', 'Сколько спален', 'dropdown', '')
+              .dropdown__block2
+                +dropdown('action', 'text', 'Сколько гостей', 'dropdown', '')
+              .dropdown__block3
+                +dropdown('action', 'text', 'Сколько гостей', 'dropdown', '')
             .checkbox 
-                .checkbox__block1 
-                  +checkbox_list()
-                .checkbox__block2 
-                  +rich_chkbox_btn()
-                .checkbox__block3 
+              .checkbox__block1 
+                +checkbox_list()
+              .checkbox__block2 
+                +rich_chkbox_btn()
+              .checkbox__block3 
             .comments 
-                .comments__block1 
-                  +information_block()
-                .comments__block2 
+              .comments__block1 
+                +information_block()
+              .comments__block2 

@@ -1,79 +1,47 @@
 @import "../../scss/mixins/color";
 
-.header {
-  background: #FFFFFF;
-  &__logo {
+
+.button {
+
+  &__default {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-  }
-
-  &__inner {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 70px;
-  }
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  margin: 0;
-
-  img:first-child {
-    margin-right: 12.5px;
-  }
-}
-
-.menu {
-  &__list {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    list-style-type: none;
-  }
-
-  &__list-link {
-    @include color('d', 0.5);
-    text-decoration: none;
-    margin-right: 20px;
-    position: relative;
-  }
-
-  &__list-link--services::after {
-    content: '';
-    background-image: url('./images/expand_more.svg');
-    margin-left: 5px;
-    width: 24px;
-    height: 21px;
-    top: 3px;
-  }
-
-  &__list-link--active {
+    justify-content: center;
+    border: none;
+    width: 320px;
+    height: 44px;
+    @include color('gp', 1);
+    border-radius: 22px;
+    color: #fff;
+    font-family: Montserrat-bold;
+    font-style: normal;
     font-weight: bold;
-    @include color('d', 0.75);
-
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.5;
+    }
   }
-}
 
-.login-button {
-  border: 2px solid #BC9CFF;
-  width: 87px;
-  height: 34px;
-  border-radius: 22px;
-  margin-right: 20px;
-  font-weight: bold;
-  @include color('p', 1);
-  background: #fff;
-}
+  &__default_text {
+    position: absolute;
+    text-align: center;
+  }
 
-.register {
-  border: none;
-  width: 196px;
-  height: 34px;
-  @include color('gp', 0.5);
-  border-radius: 22px;
-  color: #fff;
-  font-weight: bold;
+  &__default_svg {
+    height: 44px;
+    width: 44px;
+    padding: 13px;
+    margin: 0 0 0 267px;
+  }
+
+  &__default_path {
+    display: none;
+  }
+
+  &__default_pathOn {
+    // position: absolute;
+  }
 }
