@@ -1,0 +1,9 @@
+@import "../../scss/mixins/color";
+
+.rate_button {
+  
+  &__item {
+    margin-right: 4px;
+    transition-duration: 2s;
+  }
+}

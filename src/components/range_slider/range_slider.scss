@@ -1,0 +1,20 @@
+@import "../../scss/mixins/color";
+
+.range_slider {
+
+    margin: 22px 0 40px 0;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        width: 266px;
+    }
+
+    &__content {
+        
+    }
+    &__slider{
+        width: 266px;
+    }
+}
+
