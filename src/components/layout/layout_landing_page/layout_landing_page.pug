@@ -1,0 +1,28 @@
+include ../../header/header
+include ../../cards/card_search_num/card_search_num
+
+doctype html
+html(lang='ru')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel='shortcut icon' href='images/Group.png' type='image/x-icon')
+    link(rel='stylesheet')
+    title TOXIN
+  body
+    .layout_header
+      +header()
+        button.login_button войти
+        button.register зарегистрироваться
+
+    .background_landing
+      .background_landing__card_search_num
+        +card_search_num()
+      
+      img.background_landing__img(
+        src=require(`./images/landing_page.png`).default 
+        alt=`landing_page`
+      )
+
+    .layout_footer
+      include ../../footer/footer.pug
