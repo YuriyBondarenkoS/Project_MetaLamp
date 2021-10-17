@@ -37,7 +37,6 @@ const plugins = () => {
         { from: "./components/header/images", to: "./images" },
         { from: "./components/footer/images", to: "./images" },
         { from: "./components/layout/layout_form_element/images", to: "./images" },
-        { from: "./components/mixins/information_block/images", to: "./images" },
       ],
       options: {
         concurrency: 100,

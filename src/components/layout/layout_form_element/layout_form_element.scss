@@ -3,7 +3,7 @@
 .wrapper {
   display: flex;
   position: relative;
-  background: #E5E5E5;
+  background: #fff;
   top: 0;
   left: 0;
   align-items: center;
@@ -23,7 +23,6 @@
 .buttons {
   display: flex;
   justify-content: space-between;
-  background: rgb(253, 238, 31);
   width: 1158px;
   height: 635px;
   margin-top: 140px;
@@ -146,7 +145,6 @@
 .dropdown {
   display: flex;
   justify-content: space-between;
-  background: blueviolet;
   width: 1158px;
   height: 266px;
   margin-top: 100px;
@@ -171,7 +169,6 @@
 .checkbox {
   display: flex;
   justify-content: space-between;
-  background: brown;
   width: 1158px;
   height: 266px;
   margin-top: 55px;
@@ -195,7 +192,6 @@
 .comments {
   display: flex;
   justify-content: flex-start;
-  background: rgb(69, 17, 212);
   width: 1158px;
   height: 154px;
   margin-top: 105px;
