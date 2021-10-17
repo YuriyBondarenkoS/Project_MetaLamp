@@ -1,6 +1,6 @@
 import './date_dropdown.scss';
 
-import '../../node_modules/air-datepicker/dist/css/datepicker.css';
+import '../../../node_modules/air-datepicker/dist/css/datepicker.css';
 import 'air-datepicker/dist/js/datepicker';
 
 

@@ -1,0 +1,38 @@
+@import "../../scss/mixins/color";
+
+.review_form {
+  position: absolute;
+  display: flex;
+
+  &__icon {
+    align-items: center;
+    margin-right: 10px;
+  }
+
+  &__icon_like {
+    width: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__icon_img {
+    width: 48px;
+    height: 48px;
+  }
+
+  &__content {
+    width: 653px;
+  }
+
+  &__content_name {
+    font-family: Montserrat-Bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  
+  &__content_time {
+    margin-bottom: 10px;
+  }
+}
