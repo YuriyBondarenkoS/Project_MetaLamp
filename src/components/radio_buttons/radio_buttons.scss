@@ -46,7 +46,16 @@
     background: #fff;
   }
 
-  &__text {
+  &__text_male {
+    margin: 0 20px 0 10px;
+  }
+
+  &__text_female {
+    margin: 0 20px 0 10px;
+  }
+
+  &__text_active {
+    @include color('d', 0.75);
     margin: 0 20px 0 10px;
   }
 

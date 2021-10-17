@@ -1,0 +1,14 @@
+
+mixin bullet_list(text)
+    .bullet_list
+        h3.bullet_list__header=text
+        - const db_bul_list_arr = [
+        -    {bul_list_text: 'Нельзя с питомцами'},
+        -    { bul_list_text: 'Без вечеринок и мероприятий'},
+        -    {bul_list_text: 'Время прибытия — после 13:00, а выезд до 12:00'},
+        -]
+        each val_bul_list in db_bul_list_arr
+            .bullet_list__item!=val_bul_list.bul_list_text
+
+
+

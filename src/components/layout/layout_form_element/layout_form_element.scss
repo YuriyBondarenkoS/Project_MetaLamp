@@ -55,12 +55,63 @@
     width: 320px;
     margin-bottom: 5px;
   }
+
+  &__masked_text_field {
+    margin-bottom: 40px;
+  }
+
+  &__subscription {
+    margin-top: 41px;
+  }
   
   &__checkbox {
     background: #ffffff;
     width: 320px;
     height: 635px;
   }
+
+  &__checkbox_buttons {
+    margin-top: 20px;
+  }
+
+  &__radio_buttons {
+    margin: 41px 0 37px 0;
+  }
+
+  &__toggle {
+    margin: 20px 0 17px 0;
+  }
+
+  &__toggle_1 {
+    margin-top: 16px;
+  }
+
+  &__toggle_2 {
+    margin-top: 14px;
+  }
+
+  &__like_button {
+    margin: 40px 0 40px 0;
+  }
+
+  &__like_button_items{
+    margin-top: 16px;
+    display: flex;
+  }
+
+  &__like_button_item {
+    margin-right: 10px;
+  }
+
+  &__rate_button_items {
+    margin-top: 16px;
+    display: flex;
+  }
+
+  &__rate_button_item {
+    margin-right: 20px;
+  }
+
   &__buttons {
     background: #FFFFFF;
     width: 320px;
@@ -72,7 +123,11 @@
   }
 
   &__btn_1 {
-    margin: 0 19px 0 0;
+    margin: 16px 19px 0 0;
+  }
+
+  &__btn_2 {
+    margin-top: 16px;
   }
 
   &__btn_transparent_1 {
@@ -151,7 +206,7 @@
     height: 154px;
   }
   &__block2 {
-    background: rgb(144, 235, 24);
+    background: #fff;
     width: 740px;
     height: 154px;
     margin-left: 100px;

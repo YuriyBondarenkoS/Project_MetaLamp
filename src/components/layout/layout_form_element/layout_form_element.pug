@@ -18,6 +18,8 @@ include ../../dropdown_facilities/dropdown_facilities
 include ../../range_slider/range_slider
 include ../../rich_chkbox_btn/rich_chkbox_btn
 include ../../information_block/information_block
+include ../../review_form/review_form
+include ../../bullet_list/bullet_list
 
 doctype html
 html(lang='ru')
@@ -44,16 +46,44 @@ html(lang='ru')
                     +textField('action', 'text', 'This is pretty awesome')
                   .buttons__dropdown
                     +dropdown('action', 'text', 'Сколько гостей', 'dropdown')
-                  +masked_text_field('masked text field')
+                  .buttons__masked_text_field
+                    +masked_text_field('masked text field')
                   +date_dropdown('date Dropdown', 'date Dropdown')
                   +filter_date_dropdown('filter date Dropdown')
-                  +subscription_text_field('subscription text field')
+                  .buttons__subscription
+                    .buttons__text_field_header 
+                      h3.buttons__text_field_left filter date dropdown
+                    +subscription_text_field('subscription text field')
                 .buttons__checkbox 
-                  +checkbox_buttons()
-                  +radio_buttons()
-                  +toggle()
-                  +like_button()
-                  +rate_button()
+                  .buttons__checkbox_buttons 
+                    +checkbox_buttons()
+                  .buttons__radio_buttons 
+                    .buttons__text_field_header 
+                      h3.buttons__text_field_left Radio Buttons
+                    +radio_buttons()
+                  .buttons__toggle 
+                    .buttons__text_field_header 
+                      h3.buttons__text_field_left Toggle
+                    .buttons__toggle_1
+                      +toggle()
+                    .buttons__toggle_2
+                      +toggle()
+                  .buttons__like_button
+                    .buttons__text_field_header 
+                      h3.buttons__text_field_left like button
+                    .buttons__like_button_items
+                      .buttons__like_button_item
+                        +like_button()
+                      .buttons__like_button_item
+                        +like_button()
+                  .buttons__rate_button
+                    .buttons__text_field_header 
+                      h3.buttons__text_field_left like button
+                    .buttons__rate_button_items
+                      .buttons__rate_button_item
+                        +rate_button()
+                      .buttons__rate_button_item
+                        +rate_button()
                 .buttons__buttons
                   .buttons__buttons_renge_slider
                     +range_slider()
@@ -94,7 +124,9 @@ html(lang='ru')
               .checkbox__block2 
                 +rich_chkbox_btn()
               .checkbox__block3 
+                +bullet_list('bullet list')
             .comments 
               .comments__block1 
                 +information_block()
               .comments__block2 
+                +review_form()

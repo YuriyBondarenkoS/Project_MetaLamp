@@ -15,6 +15,8 @@ import '../../pagination/pagination.js';
 import '../../range_slider/range_slider.js';
 import '../../rich_chkbox_btn/rich_chkbox_btn.js';
 import '../../information_block/information_block.js';
+import '../../review_form/review_form.js';
+import '../../bullet_list/bullet_list.js';
 
 import '../../subscription_text_field/subscription_text_field.js';
 import '../../filter_date_dropdown/filter_date_dropdown.js';

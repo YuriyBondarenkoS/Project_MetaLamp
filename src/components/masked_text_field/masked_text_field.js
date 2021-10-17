@@ -1,7 +1,7 @@
 import './masked_text_field.scss';
 
-import '../../../../node_modules/air-datepicker/dist/css/datepicker.css';
-import '../../../../node_modules/air-datepicker/dist/js/datepicker.js';
+import '../../../node_modules/air-datepicker/dist/css/datepicker.css';
+import '../../../node_modules/air-datepicker/dist/js/datepicker.js';
 
 
 let myDatepicker = $('#my-datepicker').datepicker().data('datepicker');
