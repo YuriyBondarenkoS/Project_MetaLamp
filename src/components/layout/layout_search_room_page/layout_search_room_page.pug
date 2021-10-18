@@ -1,0 +1,69 @@
+include ../../header/header
+include ../../filter_date_dropdown/filter_date_dropdown
+include ../../dropdown_facilities/dropdown_facilities
+include ../../checkbox_buttons/checkbox_buttons
+include ../../rich_chkbox_btn/rich_chkbox_btn
+include ../../checkbox_list/checkbox_list
+include ../../dropdown_min/dropdown_min
+include ../../range_slider/range_slider
+include ../../pagination/pagination
+include ../../cards/card_room/card_room
+
+
+doctype html
+html(lang='ru')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel='shortcut icon' href='images/Group.png' type='image/x-icon')
+    link(rel='stylesheet')
+    title TOXIN
+  body.search_room__background
+    .search_room__header
+      +header()
+        button.login_button войти
+        button.register зарегистрироваться
+
+    .search_room__content
+      .search_room__nav
+        +filter_date_dropdown('даты пребывания в отеле')
+        .search_room__dropdown_facilities
+          +dropdown_min('action', 'text', 'Сколько гостей', 'гости')
+        .search_room__range_slider
+          +range_slider('диапазон цены')
+        .search_room__range_slider_text Стоимость за сутки пребывания в номере
+        .search_room__checkbox_buttons
+          +checkbox_buttons('правила дома')
+        .search_room__rich_chkbox_btn
+          +rich_chkbox_btn('доступность')
+        .search_room__dropdown_facilities
+          +dropdown_facilities('action', 'text', 'Сколько спален', 'удобства номера')
+        .search_room__checkbox_list
+          +checkbox_list('дополнительные удобства')
+
+      .search_room__nam
+        h1.search_room__nam_header Номера, которые мы для вас подобрали
+        .search_room__nam_items
+          - const db_room_num_arr = [
+          -    {room_img_1: 'card_room(1)', room_img_2: 'card_room(2)', room_img_3: 'card_room(3)', room_img_4: 'card_room(4)', room_num: '888', room_comf: ' люкс', room_price: '9 990₽ ', room_review: '145'},
+          -    {room_img_1: 'card_room(5)', room_img_2: 'card_room(6)', room_img_3: 'card_room(7)', room_img_4: 'card_room(8)', room_num: '840', room_comf: '', room_price: '9 990₽ ', room_review: '65'},
+          -    {room_img_1: 'card_room(9)', room_img_2: 'card_room(10)', room_img_3: 'card_room(11)', room_img_4: 'card_room(12)', room_num: '980', room_comf: ' люкс', room_price: '8 500₽ ', room_review: '35'},
+          -    {room_img_1: 'card_room(13)', room_img_2: 'card_room(14)', room_img_3: 'card_room(15)', room_img_4: 'card_room(16)', room_num: '856', room_comf: '', room_price: '7 300₽ ', room_review: '19'},
+          -]
+          each val_room_num in db_room_num_arr
+            .search_room__nam_item
+              +card_room(val_room_num.room_num, val_room_num.room_comf, val_room_num.room_price, val_room_num.room_review)
+                .card_room__slider_item
+                  img.card_room__img(id="card_room_slider1" src=require(`./images/${val_room_num.room_img_1}.png`).default alt='logo')
+                .card_room__slider_item
+                  img.card_room__img(id="card_room_slider2" src=require(`./images/${val_room_num.room_img_2}.png`).default alt='logo')
+                .card_room__slider_item
+                  img.card_room__img(id="card_room_slider3" src=require(`./images/${val_room_num.room_img_3}.png`).default alt='logo')
+                .card_room__slider_item
+                  img.card_room__img(id="card_room_slider4" src=require(`./images/${val_room_num.room_img_4}.png`).default alt='logo')
+
+        .search_room__nam_pagination
+          +pagination('15')
+
+    .search_room__footer
+      include ../../footer/footer.pug

@@ -1,7 +1,7 @@
 
-mixin rich_chkbox_btn()
+mixin rich_chkbox_btn(textRich)
     .rich_chkbox_btn
-        .rich_chkbox_btn__title rich Checkbox Buttons
+        .rich_chkbox_btn__title=textRich
         .rich_chkbox_btn__items
             - const db_rich_ch_btn_arr = [
             -    {
