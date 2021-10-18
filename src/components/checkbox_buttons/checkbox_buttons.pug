@@ -1,7 +1,7 @@
 
-mixin checkbox_buttons()
+mixin checkbox_buttons(textCheckbox)
     .checkbox_buttons
-        .checkbox_buttons__title Checkbox Buttons
+        .checkbox_buttons__title=textCheckbox
         .checkbox_buttons__items
             - const db_chbox_btn_arr = [
             -    {

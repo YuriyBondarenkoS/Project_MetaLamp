@@ -1,8 +1,8 @@
 
-mixin checkbox_list()
+mixin checkbox_list(textChcList)
     .checkbox_list
         .checkbox_list__header
-            .checkbox_list__title expandable checkbox list
+            .checkbox_list__title=textChcList
             button.checkbox_list__btn#checkbox_list_btn
                 svg(width='12' height='8' viewbox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg')
                     path.checkbox_list__btn_path(d='M10.5938 0.578125L12 1.98438L6 7.98438L0 1.98438L1.40625 0.578125L6 5.17188L10.5938 0.578125Z')
