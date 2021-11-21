@@ -49,6 +49,14 @@ html(lang='ru')
           -    {room_img_1: 'card_room(5)', room_img_2: 'card_room(6)', room_img_3: 'card_room(7)', room_img_4: 'card_room(8)', room_num: '840', room_comf: '', room_price: '9 990₽ ', room_review: '65'},
           -    {room_img_1: 'card_room(9)', room_img_2: 'card_room(10)', room_img_3: 'card_room(11)', room_img_4: 'card_room(12)', room_num: '980', room_comf: ' люкс', room_price: '8 500₽ ', room_review: '35'},
           -    {room_img_1: 'card_room(13)', room_img_2: 'card_room(14)', room_img_3: 'card_room(15)', room_img_4: 'card_room(16)', room_num: '856', room_comf: '', room_price: '7 300₽ ', room_review: '19'},
+          -    {room_img_1: 'card_room(1)', room_img_2: 'card_room(2)', room_img_3: 'card_room(3)', room_img_4: 'card_room(4)', room_num: '888', room_comf: ' люкс', room_price: '9 990₽ ', room_review: '145'},
+          -    {room_img_1: 'card_room(5)', room_img_2: 'card_room(6)', room_img_3: 'card_room(7)', room_img_4: 'card_room(8)', room_num: '840', room_comf: '', room_price: '9 990₽ ', room_review: '65'},
+          -    {room_img_1: 'card_room(9)', room_img_2: 'card_room(10)', room_img_3: 'card_room(11)', room_img_4: 'card_room(12)', room_num: '980', room_comf: ' люкс', room_price: '8 500₽ ', room_review: '35'},
+          -    {room_img_1: 'card_room(13)', room_img_2: 'card_room(14)', room_img_3: 'card_room(15)', room_img_4: 'card_room(16)', room_num: '856', room_comf: '', room_price: '7 300₽ ', room_review: '19'},
+          -    {room_img_1: 'card_room(1)', room_img_2: 'card_room(2)', room_img_3: 'card_room(3)', room_img_4: 'card_room(4)', room_num: '888', room_comf: ' люкс', room_price: '9 990₽ ', room_review: '145'},
+          -    {room_img_1: 'card_room(5)', room_img_2: 'card_room(6)', room_img_3: 'card_room(7)', room_img_4: 'card_room(8)', room_num: '840', room_comf: '', room_price: '9 990₽ ', room_review: '65'},
+          -    {room_img_1: 'card_room(9)', room_img_2: 'card_room(10)', room_img_3: 'card_room(11)', room_img_4: 'card_room(12)', room_num: '980', room_comf: ' люкс', room_price: '8 500₽ ', room_review: '35'},
+          -    {room_img_1: 'card_room(13)', room_img_2: 'card_room(14)', room_img_3: 'card_room(15)', room_img_4: 'card_room(16)', room_num: '856', room_comf: '', room_price: '7 300₽ ', room_review: '19'},
           -]
           each val_room_num in db_room_num_arr
             .search_room__nam_item
@@ -62,8 +70,9 @@ html(lang='ru')
                 .card_room__slider_item
                   img.card_room__img(id="card_room_slider4" src=require(`./images/${val_room_num.room_img_4}.png`).default alt='logo')
 
-        .search_room__nam_pagination
-          +pagination('15')
+        .search_room__pagination
+          .search_room__pagination_item
+            +pagination('15')
 
     .search_room__footer
       include ../../footer/footer.pug

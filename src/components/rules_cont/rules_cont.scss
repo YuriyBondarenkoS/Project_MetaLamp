@@ -1,0 +1,28 @@
+@import "../../scss/mixins/color";
+
+.rules_cont {
+
+  &__list {
+    padding-left: 20px;
+    margin-right: 20px;
+  }
+
+  &__item {
+    position: relative;
+    width: 271px;
+    @include color('d', 0.75);
+    font-size: 14px;
+    line-height: 24px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 7px;
+      left: -20px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: rgba(31, 32, 65, 0.25);
+    }
+  }
+}

@@ -1,7 +1,5 @@
 import './card_room.scss';
 
-import '../../rate_button/rate_button.js';
-
 const roomSliderItem = document.querySelectorAll('.card_room__slider_item'),
     roomBtnsBack = document.querySelector('.card_room__btns_back'),
     roomBtnsforward = document.querySelector('.card_room__btns_forward'),
