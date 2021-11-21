@@ -67,6 +67,16 @@
     margin-bottom: 21px;
   }
 
+  &__item2_title {
+    display: flex;
+    justify-content: space-between;
+    width: 710px;
+  }
+
+  &__item2_num {
+    margin-top: 16px;
+  }
+
   &__cont_details {
     margin-right: 80px;
   }

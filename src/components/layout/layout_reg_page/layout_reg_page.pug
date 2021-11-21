@@ -1,0 +1,28 @@
+include ../../header/header
+include ../../cards/card_account_reg/card_account_reg
+
+doctype html
+html(lang='ru')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel='shortcut icon' href='images/Group.png' type='image/x-icon')
+    link(rel='stylesheet')
+    title TOXIN
+  body.reg_page__background
+    .reg_page__header
+      +header()
+        button.login_button войти
+        button.register зарегистрироваться
+
+    .reg_page__content
+      .reg_page__card
+        +card_account_reg()
+
+      img.reg_page__img_fon( 
+        src=require(`./images/image_enter.png`).default 
+        alt='img'
+      )
+
+    .reg_page__footer
+      include ../../footer/footer.pug

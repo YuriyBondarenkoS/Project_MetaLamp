@@ -1,0 +1,38 @@
+
+.reg_page {
+
+  &__background {
+    background: #fff;
+  }
+
+  &__header {
+    height: 70px;
+  }
+
+  &__content {
+    position: relative;
+  }
+
+  &__img_fon {
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  &__card {
+    position: absolute;
+    z-index: 999;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  &__footer {
+    height: 443px;
+    border-bottom: 1px solid rgba(31, 32, 65, 0.25);
+  }
+}
