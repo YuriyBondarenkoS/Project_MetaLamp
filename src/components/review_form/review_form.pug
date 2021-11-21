@@ -1,15 +1,21 @@
+include ../like_button/like_button
 
 mixin review_form()
     .review_form 
-        .review_form__icon 
-            img.review_form__icon_img(
-                src=require('./images/icon_ava_1.png').default 
-                alt='icon_ava'
-            )
-            .review_form__icon_like
-                +like_button()
-        .review_form__content
-            .review_form__content_name Мурад Сарафанов
-            .review_form__content_time 5 дней назад
-            .review_form__content_text
-                |Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.
+        - const db_rev_form_arr = [
+        -    {rev_form_img: 'icon_ava_1', rev_form_name: 'Мурад Сарафанов', rev_form_time: '5 дней назад', rev_form_text: 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.'},
+        -    {rev_form_img: 'icon_ava_2', rev_form_name: 'Патрисия Стёклышкова', rev_form_time: 'Неделю назад', rev_form_text: 'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент'},
+        -]
+        each val_rev_form in db_rev_form_arr
+            .review_form__list
+                .review_form__icon 
+                    img.review_form__icon_img(
+                        src=require(`./images/${val_rev_form.rev_form_img}.png`).default 
+                        alt=`${val_rev_form.rev_form_img}`
+                    )
+                    .review_form__icon_like
+                        +like_button()
+                .review_form__content
+                    .review_form__content_name=val_rev_form.rev_form_name 
+                    .review_form__content_time=val_rev_form.rev_form_time
+                    .review_form__content_text=val_rev_form.rev_form_text

@@ -1,0 +1,58 @@
+include ../../header/header
+include ../../pie_chart/pie_chart
+include ../../information_block/information_block
+include ../../review_form/review_form
+include ../../rules_cont/rules_cont
+include ../../cards/card_booking/card_booking
+
+doctype html
+html(lang='ru')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel='shortcut icon' href='images/Group.png' type='image/x-icon')
+    link(rel='stylesheet')
+    title TOXIN
+  body.details_room__background
+    .details_room__header
+      +header()
+        button.login_button войти
+        button.register зарегистрироваться
+
+    .details_room__img 
+      img.details_room__img_1( 
+        src=require(`./images/img_details_room(1).png`).default 
+        alt='img'
+      )
+      img.details_room__img_2( 
+        src=require(`./images/img_details_room(2).png`).default 
+        alt='img'
+      )
+      img.details_room__img_3( 
+        src=require(`./images/img_details_room(3).png`).default 
+        alt='img'
+      )
+
+    .details_room__container
+      .details_room__content
+        .details_room__cont_item1
+          .details_room__cont_details
+            h2.details_room__head_h2 Сведения о номере
+            +information_block()
+          .details_room__cont_impressions
+            h2.details_room__head_h2 Впечатления от номера
+            +pie_chart()
+        .details_room__cont_item2
+          h2 Отзывы посетителей номера
+          +review_form()
+        .details_room__cont_item3
+          .details_room__cont_rules
+            h2 Правила
+            +rules_cont()
+          .details_room__cont_cancel
+            h2 Отмена
+            |Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
+      .details_room__card
+        +card_booking()
+    .details_room__footer
+      include ../../footer/footer.pug

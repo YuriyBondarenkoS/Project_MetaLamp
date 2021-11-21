@@ -16,8 +16,11 @@ import './scss/main.scss';
 // import './components/layout/layout_landing_page/layout_landing_page';
 // import './components/layout/layout_landing_page/layout_landing_page.js';
 
-import './components/layout/layout_search_room_page/layout_search_room_page';
-import './components/layout/layout_search_room_page/layout_search_room_page.js';
+// import './components/layout/layout_search_room_page/layout_search_room_page';
+// import './components/layout/layout_search_room_page/layout_search_room_page.js';
+
+import './components/layout/layout_details_room_page/layout_details_room_page';
+import './components/layout/layout_details_room_page/layout_details_room_page.js';
 
 import json from './assets/json.json';
 

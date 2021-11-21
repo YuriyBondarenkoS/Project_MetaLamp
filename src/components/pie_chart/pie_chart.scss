@@ -1,0 +1,85 @@
+@import "../../scss/mixins/color";
+
+.pie_chart {
+    display: flex;
+    justify-content: space-between;
+
+    &__diagram {
+        width: 120px;
+        height: 120px;
+    }
+
+    &__grade5 {
+        background: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);
+    }
+
+    &__g_text {
+        -moz-transform: translateY(0.25em);
+        -ms-transform: translateY(0.25em);
+        -webkit-transform: translateY(0.25em);
+        transform: translateY(0.25em);
+    }
+
+    &__chart_number {
+        color: #BC9CFF;
+        font-family: Montserrat-Bold;
+        font-weight: bold;
+        font-size: 0.53em;
+        line-height: 1;
+        text-anchor: middle;
+        -moz-transform: translateY(-0.25em);
+        -ms-transform: translateY(-0.25em);
+        -webkit-transform: translateY(-0.25em);
+        transform: translateY(-0.25em);
+    }
+
+    &__chart_label {
+        color: #BC9CFF;
+        font-family: Montserrat-Bold;
+        font-weight: bold;
+        font-size: 0.26em;
+        text-transform: uppercase;
+        text-anchor: middle;
+        -moz-transform: translateY(0.7em);
+        -ms-transform: translateY(0.7em);
+        -webkit-transform: translateY(0.7em);
+        transform: translateY(0.7em);
+    }
+
+    &__list {
+        position: relative;
+        margin-top: 28px;
+        margin-bottom: 0;
+    }
+
+    &__item::before {
+        content: '';
+        position: absolute;
+        
+        left: 25px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+    }
+
+    &__color1::before {
+        top: 7px;
+        background: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);
+    }
+    &__color2::before {
+        top: 31px;
+        background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    }
+    &__color3::before {
+        top: 56px;
+        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    }
+    &__color4::before {
+        top: 80px;
+        background: linear-gradient(180deg, #919191 0%, #3D4975 100%);
+    }
+}
+
+li {
+    list-style-type: none;
+}

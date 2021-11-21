@@ -1,8 +1,11 @@
 @import "../../scss/mixins/color";
 
 .review_form {
-  position: absolute;
-  display: flex;
+  margin-bottom: 23px;
+  
+  &__list {
+    display: flex;
+  }
 
   &__icon {
     align-items: center;
